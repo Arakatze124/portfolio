@@ -1,0 +1,43 @@
+.sidebar {
+    position: fixed;
+    top: 60px;
+    height: 100vh;
+    width: 10vmax; /* adjust as needed */
+    background-color: #f1f1f1;
+    padding: 20px 5px 10px 10px;
+    box-shadow: ;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .subpoint{
+    margin-left: 1em;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      position: fixed;
+      top: 60px;
+      height: 100vh;
+      width: 10vmax; /* adjust as needed */
+      background-color: #f1f1f1;
+      padding: 20px 5px 10px 10px;
+      box-shadow: ;
+      display: none;
+    }
+  }
+  
