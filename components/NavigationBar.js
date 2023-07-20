@@ -1,13 +1,49 @@
+'use client'
+import { useState, useEffect } from 'react';
 import React from 'react';
 import Link from 'next/link';
+import { slide as Menu } from 'react-burger-menu'
 import '../styles/NavigationBar.css';
 
 export default function NavigationBar() {
+  const [width, setWidth] = useState(500);
+
+useEffect(() => {
+  function handleResize() {
+    setWidth(document.body.clientWidth);
+  }
+  handleResize();
+  window.addEventListener("resize", handleResize);
+
+  return () => {
+    window.removeEventListener("resize", handleResize);
+  };
+}, []);
+  
+  if(width <= 769){
+    return buildBurgerMenu()
+  }else{
+    return buildNavigationBar()
+  }
+ 
+}
+
+function buildBurgerMenu(){
   return (
-    <>
-           
-       
-       <div id="container" >
+    <Menu>
+      <a href='/home'>Home</a>
+      <label>Hobbies</label>
+      <div className='container'>
+        <a href='/sports'>Sport</a>
+      </div>
+      
+    </Menu>
+  )
+}
+
+function buildNavigationBar(){
+  return (
+  <div id="container" >
    
          <nav className='sticky'>
            <div id="logo">
@@ -35,6 +71,5 @@ export default function NavigationBar() {
            </ul>
          </nav>
        </div>
-   </>
-  );
+  )
 }

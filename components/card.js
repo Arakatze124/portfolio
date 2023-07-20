@@ -59,7 +59,7 @@ function buildImage(img, width) {
   function buildText(headline, text) {
     return (
       <div className="gridi-headline ">
-          <h1 id="section-1" className="center">{headline}</h1>
+          <h1 id="section-1" className="center title3">{headline}</h1>
           <div className=" text-container"> {text}</div>
         </div>
     );

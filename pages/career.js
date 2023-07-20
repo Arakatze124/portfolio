@@ -49,7 +49,7 @@ title={"Karriere"}
 img={Career1}>
 </Banner>
   <br id="schools"></br>
-  <h1 className='center headline gridi-center'>
+  <h1 className='center title2 gridi-center'>
       Schulen
   </h1>
 

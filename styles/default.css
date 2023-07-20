@@ -24,12 +24,16 @@ h2 {
     size: 200px;
 }
 
-.title {
-    font-size: 4vmax;
-  }
+.title1 {
+  font-size: 4vmax;
+}
   
-.headline{
+.title2{
     font-size: 3vmax;
+}
+
+.title3{
+  font-size: 2vmax;
 }
 
 a{
@@ -63,6 +67,23 @@ p{
   .gridi-sidebar{
     grid-row: 1/5;
   }
+
+  /*Container-------------------------------------*/
+  .container{
+    margin-left: 10px;
+  }
+
+  /*Responsive-----------------------------------------*/
+ @media (max-width: 768px) {
+  .gridi-sidebar{
+    display: none;
+  }
+
+  .grid{
+    display:contents;
+  }
+  
+}
 
 
 

@@ -6,7 +6,7 @@ import "../styles/banner.css"
 export default function Banner({ title, img }) {
 
   return (
-    <div className='center gridi-center title banner' >
+    <div className='center gridi-center title1 banner' >
      <Image
   src={img} 
   layout="fill"
