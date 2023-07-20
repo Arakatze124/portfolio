@@ -31,10 +31,10 @@ useEffect(() => {
 function buildBurgerMenu(){
   return (
     <Menu>
-      <a href='/home'>Home</a>
+      <Link href='/home'>Home</Link>
       <label>Hobbies</label>
       <div className='container'>
-        <a href='/sports'>Sport</a>
+        <Link href='/sports'>Sport</Link>
       </div>
       
     </Menu>
