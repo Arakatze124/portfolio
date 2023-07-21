@@ -31,7 +31,7 @@
 
           <Card
              title=""
-             text={<a href='dean@opara.at'>E-Mail</a>}
+             text={<a href='mailto:dean@opara.at'>E-Mail</a>}
           ></Card>
           
         </div>
