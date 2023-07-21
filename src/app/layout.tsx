@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Dean Opara',
-  description: 'Personal Website',
+  description: 'This is a website about Dean Opara. An austrian Software Developer and Athlete. He is very cool',
 }
 
 export default function RootLayout({
