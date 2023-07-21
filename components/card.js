@@ -12,7 +12,7 @@ export default function Card({ headline, text, img, position }) {
     function handleResize() {
       setWidth(document.body.clientWidth / 2);
     }
-  
+    handleResize();
     window.addEventListener("resize", handleResize);
   
     return () => {
