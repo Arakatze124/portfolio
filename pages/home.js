@@ -13,7 +13,7 @@ export default function Home() {
     <>
     <NavigationBar></NavigationBar>
     <h1 className='center title2'>
-      Home</h1>
+      Dean Opara</h1>
       <Card 
         img={Home1}
         text={
