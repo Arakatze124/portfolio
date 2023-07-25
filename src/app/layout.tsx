@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Dean Opara',
-  description: 'This is a website about Dean Opara. An austrian Software Developer and Athlete. He is very cool',
+  description: 'Diese Website ist über Dean Opara, ein östrreichischer Software Entwickler und Athlet. Die Website befasst sich mit seiner Geschichte, seinen Hobbies und seinen Fähigkeiten. Außerdem bietet sie verschiedene Möglichkeiten, um ihn höchst persönlich zu kontaktieren',
 }
 
 export default function RootLayout({
@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="de">
       <body>{children}</body>
     </html>
   )

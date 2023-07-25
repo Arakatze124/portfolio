@@ -73,6 +73,12 @@ p{
     margin-left: 10px;
   }
 
+  /*Images------------------------------------------------------*/
+  img{
+    height: auto;
+  }
+
+
   /*Responsive-----------------------------------------*/
  @media (max-width: 768px) {
   .gridi-sidebar{
