@@ -38,6 +38,7 @@ h2 {
 
 a{
   font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
 p{
@@ -70,7 +71,7 @@ p{
 
   /*Container-------------------------------------*/
   .container{
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   /*Images------------------------------------------------------*/
@@ -81,6 +82,10 @@ p{
 
   /*Responsive-----------------------------------------*/
  @media (max-width: 768px) {
+  body{
+    padding-top: 0;
+  }
+
   .gridi-sidebar{
     display: none;
   }
@@ -88,6 +93,51 @@ p{
   .grid{
     display:contents;
   }
+
+  .gridi {
+    flex-basis: calc(25% - 10px);
+    padding: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+
+  /*text----------------------------------------------*/
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  margin: 1em;
+}
+
+h2 {
+  margin: 1em;
+  size: 200px;
+}
+
+.title1 {
+font-size: 5vmax;
+}
+
+.title2{
+  font-size: 4vmax;
+}
+
+.title3{
+font-size: 3vmax;
+}
+
+a{
+font-weight: bold;
+color: black;
+}
+
+p{
+font-size: 2vmax;
+}
   
 }
 

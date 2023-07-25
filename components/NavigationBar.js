@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import React from 'react';
 import Link from 'next/link';
 import { slide as Menu } from 'react-burger-menu'
+import "../styles/default.css"
 import '../styles/NavigationBar.css';
 
 export default function NavigationBar() {
@@ -29,14 +30,22 @@ useEffect(() => {
 }
 
 function buildBurgerMenu(){
+  
   return (
     <Menu>
       <Link href='/home'>Home</Link>
-      <label>Hobbies</label>
+      <a className='dropdown-btn'>Hobbies</a>
       <div className='container'>
-        <Link href='/sports'>Sport</Link>
+        <Link href='/sports'>Sport</Link><br></br><br></br>
+        <Link href='/bikes'>Motorräder</Link><br></br><br></br>
+        <Link href='/gaming'>Gaming</Link><br></br><br></br>
+        <Link href='/aviation'>Aviation</Link><br></br><br></br>
+        <Link href='/media'>Media</Link><br></br><br></br>
       </div>
       
+      <Link href='/career'>Karriere</Link>
+      <Link href='/contact'>Kontakt</Link>
+
     </Menu>
   )
 }
@@ -52,7 +61,7 @@ function buildNavigationBar(){
            <ul>
              <li><Link href={"/home"}>Home</Link></li>
             
-             <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Hobbies ▼</a>
+             <li class="dropdown"><a href="#">Hobbies ▼</a>
                <div class="dd">
                  <div id="up_arrow"></div>
                <ul>
@@ -73,3 +82,5 @@ function buildNavigationBar(){
        </div>
   )
 }
+
+

@@ -7,11 +7,17 @@ import "../styles/card.css"
 
 export default function Card({ title, text, img, position }) {
   const [width, setWidth] = useState(1000);
+  const [mobile, setMobile] = useState(true);
 
   useEffect(() => {
     function handleResize() {
-      setWidth(document.body.clientWidth / 2);
+      setWidth(document.body.clientWidth / 3);
+      if(width*2 < 769){
+        setMobile(true);
+      }
+      console.log(width)
     }
+  
     handleResize();
     window.addEventListener("resize", handleResize);
   
@@ -21,7 +27,16 @@ export default function Card({ title, text, img, position }) {
   }, []);
   
 
-    if (position === "left") {
+    if (mobile) {
+      return (
+        <>
+            <div className="grid2 card gridi-center">
+          {buildImage(img, width)}
+          {buildText(title, text)}
+          </div>
+        </>
+      );
+    } else if(position === "left"){
       return (
         <>
             <div className="grid2 card gridi-center">
@@ -30,7 +45,9 @@ export default function Card({ title, text, img, position }) {
           </div>
         </>
       );
-    } else {
+    }
+      else{
+    {
       return (
         <>
         <div className="grid2 card gridi-center">
@@ -63,4 +80,5 @@ function buildImage(img, width) {
         </div>
     );
   }
+}
   

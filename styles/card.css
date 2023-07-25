@@ -23,13 +23,23 @@ img {
     grid-gap: 20px;
   }
 
+  p{
+    color: black;
+  }
 @media (max-width: 768px) {
-    img{
-        display: none;
-    }
+   
     .grid2 {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 20px;
+      }
+    
+      .card{
+        width: 98%;
+        margin-left: 1%;
+      }
+
+      img{
+        width: 100%;
       }
 }
