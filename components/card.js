@@ -5,7 +5,7 @@ import Image from "next/image";
 import "../styles/default.css"
 import "../styles/card.css"
 
-export default function Card({ headline, text, img, position }) {
+export default function Card({ title, text, img, position }) {
   const [width, setWidth] = useState(1000);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Card({ headline, text, img, position }) {
         <>
             <div className="grid2 card gridi-center">
           {buildImage(img, width / 2)}
-          {buildText(headline, text)}
+          {buildText(title, text)}
           </div>
         </>
       );
@@ -34,7 +34,7 @@ export default function Card({ headline, text, img, position }) {
       return (
         <>
         <div className="grid2 card gridi-center">
-          {buildText(headline, text)}
+          {buildText(title, text)}
           {buildImage(img, width / 1.5)}
           </div>
         </>
@@ -49,17 +49,16 @@ function buildImage(img, width) {
         <Image 
           src={img} 
           width={width}
-          height="auto"
           alt="There was an error while loading the image">
         </Image>
       </div>
     );
   }
   
-  function buildText(headline, text) {
+  function buildText(title, text) {
     return (
-      <div className="gridi-headline ">
-          <h1 id="section-1" className="center title3">{headline}</h1>
+      <div>
+          <h1 id="section-1" className="center title3">{title}</h1>
           <div className=" text-container"> {text}</div>
         </div>
     );
