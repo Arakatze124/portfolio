@@ -11,7 +11,7 @@ export default function Reference(reference) {
 
   useEffect(() => {
     function handleResize() {
-      setWidth(document.body.clientWidth / 10);
+      setWidth(document.body.clientWidth / 20);
       if(width*2 < 769){
         setMobile(true);
       }
@@ -31,7 +31,7 @@ console.log(reference.text)
         <div className="reference-content" onClick={handleClick}>
         <Image
            src={reference.icon}
-           width={width}
+           width={94}
            alt={reference.text}
         ></Image>
         <p className=''>{reference.title}</p>

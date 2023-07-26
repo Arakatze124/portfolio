@@ -2,9 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 7vmax
-    
-     /* Increase height to fit both content and footer */
+    margin: 7vmax;
+
   }
   
   .reference-content {
@@ -13,11 +12,12 @@
     border: black 1vmax outset;
     border-radius: 100%;
     display: flex;
-    padding: 2vmax;
+    padding: 0vmax;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1; /* Allow content to grow to fill available space */
+    flex-grow: 1;
+    cursor: pointer;
   }
 
   .reference-footer{
