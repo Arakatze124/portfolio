@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
     <NavigationBar active={"home"}></NavigationBar>
-    <h1 className='center title2 home'>
+    <h1 className='center title1 home'>
       Dean Opara</h1>
       <Card 
         img={Home1}

@@ -1,7 +1,7 @@
 *{
     margin-top: 0;
     padding: 0;
-    font-family: "ChakraPetch-Regular";
+    font-family: "ChakraPetch";
 }
 
 html {
@@ -27,7 +27,7 @@ html {
 }
 
 @font-face {
-  font-family: 'ChakraPetch-Regular';
+  font-family: 'ChakraPetch';
   src: url('..//media/ChakraPetch-Regular.ttf') format('truetype');
   /* Add more src declarations for different font file types if needed */
   font-weight: normal;
@@ -37,6 +37,30 @@ html {
 @font-face {
   font-family: 'ChakraPetch-Italic';
   src: url('..//media/ChakraPetch-Italic.ttf') format('truetype');
+  /* Add more src declarations for different font file types if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('..//media/Montserrat-Black.ttf') format('truetype');
+  /* Add more src declarations for different font file types if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Italic';
+  src: url('..//media/Montserrat-BlackItalic.ttf') format('truetype');
+  /* Add more src declarations for different font file types if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TextMeOne';
+  src: url('..//media/TextMeOne-Regular.ttf') format('truetype');
   /* Add more src declarations for different font file types if needed */
   font-weight: normal;
   font-style: normal;
@@ -58,13 +82,14 @@ h1 {
 }
   
 .title2{
-  
+    font-family: "Montserrat-Italic";
     font-size: 3vmax;
     margin: 2em;
   font-weight: bold;
 }
 
 .title3{
+  font-family: "TextMeOne";
   font-size: 2vmax;
   margin: 1em;
   font-weight: bold;
@@ -165,7 +190,7 @@ p{
 }
 
 .home{
-  margin: 0;
+  margin-top: 10;
 }
 
 h1 {
