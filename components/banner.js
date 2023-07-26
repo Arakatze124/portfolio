@@ -14,7 +14,7 @@ export default function Banner({ title, img }) {
   alt="error"
   style={{ filter: 'brightness(0.4) blur(3px)' }}
 />
-      <h1 className="banner-title">{title}</h1>
+      <h1 className="title1 banner-title ">{title}</h1>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 *{
     margin-top: 0;
     padding: 0;
+    font-family: "ChakraPetch-Regular";
 }
 
 html {
@@ -8,6 +9,38 @@ html {
 }
 
 /*text----------------------------------------------*/
+
+@font-face {
+  font-family: 'ChakraPetch-Bold';
+  src: url('..//media/ChakraPetch-Bold.ttf') format('truetype');
+  /* Add more src declarations for different font file types if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChakraPetch-BoldItalic';
+  src: url('..//media/ChakraPetch-BoldItalic.ttf') format('truetype');
+  /* Add more src declarations for different font file types if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChakraPetch-Regular';
+  src: url('..//media/ChakraPetch-Regular.ttf') format('truetype');
+  /* Add more src declarations for different font file types if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChakraPetch-Italic';
+  src: url('..//media/ChakraPetch-Italic.ttf') format('truetype');
+  /* Add more src declarations for different font file types if needed */
+  font-weight: normal;
+  font-style: normal;
+}
 
 .center {
     display: flex;
@@ -21,9 +54,11 @@ h1 {
 
 .title1 {
   font-size: 4vmax;
+  font-family: 'ChakraPetch-BoldItalic';
 }
   
 .title2{
+  
     font-size: 3vmax;
     margin: 2em;
   font-weight: bold;
@@ -42,8 +77,9 @@ h1 {
 }
 
 a{
-  font-weight: bold;
+  font-family:"ChakraPetch-Italic";
   color: rgb(0, 0, 0);
+
 }
 
 p{
@@ -126,6 +162,10 @@ p{
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+.home{
+  margin: 0;
 }
 
 h1 {

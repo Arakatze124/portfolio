@@ -52,7 +52,7 @@ function buildBurgerMenu(){
 }
 
 function buildNavigationBar(active) {
-  console.log(active)
+
   return (
     <div id="container">
       <nav className='sticky'>

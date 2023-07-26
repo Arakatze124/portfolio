@@ -27,7 +27,6 @@ if (currentMonth >= 8) {
   schoolYear = currentYear - 2021;
 }
 
-console.log("Aktuelles Schuljahr:", schoolYear);
 
 const links = [
   new SideLink("Schulen", "#schools", false),

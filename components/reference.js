@@ -15,7 +15,7 @@ export default function Reference(reference) {
       if(width*2 < 769){
         setMobile(true);
       }
-      console.log(width)
+
     }
   
     handleResize();
@@ -25,7 +25,6 @@ export default function Reference(reference) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-console.log(reference.text)
     return (<>
     <div className='reference'>
         <div className="reference-content" onClick={handleClick}>

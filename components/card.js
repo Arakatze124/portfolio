@@ -12,15 +12,12 @@ export default function Card({ title, text, img, position }) {
 
   useEffect(() => {
     function handleResize() {
-      setWidth(document.body.clientWidth * 0.6);
-      if(width*2 < 769){
-        setMobile(true);
-      }
-      else{
-        setMobile(false)
-      }
+      const newWidth = document.body.clientWidth;
+      setWidth(newWidth);
+      setMobile(newWidth < 769);
     }
-  
+    
+    
     handleResize();
     window.addEventListener("resize", handleResize);
   
@@ -28,7 +25,11 @@ export default function Card({ title, text, img, position }) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  console.log(mobile)
+  console.log(width)
   
+    const imgWidth = width / 3;
 
     if (mobile) {
       return (
@@ -44,7 +45,7 @@ export default function Card({ title, text, img, position }) {
       return (
         <>
             <div className="grid2 card gridi-center">
-          {buildImage(img, width / 2)}
+          {buildImage(img, imgWidth)}
           {buildText(title, text)}
           </div>
         </>
@@ -56,7 +57,7 @@ export default function Card({ title, text, img, position }) {
         <>
         <div className="grid2 card gridi-center">
           {buildText(title, text)}
-          {buildImage(img, width / 1.5)}
+          {buildImage(img, imgWidth)}
           </div>
         </>
       );
