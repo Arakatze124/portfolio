@@ -32,7 +32,7 @@
   export default function Contact() {
     return (
       <>
-        <NavigationBar></NavigationBar>
+        <NavigationBar active={"contact"}></NavigationBar>
         <div className="grid">
           <Banner
              title={"Kontakt"}

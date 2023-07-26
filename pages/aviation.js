@@ -25,7 +25,7 @@
   export default function Aviation() {
     return (
       <>
-        <NavigationBar></NavigationBar>
+        <NavigationBar active={"aviation"}></NavigationBar>
         <div className="grid">
           <Banner
              title={"Luft- und Raumfahrt"}

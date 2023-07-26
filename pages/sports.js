@@ -27,7 +27,7 @@
   export default function Sports() {
     return (
       <>
-        <NavigationBar></NavigationBar>
+        <NavigationBar active={"sports"}></NavigationBar>
         <div className="grid">
           <Banner
              title={"Sport"}

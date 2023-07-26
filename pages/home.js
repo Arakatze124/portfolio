@@ -11,7 +11,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
-    <NavigationBar></NavigationBar>
+    <NavigationBar active={"home"}></NavigationBar>
     <h1 className='center title2'>
       Dean Opara</h1>
       <Card 

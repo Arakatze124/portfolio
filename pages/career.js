@@ -40,7 +40,7 @@ const links = [
 function Career(){
 return (
 <>
-<NavigationBar></NavigationBar>
+<NavigationBar active={"career"}></NavigationBar>
 
 <div className="grid">
 
