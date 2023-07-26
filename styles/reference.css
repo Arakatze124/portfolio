@@ -1,0 +1,28 @@
+.reference {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7vmax
+    
+     /* Increase height to fit both content and footer */
+  }
+  
+  .reference-content {
+    width: 10vmax;
+    height: 10vmax;
+    border: black 1vmax outset;
+    border-radius: 100%;
+    display: flex;
+    padding: 2vmax;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allow content to grow to fill available space */
+  }
+
+  .reference-footer{
+    margin-top: 10px;
+    
+  }
+  
+ 

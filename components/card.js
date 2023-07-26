@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import "../styles/default.css"
 import "../styles/card.css"
+import { faL } from "@fortawesome/free-solid-svg-icons";
 
 export default function Card({ title, text, img, position }) {
   const [width, setWidth] = useState(1000);
@@ -11,11 +12,13 @@ export default function Card({ title, text, img, position }) {
 
   useEffect(() => {
     function handleResize() {
-      setWidth(document.body.clientWidth / 3);
+      setWidth(document.body.clientWidth * 0.6);
       if(width*2 < 769){
         setMobile(true);
       }
-      console.log(width)
+      else{
+        setMobile(false)
+      }
     }
   
     handleResize();
@@ -30,7 +33,8 @@ export default function Card({ title, text, img, position }) {
     if (mobile) {
       return (
         <>
-            <div className="grid2 card gridi-center">
+        
+          <div className="grid2 card gridi-center">
           {buildImage(img, width)}
           {buildText(title, text)}
           </div>
@@ -75,7 +79,7 @@ function buildImage(img, width) {
   function buildText(title, text) {
     return (
       <div>
-          <h1 id="section-1" className="center title3">{title}</h1>
+          <div id="section-1" className="center title3">{title}</div>
           <div className=" text-container"> {text}</div>
         </div>
     );

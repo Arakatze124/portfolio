@@ -37,15 +37,15 @@
 
             <br id='glider'></br>
             <Card 
-              headline={"Segelflug"}
-              text={<p><Link href={"https://www.flugsportunion.at"} target="_blank">steirischen Flugsportunion</Link></p>}
+              title={"Segelflug"}
+              text={<p>Meine erste richtige Flugerfahrung habe ich bei der <Link href={"https://www.flugsportunion.at"} target="_blank">steirischen Flugsportunion</Link> gesammelt</p>}
               img={aviation4}
               position={"left"}>
             </Card>
 
             <br id='space'></br>
             <Card 
-              headline={"Raumfahrt"}
+              title={"Raumfahrt"}
               text={<p></p>}
               img={aviation3}
               position={"right"}>
@@ -53,7 +53,7 @@
 
             <br id='military'></br>
             <Card 
-              headline={"Luftstreitkräfte"}
+              title={"Luftstreitkräfte"}
               text={<p></p>}
               img={aviation2}
               position={"left"}>

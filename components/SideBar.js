@@ -7,7 +7,7 @@ export default function Sidebar({ links }) {
       <ul>
         {links.map((link, index) => (
           <li key={index} className={link.subpoint ? 'subpoint' : ''}>
-            <a href={link.path}>{link.name}</a>
+            <a className="title4" href={link.path}>{link.name}</a>
           </li>
         ))}
       </ul>

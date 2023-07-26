@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin-top: 0;
     padding: 0;
 }
 
@@ -16,12 +16,7 @@ html {
 }
 
 h1 {
-    margin: 1em;
-}
-
-h2 {
-    margin: 1em;
-    size: 200px;
+    margin: 9vmax
 }
 
 .title1 {
@@ -30,19 +25,29 @@ h2 {
   
 .title2{
     font-size: 3vmax;
+    margin: 2em;
+  font-weight: bold;
 }
 
 .title3{
   font-size: 2vmax;
+  margin: 1em;
+  font-weight: bold;
+}
+
+.title4{
+  font-size: 1vmax;
+  margin: 1em;
+  font-weight: bold;
 }
 
 a{
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 p{
-  font-size: 1vmax;
+  font-size: 1.5vmax;
 }
 
 
@@ -69,6 +74,20 @@ p{
     grid-row: 1/5;
   }
 
+  /*flex-------------------------------*/
+
+  .flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .flex-ignore{
+    display: none;
+  }
+
+
+
   /*Container-------------------------------------*/
   .container{
     margin-left: 20px;
@@ -76,7 +95,7 @@ p{
 
   /*Images------------------------------------------------------*/
   img{
-    height: auto;
+    height: fit-content;
   }
 
 

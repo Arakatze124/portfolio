@@ -43,7 +43,7 @@
   margin: 0 20px;
     color:white;
 }
-#container > nav > ul > li:hover {
+#container > nav > ul > li:hover, .active {
   border-bottom: 2px solid white;
   background-color: #009607;
   position: sticky;

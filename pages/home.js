@@ -17,8 +17,13 @@ export default function Home() {
       <Card 
         img={Home1}
         text={
-          <p className=''><b>Herzlich Willkommen auf meiner Website!</b><br></br><br></br>Ich habe diese Website selbst erstellt, um dir einen besseren Einblick in meine Person zu ermöglichen. <br></br><br></br>Hier findest du alles relevante über mich, meine bisherige (und zukünftige?) Karriere, meine Hobbies und Interessen und wie man mich<Link href={'/contact'}>kontaktieren</Link> die Möglichkeit.</p>}
-        headline={"Vorwort"}
+          <p className=''>
+            <b>Herzlich Willkommen auf meiner Website!</b><br></br><br></br>
+            Ich habe diese Website selbst erstellt, um dir einen besseren Einblick in meine Person zu ermöglichen. <br></br><br></br>
+            Hier findest du alles relevante über mich. Meine bisherige  Karriere, meine Hobbies und Interessen und wie man mich auf allen möglichen Plattformen
+            <Link href={'/contact'}> kontaktieren</Link> kann. <br></br><br></br><span style={{color:"red"}}><b>!Behalte im Kopf, dass diese Website noch nicht fertiggestellt ist!</b></span><br></br>
+          Die Entwicklung hat Anfang Juni begonnen und ist sehr zeitaufwändig. Falls du Fehler findest, kannst du sie mir gerne melden!</p>}
+        title={"Vorwort"}
         position={"left"}>
       </Card>
     </>
