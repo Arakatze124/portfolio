@@ -6,6 +6,7 @@ import { slide as Menu } from 'react-burger-menu'
 import "../styles/default.css"
 import '../styles/NavigationBar.css';
 import { useRouter } from 'next/router';
+const router = useRouter();
 
 export default function NavigationBar() {
   const [width, setWidth] = useState(500);
@@ -25,7 +26,7 @@ useEffect(() => {
   if(width <= 769){
     return buildBurgerMenu()
   }else{
-    return BuildNavigationBar()
+    return buildNavigationBar()
   }
  
 }
@@ -51,8 +52,8 @@ function buildBurgerMenu(){
   )
 }
 
-function BuildNavigationBar() {
-  const router = useRouter();
+function buildNavigationBar() {
+  
 
   return (
     <div id="container">
