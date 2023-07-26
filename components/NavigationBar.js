@@ -25,7 +25,7 @@ useEffect(() => {
   if(width <= 769){
     return buildBurgerMenu()
   }else{
-    return buildNavigationBar()
+    return BuildNavigationBar()
   }
  
 }
@@ -51,7 +51,7 @@ function buildBurgerMenu(){
   )
 }
 
-function buildNavigationBar() {
+function BuildNavigationBar() {
   const router = useRouter();
 
   return (
