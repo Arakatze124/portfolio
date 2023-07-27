@@ -7,6 +7,8 @@
   import Card from "../components/card"
   import Banner from "../components/banner"
   import Link from 'next/link';
+  import Carousel from '../components/carousel.js';
+  import 'react-responsive-carousel/lib/styles/carousel.min.css'
   //CSS
   import '../styles/default.css'
   import '../styles/sideBar.css'
@@ -15,6 +17,7 @@
   import bikes2 from "../media/bikes2.jpeg"
   import bikes3 from "../media/bikes3.jpg"
   import bikes4 from "../media/bikes4.png"
+
 
   const links =[
     new SideLink("displayName", "#id", "issubpoint"),
@@ -101,6 +104,21 @@
           ></Card>
 
           <div className='title2 center gridi-center'>Gallerie</div>
+          <div className='center gridi-center'>
+          <Carousel>
+                <div>
+                    <img src={bikes1} />
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src="assets/3.jpeg" />
+                    <p className="legend">Legend 3</p>
+                </div>
+            </Carousel>
+            </div>
         </div>
       </>
     )
