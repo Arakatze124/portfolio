@@ -96,9 +96,9 @@ h1 {
 }
 
 .title4{
-  font-size: 1vmax;
-  margin: 1em;
-  font-weight: bold;
+  font-family: "Montserrat";
+  font-size: 1.5vmax;
+  
 }
 
 a{
@@ -212,6 +212,13 @@ font-size: 5vmax;
 
 .title3{
 font-size: 3vmax;
+}
+
+.title4{
+  font-family: "Montserrat";
+  font-size: 2.5vmax;
+  
+  
 }
 
 a{

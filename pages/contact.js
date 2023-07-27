@@ -81,7 +81,7 @@
           <Reference
             title={"Paypal"}
             text={"deanopara"}
-            link={""}
+            link={"https://paypal.me/deanopara"}
             icon={iconPaypal}
           ></Reference>
 
@@ -89,7 +89,7 @@
           <Reference
             title={"Discord"}
             text={"Arakatze124"}
-            link={""}
+            link={"https://discord.com/channels/@me"}
             icon={iconDiscord}
           ></Reference>
 

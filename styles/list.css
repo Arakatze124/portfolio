@@ -1,0 +1,9 @@
+li{
+    list-style-type: none;
+    margin: 1vmax;
+}
+
+.li-item{
+    margin-left: 2vmax;
+    font-family:"ChakraPetch-Bold"
+}

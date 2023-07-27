@@ -35,7 +35,7 @@ export default function Card({ title, text, img, position }) {
       return (
         <>
         
-          <div className="grid2 card gridi-center">
+        <div className={img === null ? "card gridi-center" : "grid2 card gridi-center"}>
           {buildImage(img, width)}
           {buildText(title, text)}
           </div>
@@ -44,7 +44,7 @@ export default function Card({ title, text, img, position }) {
     } else if(position === "left"){
       return (
         <>
-            <div className="grid2 card gridi-center">
+          <div className={img === null ? "card gridi-center" : "grid2 card gridi-center"}>
           {buildImage(img, imgWidth)}
           {buildText(title, text)}
           </div>
@@ -55,7 +55,7 @@ export default function Card({ title, text, img, position }) {
     {
       return (
         <>
-        <div className="grid2 card gridi-center">
+          <div className={img === null ? "card gridi-center" : "grid2 card gridi-center"}>
           {buildText(title, text)}
           {buildImage(img, imgWidth)}
           </div>
@@ -66,8 +66,9 @@ export default function Card({ title, text, img, position }) {
   
 
 function buildImage(img, width) {
+  if(img != null){
     return (
-      <div className="gridi center">
+      <div className="center img-container">
         <Image 
           src={img} 
           width={width}
@@ -75,6 +76,9 @@ function buildImage(img, width) {
         </Image>
       </div>
     );
+  }else{
+    return <></>
+  }
   }
   
   function buildText(title, text) {

@@ -38,7 +38,7 @@
             <br id='glider'></br>
             <Card 
               title={"Segelflug"}
-              text={<p>Meine erste richtige Flugerfahrung habe ich bei der <Link href={"https://www.flugsportunion.at"} target="_blank">steirischen Flugsportunion</Link> gesammelt</p>}
+              text={<p>Meine erste richtige Flugerfahrung habe ich bei der <Link href={"https://www.flugsportunion.at"} target="_blank">steirischen Flugsportunion</Link> gesammelt. Dort habe ich n einem 1 wöchigen Kurs teilgenommen und 2 Flüge gehabt</p>}
               img={aviation4}
               position={"left"}>
             </Card>
@@ -46,7 +46,7 @@
             <br id='space'></br>
             <Card 
               title={"Raumfahrt"}
-              text={<p></p>}
+              text={<p>Wenn es um Raumfahrt und das Weltall im generellen geht, bin ich auch sehr interressiert. So habe ich einige Sandbox Spiele wie KSP gespielt, in denen man eigene Raumfahrzeuge baut und interplanetare Reisen durchführt</p>}
               img={aviation3}
               position={"right"}>
             </Card>
@@ -54,7 +54,7 @@
             <br id='military'></br>
             <Card 
               title={"Luftstreitkräfte"}
-              text={<p></p>}
+              text={<p>Gleich vorweg, Krieg = Schlecht, aber Kampfjets = Cool. Was Flugzeuge, insbesondere Kampfjets angeht, bin ich meistens der Fachmann im Raum. Mein Lieblingsflugzeug ist die F35B-Lighting II, ein Mehrzweck-Stealth-Kampfjet des Hauses Locheed Martin. Ich kann mir eine Karriere im Luftgeschwarder des Östereichischen Bundesheer sehr gut vorstellen, wenn nicht sogar, mein größtes Ziel.</p>}
               img={aviation2}
               position={"left"}>
             </Card>

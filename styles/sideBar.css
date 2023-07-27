@@ -15,10 +15,12 @@
   }
   
   .sidebar li {
+    font-size: 0.5vmax;
     margin-bottom: 10px;
   }
   
   .sidebar a {
+    font-size: 1vmax;
     text-decoration: none;
     color: #333;
   }
