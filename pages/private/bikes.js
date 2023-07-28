@@ -1,15 +1,7 @@
 
   /*
   //Components
-  import React from 'react'
-  import NavigationBar from '../components/NavigationBar'
-  import SideBar from "../components/SideBar";
-  import SideLink from "../components/SideLink";
-  import Card from "../components/card"
-  import Banner from "../components/banner"
-  import Link from 'next/link';
-  import Carousel from '../components/carousel.js';
-  import 'react-responsive-carousel/lib/styles/carousel.min.css'
+
   //CSS
   import '../styles/default.css'
   import '../styles/sideBar.css'
