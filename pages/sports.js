@@ -17,11 +17,11 @@
  
   
   const links =[
+    new SideLink("Sportarten", "#sports", false),
+    new SideLink("American Football", "#football", true),
     new SideLink("Krafttraining", "#strength", false),
     new SideLink("Workouts", "#workouts", true),
     new SideLink("Trainingsplan", "#plan", true),
-    new SideLink("Sportarten", "#sports", false),
-    new SideLink("American Football", "#football", true),
   ]
   
   export default function Sports() {
@@ -36,6 +36,16 @@
           <div>
              <SideBar links={links} />
           </div>
+
+          <br id='sports'></br>
+          <div className='title2 center gridi-center'>Sportarten</div>
+            <br id='football'></br>
+            <Card
+              title={"American Football"}
+              text={<p>Seit Juli, 2023 bin ich stolzes Mitglied der <Link href={"https://www.grazgiants.at"}>Grazer Giants</Link>, einem österreichischen Football Team in Graz. Dort fungiere ich als Running Back in der U16.<br></br><br></br>Ich habe schon viele verschiedene Sportarten in meinem Leben ausprobiert, aber nichts konnte mich bisher so begeistern wie Football. Von den athletischen Ansprüchen her perfekt auf meine Stärken angepasst und nirgendwo sonst ein stärkerer Teamgeist.</p>}
+              img={football1}
+              position={"right"}
+            ></Card>
 
           <br id='strength'></br><br></br><br></br>
           <div className='title2 center gridi-center'>Krafttraining</div>
@@ -52,15 +62,7 @@
               url={"https://onedrive.live.com/embed?resid=999107596EE3D11B%21156160&authkey=!ACywZ-H57i6egwE&em=2"}
             ></Table>
 
-          <br id='sports'></br>
-          <div className='title2 center gridi-center'>Sportarten</div>
-            <br id='football'></br>
-            <Card
-              title={"American Football"}
-              text={<p>Seit Juli, 2023 bin ich stolzes Mitglied der <Link href={"https://www.grazgiants.at"}>Grazer Giants</Link>, einem österreichischen Football Team in Graz. Dort fungiere ich als Running Back in der U16.<br></br><br></br>Ich habe schon viele verschiedene Sportarten in meinem Leben ausprobiert, aber nichts konnte mich bisher so begeistern wie Football. Von den athletischen Ansprüchen her perfekt auf meine Stärken angepasst und nirgendwo sonst ein stärkerer Teamgeist.</p>}
-              img={football1}
-              position={"right"}
-            ></Card>
+          
 
         </div>
       </>

@@ -26,8 +26,7 @@ export default function Card({ title, text, img, position }) {
     };
   }, []);
 
-  console.log(mobile)
-  console.log(width)
+ 
   
     const imgWidth = width / 3;
 

@@ -6,6 +6,7 @@
   import SideLink from "../components/SideLink";
   import Card from "../components/card"
   import Banner from "../components/banner"
+  import Image from 'next/image';
   //CSS
   import '../styles/default.css'
   import '../styles/sideBar.css'
@@ -21,8 +22,12 @@
 
   const links =[
     new SideLink("E-Mail", "#mail", false),
+    new SideLink("Telefon", "#number", false),
     new SideLink("Github", "#github", false),
-    new SideLink("Instagram", "#instagram", false),
+    new SideLink("Instagran", "#instagram", false),
+    new SideLink("Paypal", "#paypal", false),
+    new SideLink("Discord", "#discord", false),
+
   ]
   
   export default function Contact() {
@@ -49,6 +54,14 @@
             title={"E-Mail"}
           ></Reference>
 
+          <br id='number'></br>
+          <Reference
+            link={"tel:+43 660 8663522"}
+            text={"+43 660 8663522"}
+            icon={iconPhone}
+            title={"Telefon"}
+          ></Reference>
+
           <br id='github'></br>
           <Reference
             title={"Github"}
@@ -65,8 +78,21 @@
             icon={iconInstagram}
           ></Reference>
 
-          
-          
+          <br id='paypal'></br>
+          <Reference
+            title={"Paypal"}
+            text={"deanopara"}
+            link={"https://paypal.me/deanopara"}
+            icon={iconPaypal}
+          ></Reference>
+
+          <br id='discord'></br>
+          <Reference
+            title={"Discord"}
+            text={"Arakatze124"}
+            link={"https://discord.com/channels/@me"}
+            icon={iconDiscord}
+          ></Reference>
 
         </div>
         </div>

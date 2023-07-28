@@ -14,7 +14,7 @@
   import media1 from "../media/media1.jpg"
   
   const links =[
-    new SideLink("displayName", "#id", "issubpoint"),
+    new SideLink("Musik", "#music", false),
   ]
   
   export default function Media() {
@@ -30,6 +30,7 @@
              <SideBar links={links} />
           </div>
           
+          <br id='music'></br>
           <div className='title2 center gridi-center'>Musik</div>
           <div className='title3 center gridi-center'>Konsum</div>
           <Card
