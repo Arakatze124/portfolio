@@ -22,6 +22,8 @@
   width:40%;
   letter-spacing:2px;
   text-shadow:2px 2px 5px;
+  display: flex;
+  align-items: center;
 }
 #container > nav > ul {
   margin:0;

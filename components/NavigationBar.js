@@ -6,6 +6,8 @@ import { slide as Menu } from 'react-burger-menu'
 import "../styles/default.css"
 import '../styles/NavigationBar.css';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
+import logo from "../media/logo.png"
 
 export default function NavigationBar(active) {
   const [width, setWidth] = useState(500);
@@ -25,7 +27,7 @@ useEffect(() => {
   if(width <= 769){
     return buildBurgerMenu()
   }else{
-    return buildNavigationBar(active.active)
+    return buildNavigationBar(active.active, width)
   }
  
 }
@@ -51,13 +53,20 @@ function buildBurgerMenu(){
   )
 }
 
-function buildNavigationBar(active) {
+function buildNavigationBar(active, width) {
 
   return (
     <div id="container">
       <nav className='sticky'>
+        
         <div id="logo">
-          Dean Opara
+          <Image
+          width={50}
+          
+          src={logo}
+          />
+          <p> ----</p>
+          <div>Dean Opara</div>
         </div>
         <ul>
           <li className={active === 'home' ? 'active' : ''}><Link href={"/home"}>Home</Link></li>
