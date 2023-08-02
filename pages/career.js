@@ -62,9 +62,10 @@ function Career() {
           text={
             <p>
               Im Juli 2023 habe ich ein Ferialpraktikum im Bereich Software
-              Development absolviert . Bei Arland Technologies konnte ich das
-              erste mal praktische Erfahrung in diesem Bereich sammeln. Zu
-              meinen Aufgaben zählten:
+              Development absolviert . Bei{" "}
+              <Link href={"https://arland.at"}>Arland Technologies </Link>konnte
+              ich das erste mal praktische Erfahrung in diesem Bereich sammeln.
+              Zu meinen Aufgaben zählten:
               <List
                 data={["Webdesign", "Web-Entwicklung", "Script-Entwicklung"]}
               ></List>
@@ -79,10 +80,13 @@ function Career() {
           text={
             <p>
               Im November, 2022, habe ich im Bereich der Warenkomission
-              geringfügig bis Jänner nächsten Jahres gearbeitet. Dort habe ich
-              dafür gesorgt, dass die bestellte Ware so schnell wie möglich zu
-              der Versandstation gebracht wird, um unseren Kunden eine kurze
-              Wartezeit zu bereiten.
+              geringfügig bis Jänner nächsten Jahres bei{" "}
+              <Link href={"https://www.kastner-oehler.at"}>
+                Kastner & Öhler
+              </Link>{" "}
+              gearbeitet. Dort habe ich dafür gesorgt, dass die bestellte Ware
+              so schnell wie möglich zu der Versandstation gebracht wird, um
+              unseren Kunden eine kurze Wartezeit zu bereiten.
             </p>
           }
           img={career8}
