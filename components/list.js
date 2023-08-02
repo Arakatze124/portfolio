@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/list.css"
+import "../styles/list.css";
 
 export default function List({ data }) {
   return (
@@ -8,13 +8,19 @@ export default function List({ data }) {
         if (item.includes(":")) {
           const [part1, part2] = item.split(":");
           return (
-            <li key={index}>
-              <div className="title4">{part1}<p className="li-item">{part2}</p></div>
-              
+            <li className="li-parent" key={index}>
+              <div className="title4">
+                {part1}
+                <p className="li-item">{part2}</p>
+              </div>
             </li>
           );
         } else {
-          return <li className="li-item" key={index}>{item}</li>;
+          return (
+            <li className="li-parent li-item" key={index}>
+              {item}
+            </li>
+          );
         }
       })}
     </ul>
