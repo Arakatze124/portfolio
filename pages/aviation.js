@@ -46,6 +46,7 @@ export default function Aviation() {
           }
           img={aviation4}
           position={"left"}
+          date={"25.7.2023"}
         ></Card>
 
         <br id="space"></br>
@@ -61,6 +62,7 @@ export default function Aviation() {
           }
           img={aviation3}
           position={"right"}
+          date={"25.7.2023"}
         ></Card>
 
         <br id="military"></br>
@@ -79,6 +81,7 @@ export default function Aviation() {
           }
           img={aviation2}
           position={"left"}
+          date={"25.7.2023"}
         ></Card>
       </div>
     </>

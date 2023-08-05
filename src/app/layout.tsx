@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Dean Opara',
-  description: 'Diese Website ist über Dean Opara, ein östrreichischer Software Entwickler und Athlet. Die Website befasst sich mit seiner Geschichte, seinen Hobbies und seinen Fähigkeiten. Außerdem bietet sie verschiedene Möglichkeiten, um ihn höchst persönlich zu kontaktieren',
+  title: 'Dean Opara - Athlet und Software-Developer',
+  description: 'Diese Website ist über Dean Opara, ein österreichischer Software Entwickler und Athlet. ',
 }
 
 export default function RootLayout({

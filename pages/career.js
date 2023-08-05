@@ -72,6 +72,7 @@ function Career() {
             </p>
           }
           img={career7}
+          date={"3.8.2023"}
         ></Card>
 
         <br id="k&oe"></br>
@@ -91,6 +92,7 @@ function Career() {
           }
           img={career8}
           position={"left"}
+          date={"3.8.2023"}
         ></Card>
 
         <br id="docs"></br>
@@ -108,6 +110,7 @@ function Career() {
             ></iframe>
           }
           img={null}
+          date={"3.8.2023"}
         ></Card>
 
         <br id="testimonial"></br>
@@ -123,6 +126,7 @@ function Career() {
             ></iframe>
           }
           img={null}
+          date={"3.8.2023"}
         ></Card>
 
         <br id="ccna"></br>
@@ -136,6 +140,7 @@ function Career() {
             />
           }
           img={null}
+          date={"3.8.2023"}
         ></Card>
 
         <br id="fce"></br>
@@ -151,6 +156,7 @@ function Career() {
             ></iframe>
           }
           img={null}
+          date={"3.8.2023"}
         ></Card>
 
         <br id="webpeer"></br>
@@ -165,6 +171,7 @@ function Career() {
               scrolling="no"
             ></iframe>
           }
+          date={"3.8.2023"}
           img={null}
         ></Card>
 
@@ -204,6 +211,7 @@ function Career() {
           }
           img={Kaindorf1}
           position={"left"}
+          date={"13.7.2023"}
         ></Card>
 
         <br id="pmsDobl"></br>
@@ -227,6 +235,7 @@ function Career() {
           }
           img={pmsdobl1}
           position={"right"}
+          date={"13.7.2023"}
         ></Card>
 
         <br id="vsLannach"></br>
@@ -247,6 +256,7 @@ function Career() {
           }
           img={vslannach1}
           position={"left"}
+          date={"13.7.2023"}
         ></Card>
 
         <br></br>
