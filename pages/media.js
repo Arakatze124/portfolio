@@ -6,13 +6,22 @@ import SideLink from "../components/SideLink";
 import Card from "../components/card";
 import Banner from "../components/banner";
 import Link from "next/link";
+import List from "../components/list.js";
 //CSS
 import "../styles/default.css";
 import "../styles/sideBar.css";
 //Media
 import media1 from "../media/media1.jpg";
+import media2 from "../media/media2.jpg";
+import media3 from "../media/media3.jpg";
 
-const links = [new SideLink("Musik", "#music", false)];
+const links = [
+  new SideLink("Musik", "#music", false),
+  new SideLink("Konsum", "#consumption", true),
+  new SideLink("Produktion", "#production", true),
+  new SideLink("Filme/Serien", "#movies", false),
+  new SideLink("Fotos", "#pictures", false),
+];
 
 export default function Media() {
   return (
@@ -26,9 +35,9 @@ export default function Media() {
 
         <br id="music"></br>
         <div className="title2 center gridi-center">Musik</div>
-        <div className="title3 center gridi-center">Konsum</div>
+        <br id="consumption"></br>
         <Card
-          title={"Meine Top-Tracks"}
+          title={"Konsum"}
           text={
             <p>
               Es vergeht kein Tag an dem ich nicht Musik hör, und ich würde auch
@@ -53,6 +62,76 @@ export default function Media() {
             loading="lazy"
           ></iframe>
         </div>
+
+        <br id="production"></br>
+        <Card
+          title={"Produktion"}
+          text={
+            <p>
+              Mit meinem großen Konsum von Musik kommt das Bedürfnis mit, selbst
+              etwas zu produzieren. Nicht falsch verstehen, ich komponiere
+              (jedenfalls noch) keine eigenen Songs. Ich möchte nur in der Lage
+              sein meine Lieblingslieder auf einem Instrument spielen zu können.
+              <br></br>
+              <br></br>
+              Anfang August habe ich mir deshalb eine E-Gitarre gekauft. Zu
+              diesem Zeitpunkt, bin ich noch nicht sehr gut aber ich denke, mit
+              täglichem Üben wird sich das schnell ändern
+            </p>
+          }
+          img={media2}
+          date={"9.8.2023"}
+        ></Card>
+
+        <br id="movies"></br>
+        <div className="title2 center gridi-center">Filme und Serien</div>
+        <Card
+          title={"Filme und Serien"}
+          text={
+            <p>
+              Wenn es nur hin und wieder wäre, würde ich diesen Punkt nicht
+              auflisten. Denn Fakt ist, das ich jedentag zumindest eine Folge
+              oder einen Film schaue. Ich liebe es, wenn dich etwas so in den
+              Bann reißt, das du Raum und Zeit vergisst und in einer ganz
+              anderen Welt bist. <br></br>
+              <br></br>Hier ein paar meiner Favoriten:
+              <List
+                data={[
+                  "Serien:",
+                  "The Boys",
+                  "Haus des Geldes",
+                  "Sword Art Online",
+                  "Filme:",
+                  "Interstellar",
+                  "Tenet",
+                  "Inception",
+                  "Whiplash",
+                  "The Truman Show",
+                ]}
+              ></List>
+            </p>
+          }
+          img={null}
+          date={"9.8.2023"}
+        ></Card>
+        <br id="pictures"></br>
+
+        <div className="title2 center gridi-center">Fotos</div>
+        <Card
+          title={"Fotos"}
+          text={
+            <p>
+              Dieses Hobby ist bei mir noch sehr unausgeprägt und hält sich nur
+              klein. Ich habe einfach Spaß daran schöne Fotos zu machen, am
+              meisten von mir selbst in verschiedenen Posen. Vorallem für diese
+              Website musste ich so einige Fotos machen und es hat durchaus Spaß
+              gemacht auch wenn sie nur mit meinem Handy, unprofessionell,
+              aufgenommen wurden.
+            </p>
+          }
+          img={media3}
+          date={"9.8.2023"}
+        ></Card>
       </div>
     </>
   );
