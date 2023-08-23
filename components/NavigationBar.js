@@ -35,7 +35,7 @@ function buildBurgerMenu() {
   return (
     <Menu>
       <Link href="/home">Home</Link>
-      <a className="dropdown-btn">Hobbies</a>
+      <a className="dropdown-btn">Interessen</a>
       <div className="container">
         <Link href="/sports">Sport</Link>
         <br></br>
@@ -76,7 +76,7 @@ function buildNavigationBar(active, width) {
             </Link>
           </li>
           <li className="dropdown">
-            <a href="#">Hobbies ▼</a>
+            <a href="#">Interessen ▼</a>
             <div class="dd">
               <div id="up_arrow"></div>
               <ul>

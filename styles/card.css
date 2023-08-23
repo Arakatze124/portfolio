@@ -58,6 +58,7 @@ img {
       }
     
       .card{
+        box-shadow: none;
         width: 98%;
         margin-left: 1%;
       }
@@ -66,8 +67,5 @@ img {
         width: 100%;
       }
 
-      .card{
-               width: 80%;
-        margin-left: 10%;
-      }
+   
 }
