@@ -26,7 +26,7 @@ export default function Aviation() {
     <>
       <NavigationBar active={"aviation"}></NavigationBar>
       <div className="grid">
-        <Banner title={"Luft- und Raumfahrt"} img={aviation1}></Banner>
+        <Banner title={"Luft-Raumfahrt"} img={aviation1}></Banner>
         <div className="gridi-sidebar">
           <SideBar links={links} />
         </div>

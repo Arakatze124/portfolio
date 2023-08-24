@@ -1,0 +1,19 @@
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap:5vmax;
+    bottom: 0;
+    left: 0;
+    position:relative;
+    width: 90%;
+    background-color: rgb(0, 0, 0);
+    padding:5%;
+    color: white;
+    z-index: 1;
+}
+
+.white{
+    color: white;
+}
+

@@ -9,7 +9,7 @@
     z-index: 1;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.2vmax rgb(0, 0, 0);
-    font-size: 10vmax;
+    font-size: 8vmax;
 }
 
 @media (max-width: 768px) {

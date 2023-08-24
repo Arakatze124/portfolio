@@ -65,9 +65,11 @@ function buildNavigationBar(active, width) {
     <div id="container">
       <nav className="sticky">
         <div id="logo">
-          <Image width={50} src={logo} />
+          <Link href={"/home"}>
+            <Image width={50} src={logo} />
+          </Link>
           <p> ----</p>
-          <div>Dean Opara</div>
+          <Link href={"/home"}>Dean Opara</Link>
         </div>
         <ul>
           <li className={active === "home" ? "active" : ""}>

@@ -6,6 +6,7 @@ import SideLink from "../components/SideLink";
 import Card from "../components/card";
 import Banner from "../components/banner";
 import Link from "next/link";
+import Footer from "../components/footer.js";
 //CSS
 import "../styles/default.css";
 import "../styles/sideBar.css";
@@ -60,7 +61,7 @@ export default function Sports() {
           text={
             <p>
               Ich bin ein sehr energetischer Mensch. Ein Weg, das zum Ausdruck
-              zu bringen sind coole Parour Tricks wie z.b. Flips. <br></br>
+              zu bringen sind coole Parcour Tricks wie z.b. Flips. <br></br>
               <br></br>In meiner Volksschulzeit habe ich einen Parkour-Kurs
               besucht und so die Basics gelernt, weiter ging es in der
               Mittelschule mit Akrobatik und heute, heute bringe ich mir selbst
@@ -253,6 +254,7 @@ export default function Sports() {
           }
         ></Table>
       </div>
+      <Footer></Footer>
     </>
   );
 }

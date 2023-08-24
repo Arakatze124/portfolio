@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/default.css";
 import NavigationBar from "../components/NavigationBar";
+import Footer from "../components/footer";
 import Image from "next/image";
 import Home1 from "../media/home1.jpg";
 import Card from "../components/card";
@@ -43,6 +44,7 @@ export default function Home() {
         position={"left"}
         date={"6.7.2023"}
       ></Card>
+      <Footer></Footer>
     </>
   );
 }
