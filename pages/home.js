@@ -6,7 +6,6 @@ import Image from "next/image";
 import Home1 from "../media/home1.jpg";
 import Card from "../components/card";
 import "../styles/card.css";
-import "../styles/default.css";
 import Link from "next/link";
 
 export default function Home() {

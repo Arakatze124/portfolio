@@ -1,6 +1,7 @@
 //Components
 import React from "react";
 import NavigationBar from "../components/NavigationBar";
+import Footer from "../components/footer";
 import SideBar from "../components/SideBar";
 import SideLink from "../components/SideLink";
 import Card from "../components/card";
@@ -84,6 +85,7 @@ export default function Aviation() {
           date={"25.7.2023"}
         ></Card>
       </div>
+      <Footer></Footer>
     </>
   );
 }

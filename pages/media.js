@@ -3,6 +3,7 @@ import React from "react";
 import NavigationBar from "../components/NavigationBar";
 import SideBar from "../components/SideBar";
 import SideLink from "../components/SideLink";
+import Footer from "../components/footer";
 import Card from "../components/card";
 import Banner from "../components/banner";
 import Link from "next/link";
@@ -133,6 +134,7 @@ export default function Media() {
           date={"9.8.2023"}
         ></Card>
       </div>
+      <Footer></Footer>
     </>
   );
 }

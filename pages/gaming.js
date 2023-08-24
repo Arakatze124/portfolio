@@ -4,6 +4,7 @@ import NavigationBar from "../components/NavigationBar";
 import SideBar from "../components/SideBar";
 import SideLink from "../components/SideLink";
 import Card from "../components/card";
+import Footer from "../components/footer";
 import Banner from "../components/banner";
 import Link from "next/link";
 import List from "../components/list";
@@ -87,6 +88,7 @@ export default function Gaming() {
           date={"22.7.2023"}
         ></Card>
       </div>
+      <Footer></Footer>
     </>
   );
 }

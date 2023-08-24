@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import NavigationBar from "../components/NavigationBar";
 import SideBar from "../components/SideBar";
+import Footer from "../components/footer";
 import SideLink from "../components/SideLink";
 import Card from "../components/card";
 import Banner from "../components/banner";
@@ -90,6 +91,7 @@ export default function Bikes() {
           </Carousel>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }

@@ -8,6 +8,7 @@
   width:100%;
   background-color:black;
   box-shadow: -2px -2px 5px white,2px -2px 5px white;
+  z-index: 1;
 }
 #container > nav {
   width:100%;
@@ -17,13 +18,14 @@
 #logo {
   line-height:60px;
   font-size:30px;
-  padding: 0 50px;
+  padding: 5px 50px;
   color: white;
   width:40%;
   letter-spacing:2px;
   text-shadow:2px 2px 5px;
   display: flex;
-  align-items: center;
+  
+  
 }
 #container > nav > ul {
   margin:0;
@@ -63,7 +65,7 @@
 }
 a {
   text-decoration:none;
- 
+  
 }
 
 #container > nav > ul > li > div {

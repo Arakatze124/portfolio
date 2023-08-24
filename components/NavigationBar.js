@@ -69,6 +69,7 @@ function buildNavigationBar(active, width) {
             <Image width={50} src={logo} />
           </Link>
           <p> ----</p>
+
           <Link href={"/home"}>Dean Opara</Link>
         </div>
         <ul>

@@ -2,6 +2,7 @@ import React from "react";
 //Components
 import NavigationBar from "../components/NavigationBar";
 import SideBar from "../components/SideBar";
+import Footer from "../components/footer";
 import SideLink from "../components/SideLink";
 import Card from "../components/card";
 import Link from "next/link";
@@ -261,6 +262,7 @@ function Career() {
 
         <br></br>
       </div>
+      <Footer></Footer>
     </>
   );
 }
