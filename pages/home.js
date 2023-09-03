@@ -24,8 +24,7 @@ export default function Home() {
             Einblick in meine Person zu ermöglichen. <br></br>
             <br></br>
             Hier findest du alles relevante über mich. Meine bisherige Karriere,
-            meine Hobbies und Interessen und wie man mich auf allen möglichen
-            Plattformen
+            meine Interessen und wie man mich
             <Link href={"/contact"}> kontaktieren</Link> kann. <br></br>
             <br></br>
             <span style={{ color: "red" }}>

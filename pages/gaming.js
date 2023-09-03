@@ -40,13 +40,12 @@ export default function Gaming() {
               es sich denken kann, Fortnite.<br></br>
               <br></br> Mittlerweile hab ich mehr Geschmack. Alle Spiele
               aufzulisten würde wohl zu lange daueren daher habe ich ein paar
-              meiner Lieblingsspiele und die aktuellsten aufgelistet:<br></br>
+              meiner Lieblingsspiele aufgelistet:<br></br>
               <br></br>
               <List
                 data={[
                   "Star Citizen",
                   "Ace Combat 7",
-                  "Madden NFL",
                   "Spiderheck",
                   "GTA V",
                   "...",
@@ -64,9 +63,9 @@ export default function Gaming() {
           title={"Setup"}
           text={
             <p>
-              Abgesehen von Handy war die erste Plattform, auf der ich spielte,
+              Abgesehen vom Handy war die erste Plattform, auf der ich spielte,
               die Nintendo Switch. Danach wechselte ich auf die Xbox One S und
-              schließlich hab ich mir einen PC zusammengebaut. <br></br>
+              schließlich habe ich mir einen PC zusammengebaut. <br></br>
               In meinem PC verbaut sind:<br></br>
               <br></br>
               <List
@@ -80,7 +79,7 @@ export default function Gaming() {
                 ]}
               ></List>
               Außerdem besitze ich eine Oculus Quest 2 und ein Thrustmaster
-              T16000M FCS HOTAS.
+              T16000M FCS HOTAS. (Ein Steuerknüppel und Schubregler)
             </p>
           }
           img={gaming3}

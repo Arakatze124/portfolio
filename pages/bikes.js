@@ -54,11 +54,11 @@ export default function Bikes() {
           title={"Meine Mopedzeit"}
           text={
             <p>
-              Mein Moped ist eine Beta RR 50 Track Bj. 2017 und ich habe sie im
-              Juli 2022 erworben. Am 15. August habe ich dann meinen
+              Mein Moped ist eine Beta, Modell: RR 50 Track vom Jahr 2017. Ich
+              habe es im Juli 2022 erworben. Am 15. August habe ich dann meinen
               Führerschein erhalten und damit hat sich für mich eine ganz neue
-              Welt eröffnet. Mein meinem Moped habe ich so einiges erlebt und
-              dazu gelernt.<br></br>
+              Welt eröffnet. Mit meinem Moped habe ich so einiges erlebt und
+              viel dazu gelernt.<br></br>
               <br></br> Immer wenn etwas kaputt war hab ich es selbst repariert
               und so mein technisches Verständnis gestärkt und gelernt mit
               wenigen Mittel zu improvisieren.

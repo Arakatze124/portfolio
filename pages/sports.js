@@ -65,7 +65,7 @@ export default function Sports() {
               <br></br>In meiner Volksschulzeit habe ich einen Parkour-Kurs
               besucht und so die Basics gelernt, weiter ging es in der
               Mittelschule mit Akrobatik und heute, heute bringe ich mir selbst
-              einpaar Tricks bei.
+              ein paar Tricks bei.
             </p>
           }
           img={sports2}
@@ -85,8 +85,8 @@ export default function Sports() {
               <br></br>Ich habe schon viele verschiedene Sportarten in meinem
               Leben ausprobiert, aber nichts konnte mich bisher so begeistern
               wie Football. Von den athletischen Ansprüchen her perfekt auf
-              meine Stärken angepasst und nirgendwo sonst ein stärkerer
-              Teamgeist.
+              meine Stärken angepasst und nirgendwo sonst gibt es einen
+              stärkeren Teamgeist.
             </p>
           }
           img={football1}
@@ -113,7 +113,7 @@ export default function Sports() {
               <br></br>So richtig damit begonnen habe ich aber erst durch einen
               meiner besten Freunde,{" "}
               <Link href={"http://markus.prietl.eu"}>Markus. </Link>Er
-              praktiziert schon eine ganze Weile jegliche Radsportart
+              praktiziert schon eine ganze Weile jegliche Radsportarten.
             </p>
           }
           img={sports4}
@@ -149,7 +149,7 @@ export default function Sports() {
               gehen. <br></br>
               <br></br>Calisthenics bringen ihre eigenen Vorteile mit, so bleibt
               man viel agiler und kann mehr Übungen ausführen als ein normaler
-              Kraftsportler, wie z.B ein L-Sit to Handstand wie man es im Gif
+              Kraftsportler, wie z.B ein L-Sit to Handstand wie man es hier
               sieht.
             </p>
           }
@@ -168,9 +168,9 @@ export default function Sports() {
             <p>
               Im Winter mach ich gerne die Pisten unsicher. Mein Fahrstil ist
               sehr... schnell. Ich bin ein großer Fan von Geschwindigkeit
-              deshalb fahre meistens Schuss. Odere ich versuche mich an
-              unterschiedlichen Tricks wie im Video z.B ein 360 der dann
-              einbisschen schief gegangen ist.
+              deshalb fahre meistens Schuss. Oder ich versuche mich an
+              unterschiedlichen Tricks, zum Beispiel an einer 360° Drehung, die
+              dann einbisschen schief gegangen ist.
             </p>
           }
           img={sports6}
@@ -183,8 +183,8 @@ export default function Sports() {
           title={"Skateboarding"}
           text={
             <p>
-              Eines meiner Hauptfortbewegungsmittel wenn ich kurze Strecke
-              zurücklegen muss, das Skateboard.<br></br>
+              Eines meiner Hauptfortbewegungsmittel, wenn ich kurze Strecken
+              zurücklegen muss, ist mein Skateboard.<br></br>
               <br></br>Das Skateboard das ich fahre hat einiges überstanden, mit
               dabei von einem Auto überfahren werden (streng genommen ist das
               Deck kaputt gewesen, aber es wurde ausgetauscht). Früher
@@ -227,8 +227,8 @@ export default function Sports() {
               App, heute mit selbst erstellten{" "}
               <Link href={"#plan"}>Trainingsplan</Link> der jeden Monat
               geupdated wird.<br></br>
-              <br></br>Wer sich für meine Ernährung interessiert, mein
-              Ernährungsplan ist demnächst verfügbar.
+              <br></br>Wer sich für meine Ernährung interessiert, kann sich auf
+              die nächste Version freuen.
             </p>
           }
           img={null}

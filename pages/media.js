@@ -42,11 +42,11 @@ export default function Media() {
           text={
             <p>
               Es vergeht kein Tag an dem ich nicht Musik hör, und ich würde auch
-              keinen ohne Überleben. Musik ist mir extrem wichtig und ich höre
-              so ziemlich die ganze Zeit. <br></br>
+              keinen ohne überleben. Musik ist mir extrem wichtig und ich höre
+              sie so ziemlich die ganze Zeit. <br></br>
               <br></br>Sich für ein Lieblingslied zu entscheiden ist für mich
-              unmöglich, deshalb habe ich eine Playlist mit Liedern erstell, die
-              für mich auf verschiedene Art und Weise gut sind
+              unmöglich, deshalb habe ich eine Playlist mit Liedern erstellt,
+              die für mich auf verschiedene Art und Weise gut sind
             </p>
           }
           img={null}
@@ -76,8 +76,8 @@ export default function Media() {
               <br></br>
               <br></br>
               Anfang August habe ich mir deshalb eine E-Gitarre gekauft. Zu
-              diesem Zeitpunkt, bin ich noch nicht sehr gut aber ich denke, mit
-              täglichem Üben wird sich das schnell ändern
+              diesem Zeitpunkt bin ich noch nicht sehr gut, aber ich denke mit
+              täglichem Üben wird sich das schnell ändern.
             </p>
           }
           img={media2}

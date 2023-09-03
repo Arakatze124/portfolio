@@ -41,8 +41,8 @@ export default function Aviation() {
               <Link href={"https://www.flugsportunion.at"} target="_blank">
                 steirischen Flugsportunion
               </Link>{" "}
-              gesammelt. Dort habe ich n einem 1 wöchigen Kurs teilgenommen und
-              2 Flüge gehabt
+              gesammelt. Dort habe ich in einem einwöchigen Kurs an 2 Flügen
+              teilgenommen.
             </p>
           }
           img={aviation4}
@@ -56,9 +56,9 @@ export default function Aviation() {
           text={
             <p>
               Wenn es um Raumfahrt und das Weltall im generellen geht, bin ich
-              auch sehr interressiert. So habe ich einige Sandbox Spiele wie KSP
-              gespielt, in denen man eigene Raumfahrzeuge baut und
-              interplanetare Reisen durchführt
+              auch sehr interessiert. So habe ich einige Sandbox Spiele wie
+              Kerbal Space Program gespielt, in denen man eigene Raumfahrzeuge
+              baut und interplanetare Reisen durchführt.
             </p>
           }
           img={aviation3}
@@ -75,8 +75,8 @@ export default function Aviation() {
               Flugzeuge, insbesondere Kampfjets angeht, bin ich meistens der
               Fachmann im Raum. Mein Lieblingsflugzeug ist die F35B-Lighting II,
               ein Mehrzweck-Stealth-Kampfjet des Hauses Locheed Martin. Ich kann
-              mir eine Karriere im Luftgeschwarder des Östereichischen
-              Bundesheer sehr gut vorstellen, wenn nicht sogar, mein größtes
+              mir eine Karriere im Luftgeschwarder des österreichischen
+              Bundesheeres sehr gut vorstellen, wenn nicht sogar, mein größtes
               Ziel.
             </p>
           }
