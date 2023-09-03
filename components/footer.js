@@ -12,7 +12,7 @@ export default function Footer() {
           mir
         </Link>
       </div>
-      <div>Version: 1.2</div>
+      <div>Version: 1.3</div>
     </footer>
   );
 }

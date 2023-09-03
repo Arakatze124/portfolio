@@ -46,7 +46,8 @@ export default function Media() {
               sie so ziemlich die ganze Zeit. <br></br>
               <br></br>Sich für ein Lieblingslied zu entscheiden ist für mich
               unmöglich, deshalb habe ich eine Playlist mit Liedern erstellt,
-              die für mich auf verschiedene Art und Weise gut sind
+              die für mich auf verschiedene Art und Weise gut sind.
+              Hauptsächlich besteht die Playlist aber aus melancholischem Rock.
             </p>
           }
           img={null}
@@ -75,13 +76,13 @@ export default function Media() {
               sein meine Lieblingslieder auf einem Instrument spielen zu können.
               <br></br>
               <br></br>
-              Anfang August habe ich mir deshalb eine E-Gitarre gekauft. Zu
-              diesem Zeitpunkt bin ich noch nicht sehr gut, aber ich denke mit
-              täglichem Üben wird sich das schnell ändern.
+              Seit August 2023 spiele ich E-Gitarre. Ich schon die ein oder
+              anderen einfachen Songs spielen. So konnte ich, zum Beispiel,
+              eines meiner Lieblingslieder, Freaks, ohne große Probleme spielen.
             </p>
           }
           img={media2}
-          date={"9.8.2023"}
+          date={"3.9.2023"}
         ></Card>
 
         <br id="movies"></br>
