@@ -20,7 +20,7 @@ import sports6 from "../media/sports6.gif";
 import sports7 from "../media/sports7.gif";
 import sports8 from "../media/sports8.jpg";
 import Table from "../components/Table";
-import football1 from "../media/football1.jpg";
+import football1 from "../media/football1.jpeg";
 
 const currentDate = new Date();
 const october21 = new Date("2021-10-21");
