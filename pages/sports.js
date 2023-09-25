@@ -81,7 +81,7 @@ export default function Sports() {
               Seit Juli, 2023 bin ich stolzes Mitglied der{" "}
               <Link href={"https://www.grazgiants.at"}>Grazer Giants</Link>,
               einem österreichischen Football Team in Graz. Dort fungiere ich
-              als Running Back in der U16.<br></br>
+              als Punter und Starting Running Back in der U16.<br></br>
               <br></br>Ich habe schon viele verschiedene Sportarten in meinem
               Leben ausprobiert, aber nichts konnte mich bisher so begeistern
               wie Football. Von den athletischen Ansprüchen her perfekt auf
