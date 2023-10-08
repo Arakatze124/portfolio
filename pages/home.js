@@ -27,20 +27,42 @@ export default function Home() {
             meine Interessen und wie man mich
             <Link href={"/contact"}> kontaktieren</Link> kann. <br></br>
             <br></br>
-            <span style={{ color: "red" }}>
-              <b>
-                Behalte im Kopf, dass diese Website noch nicht fertiggestellt
-                ist!
-              </b>
-            </span>
             <br></br>
-            Die Entwicklung hat Anfang Juni begonnen und ist sehr zeitaufwändig.
+            Die Entwicklung hat Anfang Juni begonnen und läuft immer weiter.
             Falls du Fehler findest, kannst du sie mir gerne melden!
           </p>
         }
         title={"Vorwort"}
         position={"left"}
         date={"6.7.2023"}
+      ></Card>
+
+      <Card
+        img={null}
+        text={
+          <p className="">
+            Mein Name ist Dean Opara und ich bin ein 16-Jähriger aus Lannach.
+            Ich bin jemand, der schwer ist von einer Sache abzubringen wenn ich
+            erstmal davon überzeugt bin, auch wenn das oft bedeutet gegen den
+            Strom zu schwimmen. Mein Ziel ist es, die beste Version von mir
+            selbst zu werden, dabei aber immer noch Spaß am Leben zu haben. Ich
+            bin eher extrovertiert, das heißt ich hab kein Problem damit auf
+            Leute zuzugehen und schließe prinzipiell schnell neue
+            Freundschaften. Ich bin offen und ehrlich, habe also kein Problem
+            damit Fragen zu beantworten und lüge ungern jemanden an. Ich bin
+            sehr energiegeladen und wer in meiner Nähe ist, merkt das auch. Wenn
+            es wichtig ist, kann ich mich natürlich konzentrieren. Ich bin ein
+            totaler Listenmensch und schreibe mir so gut wie alles auf und plane
+            meinen Alltag durch. Wenn es allerdings um Schule geht, bin ich eher
+            der Improvisationskünstler. Außerdem bin ich ein großer Fan von
+            Adrenalin und Geschwindigkeit. Ich bin ein Poweruser, das bedeutet
+            ich liebe es wenn einfache Sachen viele Funktionen haben und ich sie
+            in ganzer Breite benutzen kann.{" "}
+          </p>
+        }
+        title={"Wer bin ich?"}
+        position={""}
+        date={"8.10.2023"}
       ></Card>
       <Footer></Footer>
     </>
