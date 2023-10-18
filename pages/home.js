@@ -9,7 +9,7 @@ import "../styles/card.css";
 import Link from "next/link";
 
 const currentDate = new Date();
-const birthday = new Date('2008-08-13')
+const birthday = new Date('2007-08-13')
 const age = Math.floor((currentDate - birthday) / (1000 * 60 * 60 * 24 * 365.25));
 
 export default function Home() {
