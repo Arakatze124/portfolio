@@ -8,6 +8,10 @@ import Card from "../components/card";
 import "../styles/card.css";
 import Link from "next/link";
 
+const currentDate = new Date();
+const birthday = new Date('2007-08-13')
+const age = Math.floor((currentDate - birthday) / (1000 * 60 * 60 * 24 * 365.25));
+
 export default function Home() {
   return (
     <>
@@ -41,7 +45,7 @@ export default function Home() {
         img={null}
         text={
           <p className="">
-            Mein Name ist Dean Opara und ich bin ein 16-Jähriger aus Lannach.
+            Mein Name ist Dean Opara und ich bin ein {age}-Jähriger aus Lannach.
             Ich bin jemand, der schwer ist von einer Sache abzubringen wenn ich
             erstmal davon überzeugt bin, auch wenn das oft bedeutet gegen den
             Strom zu schwimmen. Mein Ziel ist es, die beste Version von mir
