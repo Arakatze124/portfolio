@@ -212,7 +212,7 @@ function Career() {
           }
           img={Kaindorf1}
           position={"left"}
-          date={"13.7.2023"}
+          date={"18.10.2023"}
         ></Card>
 
         <br id="pmsDobl"></br>
