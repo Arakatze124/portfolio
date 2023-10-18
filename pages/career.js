@@ -195,7 +195,7 @@ function Career() {
               </Link>{" "}
               ist der aktuelle Ort meiner Ausbildung. Da ich den Fachbereicht
               Informatik gewählt habe, lerne ich dort einige Themenbezogene
-              Gegenstände. Mehr zu den Lehrinhalten{" "}
+              Gegenstände. Außerdem bin ich Abteilungssprecher meines Bereichs. Mehr zu den Lehrinhalten{" "}
               <b>
                 <Link
                   href={"https:www.htl-kaindorf.at/abteilungen/informatik"}
@@ -231,7 +231,7 @@ function Career() {
               Freigegenstand Akrobatik besucht welcher mich später zu Parcour
               brachte oder der Beitritt des Chor, wessen ich zwar wieder
               zurückgezogen habe, aber Musik immernoch ein großer Teil meines
-              Lebens geblieben ist
+              Lebens geblieben ist.
             </p>
           }
           img={pmsdobl1}
@@ -252,7 +252,7 @@ function Career() {
               oder? Ich war ein sehr aufgedrehtes Kind, hab den Unterricht
               gestört, bin auf Sachen geklettert auf die ich nicht hoch durfte
               und so weiter ... Ich hab meine jungen Jahre voll und ganz
-              ausgelebt
+              ausgelebt.
             </p>
           }
           img={vslannach1}
