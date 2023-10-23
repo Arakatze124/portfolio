@@ -68,12 +68,13 @@ function Career() {
               ich das erste mal praktische Erfahrung in diesem Bereich sammeln.
               Zu meinen Aufgaben zählten:
               <List
-                data={["Webdesign", "Web-Entwicklung", "Script-Entwicklung"]}
+                data={["Webdesign", "Web-Entwicklung"]}
               ></List>
+              Derzeit bin ich dort geringfügig als Web-Developer eingestellt.
             </p>
           }
           img={career7}
-          date={"3.8.2023"}
+          date={"20.10.2023"}
         ></Card>
 
         <br id="k&oe"></br>
