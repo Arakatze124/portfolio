@@ -12,7 +12,7 @@ export default function Footer() {
           mir
         </Link>
       </div>
-      <div><Link className="white" href={"/patchNotes"}>Version: 2.2</Link></div>
+      <div><Link className="white" href={"/patchNotes"}>Version: 2.3</Link></div>
     </footer>
   );
 }

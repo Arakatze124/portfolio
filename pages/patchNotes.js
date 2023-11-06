@@ -42,6 +42,16 @@ export default function Contact() {
             date={"20.10.2023"}
           ></Card>
 
+<Card
+            title={"Version 2.3"}
+            text={<List
+                data={[
+                    "Musik Text überarbeitet",
+                ]}></List>}
+            img={null}
+            date={"20.10.2023"}
+          ></Card>
+
         </div>
       </div>
       <Footer></Footer>

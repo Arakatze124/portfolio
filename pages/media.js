@@ -47,7 +47,7 @@ export default function Media() {
               <br></br>Sich für ein Lieblingslied zu entscheiden ist für mich
               unmöglich, deshalb habe ich eine Playlist mit Liedern erstellt,
               die für mich auf verschiedene Art und Weise gut sind.
-              Hauptsächlich besteht die Playlist aber aus melancholischem Rock.
+              Hauptsächlich besteht die Playlist aus Indie Rock, meist leicht melancholisch.
             </p>
           }
           img={null}
