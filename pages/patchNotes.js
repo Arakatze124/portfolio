@@ -47,6 +47,7 @@ export default function Contact() {
             text={<List
                 data={[
                     "Musik Text überarbeitet",
+                    "Neues Sport Banner"
                 ]}></List>}
             img={null}
             date={"20.10.2023"}
