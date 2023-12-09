@@ -25,10 +25,10 @@ export default function Sports() {
             gegeben habe, oder das du Glück beim eingeben hattest.<br></br>
             <br></br>
             Auf dieser Seite befinden sich Information die möglicherweise
-            "unseriös" wirken könnten weswegen ich sie nicht einfach so auf
-            meiner normalen Homepage zur Verfügung stellen kann. Deshalb ist sie
-            auch nicht ganz so schön und strukturiert, ich hoffe, dass macht dir
-            nix aus.<br></br>
+            unseriös wirken könnten weswegen ich sie nicht einfach so auf meiner
+            normalen Homepage zur Verfügung stellen kann. Deshalb ist sie auch
+            nicht ganz so schön und strukturiert, ich hoffe, dass macht dir nix
+            aus.<br></br>
             <br></br>Viel Spaß
           </p>
         }
