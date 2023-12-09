@@ -12,7 +12,6 @@ import "../styles/sideBar.css";
 import List from "../components/list";
 //Media
 import patchNotes1 from "../media/patchNotes1.jpg";
-import { SingleEntryPlugin } from "webpack";
 
 const links = [
   new SideLink("Version: 2", "#patchNotes", false),
