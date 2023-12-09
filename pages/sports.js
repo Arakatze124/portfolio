@@ -70,7 +70,7 @@ export default function Sports() {
           }
           img={sports2}
           position={"right"}
-          date={"19.7.2023"}
+          date={"9.12.2023"}
         ></Card>
 
         <br id="football"></br>
