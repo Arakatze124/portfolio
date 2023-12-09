@@ -20,7 +20,7 @@ import sports6 from "../media/sports6.gif";
 import sports7 from "../media/sports7.gif";
 import sports8 from "../media/sports8.jpg";
 import Table from "../components/Table";
-import football1 from "../media/football1.jpeg";
+import football1 from "../media/football1.jpg";
 
 const currentDate = new Date();
 const october21 = new Date("2021-10-21");
@@ -80,15 +80,13 @@ export default function Sports() {
             <p>
               Seit Juli, 2023 bin ich stolzes Mitglied der{" "}
               <Link href={"https://www.grazgiants.at"}>Grazer Giants</Link>,
-              einem österreichischen Football Team in Graz. Dort fungiere ich
-              als Backup Punter und Starting Running Back in der U16. Außerdem
-              kann ich stolz behaupten, in jedem Spiel meiner Karriere mind. 1
-              Touchdown erzielt zu haben.<br></br>
-              <br></br>Ich habe schon viele verschiedene Sportarten in meinem
-              Leben ausprobiert, aber nichts konnte mich bisher so begeistern
-              wie Football. Von den athletischen Ansprüchen her perfekt auf
-              meine Stärken angepasst und nirgendwo sonst gibt es einen
-              stärkeren Teamgeist.
+              einem österreichischen Football Team in Graz. Als Runningback habe
+              ich in meiner ersten Season erstaunliche Leistungen erbracht. Mit
+              über 1000 Yards ind der gesamten Season und mind. 1 Touchdown pro
+              Game wurde mir als Ausnahmetalent der Award des Rookie of the Year
+              der Graz Giants verliehen. Ich bin vollkommen von Football
+              überzeugt und werde weiterhin mein bestes geben und eine weiter
+              erfolgreiche Season abschließen.
             </p>
           }
           img={football1}
