@@ -82,9 +82,17 @@ export default function Sports() {
               <Link href={"https://www.grazgiants.at"}>Grazer Giants</Link>,
               einem österreichischen Football Team in Graz. Als Runningback habe
               ich in meiner ersten Season erstaunliche Leistungen erbracht. Mit
-              über 1000 Yards ind der gesamten Season und mind. 1 Touchdown pro
+              über 1000 Yards in der gesamten Season und mind. 1 Touchdown pro
               Game wurde mir als Ausnahmetalent der Award des Rookie of the Year
-              der Graz Giants verliehen. Ich bin vollkommen von Football
+              der Graz Giants verliehen.{" "}
+              <Link
+                href={
+                  "https://www.hudl.com/video/3/20153906/6548d6e32352620a404e2ca4"
+                }
+              >
+                hier
+              </Link>{" "}
+              gehts zu meinen Highlights. Ich bin vollkommen von Football
               überzeugt und werde weiterhin mein bestes geben und eine weiter
               erfolgreiche Season abschließen.
             </p>
