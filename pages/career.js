@@ -66,7 +66,7 @@ function Career() {
             <p>
               Im Juli 2023 habe ich ein Ferialpraktikum im Bereich Software
               Development absolviert . Bei{" "}
-              <Link href={"https://arland.at"}>Arland Technologies </Link>konnte
+              <Link href={"https://arland.at"} target="_blank">Arland Technologies </Link>konnte
               ich das erste mal praktische Erfahrung in diesem Bereich sammeln.
               Zu meinen Aufgaben zählten:
               <List
@@ -86,7 +86,7 @@ function Career() {
             <p>
               Im November, 2022, habe ich im Bereich der Warenkomission
               geringfügig bis Jänner nächsten Jahres bei{" "}
-              <Link href={"https://www.kastner-oehler.at"}>
+              <Link href={"https://www.kastner-oehler.at"} target="_blank">
                 Kastner & Öhler
               </Link>{" "}
               gearbeitet. Dort habe ich dafür gesorgt, dass die bestellte Ware

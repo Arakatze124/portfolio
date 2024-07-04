@@ -39,15 +39,16 @@ export default function Contact() {
                 <br id="3.0"></br>
                 <Card
                     title={"Version 3.0"}
-                    text={<p>
-                        Animationen hinzugefüght
-                        Sidebar ist nun Ein- und Ausklappbar
-                        125er bei Motorrädern hinzugefügt
-                        Landing Page überarbeitet
-                        Sämtliche Texte angepasst
-                        Dokumente entfernt
-                        
-                    </p>}
+                    text={<List
+                    data={[
+                        "Animationen hinzugefüght",
+                        "Sidebar ist nun Ein- und Ausklappbar",
+                       " 125er bei Motorrädern hinzugefügt",
+                      "  Landing Page überarbeitet",
+                     "   Sämtliche Texte angepasst",
+                       " Dokumente entfernt"
+                    ]}
+                        />}
                     img={null}
                     date={"4.2.2024"}/>
 

@@ -79,7 +79,7 @@ export default function Sports() {
           text={
             <p>
               Seit Juli, 2023 bin ich stolzes Mitglied der{" "}
-              <Link href={"https://www.grazgiants.at"}>Grazer Giants</Link>,
+              <Link href={"https://www.grazgiants.at"} target="_blank">Grazer Giants</Link>,
               einem österreichischen Football Team in Graz. Als Runningback habe
               ich in meiner ersten Season erstaunliche Leistungen erbracht. Mit
               über 1000 Yards in der gesamten Season und mind. 1 Touchdown pro
@@ -88,9 +88,9 @@ export default function Sports() {
               <Link
                 href={
                   "https://www.hudl.com/video/3/20153906/6548d6e32352620a404e2ca4"
-                }
+                }target="_blank"
               >
-                hier
+                Hier
               </Link>{" "}
               gehts zu meinen Highlights. Ich bin vollkommen von Football
               überzeugt und werde weiterhin mein bestes geben und eine weiter
@@ -112,7 +112,7 @@ export default function Sports() {
               <Link
                 href={
                   "https://www.lannach.gv.at/page/79/bike-trail-park-lannach"
-                }
+                }target="_blank"
               >
                 Trailpark Lannach
               </Link>{" "}
@@ -120,7 +120,7 @@ export default function Sports() {
               Mountainbiken. <br></br>
               <br></br>So richtig damit begonnen habe ich aber erst durch einen
               meiner besten Freunde,{" "}
-              <Link href={"http://markus.prietl.eu"}>Markus. </Link>Er
+              <Link href={"http://markus.prietl.eu"} target="_blank">Markus. </Link>Er
               praktiziert schon eine ganze Weile jegliche Radsportarten.
             </p>
           }
@@ -136,8 +136,9 @@ export default function Sports() {
             <p>
               Mein Vater hat eine große Leidenschaft für Fußball, daher habe ich
               schon in sehr jungen Jahren mit dem Training begonnen, allerdings
-              spiele ich mittlerweile nicht mehr im Verein. <br></br>
-              <br></br>Im Verein habe ich meistens als Verteidiger gespielt oder
+              spiele ich mittlerweile nicht mehr im Verein.
+              <br/><br/>
+              Im Verein habe ich meistens als Verteidiger gespielt oder
               wurde im Mittelfeld eingesetzt. In der Klassenmannschaft fungiere
               ich allerdings als Tormann.
             </p>
@@ -236,7 +237,7 @@ export default function Sports() {
               <Link href={"#plan"}>Trainingsplan</Link> der jeden Monat
               geupdated wird.
               <br/><br/>
-              Falls die unten angebotenen Daten nicht reichen, könnt ihr auf meinem <Link href={"https://hevy.com/user/deanus_124"}>Hevy Profil</Link> mehr über mein Training erfahren, oder ihr 
+              Falls die unten angebotenen Daten nicht reichen, könnt ihr auf meinem <Link target="_blank" href={"https://hevy.com/user/deanus_124"}>Hevy Profil</Link> mehr über mein Training erfahren, oder ihr 
               könnt mich <Link  href={"#contact"}>kontaktieren</Link> und ich erkläre euch alles.
             </p>
           }
