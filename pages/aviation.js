@@ -71,18 +71,17 @@ export default function Aviation() {
           title={"Luftstreitkräfte"}
           text={
             <p>
-              Gleich vorweg, Krieg = Schlecht, aber Kampfjets = Cool. Was
-              Flugzeuge, insbesondere Kampfjets angeht, bin ich meistens der
-              Fachmann im Raum. Mein Lieblingsflugzeug ist die F35B-Lighting II,
-              ein Mehrzweck-Stealth-Kampfjet des Hauses Locheed Martin. Ich kann
-              mir eine Karriere im Luftgeschwarder des österreichischen
-              Bundesheeres sehr gut vorstellen, wenn nicht sogar, mein größtes
-              Ziel.
+              Gleich vorweg möchte ich klarstellen, dass ich absolut kein Fan von 
+              Krieg und Gewalt bin. Allerdings bin ich fasziniert von der Technik 
+              rund um Kampfjets. Was mich wirklich begeistert ist die Höhe, die Schnellichkeit und 
+              einfach das Gefühl von Freiheit. Und für steht klar, dass Kampfflugzeuge eben um ein vielfaches 
+              cooler sind als Passagierflugzeuge. Und auch wenn ich gern eine Karriere in der Luftfahrt
+              anstreben würde, werde ich das nicht können wenn es nicht mit meinem ethnischen Werten übereinstimmt.
             </p>
           }
           img={aviation2}
           position={"left"}
-          date={"25.7.2023"}
+          date={"4.7.2024"}
         ></Card>
       </div>
       <Footer></Footer>

@@ -35,12 +35,14 @@ const links = [
   new SideLink("Erfahrung", "#experience", false),
   new SideLink("Arland", "#arland", true),
   new SideLink("K&Ö", "#k&oe", true),
+  /*
   new SideLink("Dokumente", "#docs", false),
   new SideLink("Lebenslauf", "#cv", true),
   new SideLink("Zeugnis", "#testimonial", true),
   new SideLink("CCNA", "#ccna", true),
   new SideLink("FCE Exam", "#fce", true),
   new SideLink("Webpeer", "#webpeer", true),
+  */
   new SideLink("Schulen", "#schools", false),
   new SideLink("HTBLA Kaindorf", "#htlKaindorf", true),
   new SideLink("PMS Dobl", "#pmsDobl", true),
@@ -97,6 +99,7 @@ function Career() {
           date={"3.8.2023"}
         ></Card>
 
+       {/* 
         <br id="docs"></br>
         <div className="center title2 gridi-center">Dokumente</div>
         <br id="cv"></br>
@@ -176,7 +179,7 @@ function Career() {
           date={"3.8.2023"}
           img={null}
         ></Card>
-
+          */}
         <br id="schools"></br>
         <div className="center title2 gridi-center">Schulen</div>
 
@@ -205,7 +208,7 @@ function Career() {
                   hier
                 </Link>
               </b>
-              , zusätzlich dazu besuche ich den Freigegenstand Spanisch.
+              , zusätzlich dazu besuche ich den Freigegenstand Spanisch, der es mir ermöglichte, eine Traumhafte Reise nach Barcelona zu machen
               <br></br>
               <br></br> Meine Ausblidung habe ich 2021 begonnen und befinde mich
               demnach im {schoolYear}ten Schuljahr.
@@ -213,7 +216,7 @@ function Career() {
           }
           img={Kaindorf1}
           position={"left"}
-          date={"18.10.2023"}
+          date={"4.7.2024"}
         ></Card>
 
         <br id="pmsDobl"></br>

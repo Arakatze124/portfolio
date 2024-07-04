@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 
-export default function Table(url){
+export default function Table({url, height}){
     const [width, setWidth] = useState(1000);
     useEffect(() => {
       function handleResize() {
@@ -17,7 +17,7 @@ export default function Table(url){
     return (
         <>
             <div className="center gridi-center">
-                <iframe width={width} height={350} src={url.url}></iframe>
+                <iframe width={width} height={height ? height : 350} src={url}></iframe>
             </div>
         </>
     )

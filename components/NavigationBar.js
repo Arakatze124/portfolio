@@ -24,14 +24,7 @@ export default function NavigationBar(active) {
     };
   }, []);
 
-  if (width <= 769) {
-    return buildBurgerMenu();
-  } else {
-    return buildNavigationBar(active.active, width);
-  }
-}
-
-function buildBurgerMenu() {
+  const buildBurgerMenu = () => {
   return (
     <Menu>
       <Link href="/home">Home</Link>
@@ -60,7 +53,7 @@ function buildBurgerMenu() {
   );
 }
 
-function buildNavigationBar(active, width) {
+const buildNavigationBar = (active, width) => {
   return (
     <div id="container">
       <nav className="sticky">
@@ -68,9 +61,6 @@ function buildNavigationBar(active, width) {
           <Link href={"/home"}>
             <Image width={50} src={logo} />
           </Link>
-          <p> ----</p>
-
-          <Link href={"/home"}>Dean Opara</Link>
         </div>
         <ul>
           <li className={active === "home" ? "active" : ""}>
@@ -78,8 +68,8 @@ function buildNavigationBar(active, width) {
               Home
             </Link>
           </li>
-          <li className="dropdown">
-            <a href="#">Interessen ▼</a>
+          <li className={"dropdown"}>
+            <a href="#" >Interessen ▼</a>
             <div class="dd">
               <div id="up_arrow"></div>
               <ul>
@@ -112,3 +102,12 @@ function buildNavigationBar(active, width) {
     </div>
   );
 }
+
+
+  if (width <= 769) {
+    return buildBurgerMenu();
+  } else {
+    return buildNavigationBar(active.active, width);
+  }
+}
+

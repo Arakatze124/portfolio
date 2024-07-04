@@ -15,11 +15,13 @@ import patchNotes1 from "../media/patchNotes1.jpg";
 import {Siemreap} from "next/dist/compiled/@next/font/dist/google";
 
 const links = [
+    new SideLink("Version: 3", "#patchNotes", false),
+    new SideLink("3.0", "#3.0", true),
   new SideLink("Version: 2", "#patchNotes", false),
-    new SideLink("2.5", "#5", true),
-    new SideLink("2.4", "#4", true),
-    new SideLink("2.3", "#3", true),
-  new SideLink("2.2", "#2", true),
+    new SideLink("2.5", "#2.5", true),
+    new SideLink("2.4", "#2.4", true),
+    new SideLink("2.3", "#2.3", true),
+    new SideLink("2.2", "#2.2", true),
 ];
 
 export default function Contact() {
@@ -33,6 +35,21 @@ export default function Contact() {
 
           <div className="flex gridi-center center">
               <div className="center flex-ignore"></div>
+
+                <br id="3.0"></br>
+                <Card
+                    title={"Version 3.0"}
+                    text={<p>
+                        Animationen hinzugefüght
+                        Sidebar ist nun Ein- und Ausklappbar
+                        125er bei Motorrädern hinzugefügt
+                        Landing Page überarbeitet
+                        Sämtliche Texte angepasst
+                        Dokumente entfernt
+                        
+                    </p>}
+                    img={null}
+                    date={"4.2.2024"}/>
 
               <br id="5"></br>
               <Card

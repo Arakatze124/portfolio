@@ -142,14 +142,14 @@ export default function Media() {
                 title={"Bücher"}
                 text={
                     <p>
-                        Um meine Zeit effektiv zu nutzten und meinen Konsum von tiktok zu minimierern habe ich begonnen
-                        regelmäßig zu lesen. Vor allem im Gym während ich reste lese ich oft Bücher. Dabei handelt es
+                        Um meine Zeit effektiv zu nutzten und meinen Konsum von Tiktok zu minimierern habe ich begonnen
+                        regelmäßig zu lesen. Vor allem im Gym während ich raste lese ich oft Bücher. Dabei handelt es
                         sich meistens um Selbsthifle Bücher, sprich etwas, was dich wirklich weiterbringt und nützlich
-                        ist. Ich verwendt ein Kindle weils praktisch is.
+                        ist. 
                     </p>
                 }
                 img={null}
-                date={"4.2.2024"}
+                date={"4.7.2024"}
             ></Card>
         </div>
         <Footer></Footer>

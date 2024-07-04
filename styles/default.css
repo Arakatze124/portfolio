@@ -1,7 +1,7 @@
-*{
-    margin-top: 0;
-    padding: 0;
-    font-family: "ChakraPetch";
+* {
+  margin-top: 0;
+  padding: 0;
+  font-family: "ChakraPetch";
 }
 
 html {
@@ -65,6 +65,7 @@ html {
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Material Symbols Outlined';
   font-style: normal;
@@ -86,7 +87,7 @@ html {
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
-  
+
 }
 
 .center {
@@ -96,41 +97,41 @@ html {
 }
 
 h1 {
-    margin: 9vmax
+  margin: 9vmax
 }
 
 .title1 {
   font-size: 4vmax;
   font-family: 'ChakraPetch-BoldItalic';
 }
-  
-.title2{
-    font-family: "Montserrat-Italic";
-    font-size: 3vmax;
-    margin: 2em;
+
+.title2 {
+  font-family: "Montserrat-Italic";
+  font-size: 3vmax;
+  margin: 2em;
   font-weight: bold;
 }
 
-.title3{
+.title3 {
   font-family: "TextMeOne";
   font-size: 2vmax;
   margin: 1em;
   font-weight: bold;
 }
 
-.title4{
+.title4 {
   font-family: "Montserrat";
   font-size: 1.5vmax;
-  
-}
-
-a{
-  font-family:"ChakraPetch-BoldItalic";
-  color:#009607;
 
 }
 
-p{
+a {
+  font-family: "ChakraPetch-BoldItalic";
+  color: #009607;
+
+}
+
+p {
   font-size: 1.5vmax;
 }
 
@@ -138,69 +139,69 @@ p{
 /*Grid System---------------------------------------------------*/
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 5fr 5fr;
-    grid-gap: 20px;
-  }
-  
-  .gridi {
-    flex-basis: calc(25% - 10px);
-    padding: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
+  display: grid;
+  grid-template-columns: 0fr 5fr 5fr;
+  grid-gap: 20px;
+}
 
-  .gridi-center {
-    grid-column: 2/4;
-  }
-  
-  .gridi-sidebar{
-    grid-row: 1/5;
-  }
+.gridi {
+  flex-basis: calc(25% - 10px);
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 
-  /*flex-------------------------------*/
+.gridi-center {
+  grid-column: 2/4;
+}
 
-  .flex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+.gridi-sidebar {
+  grid-row: 1/5;
+}
 
-  .flex-ignore{
-    display: none;
-  }
+/*flex-------------------------------*/
 
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-
-  /*Container-------------------------------------*/
-  .container{
-    margin-left: 20px;
-  }
-
-  /*Images------------------------------------------------------*/
-  img{
-    height: fit-content;
-  }
-
-    .carousel{
-      height: 100%;
-      z-index: -1;
-    }
- 
+.flex-ignore {
+  display: none;
+}
 
 
-  /*Responsive-----------------------------------------*/
- @media (max-width: 768px) {
-  body{
+
+/*Container-------------------------------------*/
+.container {
+  margin-left: 20px;
+}
+
+/*Images------------------------------------------------------*/
+img {
+  height: fit-content;
+}
+
+.carousel {
+  height: 100%;
+  z-index: -1;
+}
+
+
+
+/*Responsive-----------------------------------------*/
+@media (max-width: 768px) {
+  body {
     padding-top: 0;
   }
 
-  .gridi-sidebar{
+  .gridi-sidebar {
     display: none;
   }
 
-  .grid{
-    display:contents;
+  .grid {
+    display: contents;
   }
 
   .gridi {
@@ -212,58 +213,51 @@ p{
 
   /*text----------------------------------------------*/
 
-.center {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  .center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home {
+    margin-top: 10;
+  }
+
+  h1 {
+    margin: 1em;
+  }
+
+  h2 {
+    margin: 1em;
+    size: 200px;
+  }
+
+  .title1 {
+    font-size: 5vmax;
+  }
+
+  .title2 {
+    font-size: 4vmax;
+  }
+
+  .title3 {
+    font-size: 3vmax;
+  }
+
+  .title4 {
+    font-family: "Montserrat";
+    font-size: 2.5vmax;
+
+
+  }
+
+  a {
+    font-weight: bold;
+    color: #009607;
+  }
+
+  p {
+    font-size: 2vmax;
+  }
+
 }
-
-.home{
-  margin-top: 10;
-}
-
-h1 {
-  margin: 1em;
-}
-
-h2 {
-  margin: 1em;
-  size: 200px;
-}
-
-.title1 {
-font-size: 5vmax;
-}
-
-.title2{
-  font-size: 4vmax;
-}
-
-.title3{
-font-size: 3vmax;
-}
-
-.title4{
-  font-family: "Montserrat";
-  font-size: 2.5vmax;
-  
-  
-}
-
-a{
-font-weight: bold;
-color: #009607;
-}
-
-p{
-font-size: 2vmax;
-}
-  
-}
-
-
-
-
-
-
-  

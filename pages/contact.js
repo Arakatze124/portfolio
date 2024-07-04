@@ -4,7 +4,6 @@ import NavigationBar from "../components/NavigationBar";
 import SideBar from "../components/SideBar";
 import SideLink from "../components/SideLink";
 import Footer from "../components/footer";
-import Card from "../components/card";
 import Banner from "../components/banner";
 //CSS
 import "../styles/default.css";
@@ -13,11 +12,8 @@ import "../styles/sideBar.css";
 import contact1 from "../media/contact1.jpg";
 import Reference from "../components/reference";
 import iconMail from "../media/iconMail.png";
-import iconPhone from "../media/iconPhone.png";
-import iconPaypal from "../media/iconPaypal.png";
 import iconInstagram from "../media/iconInstagram.png";
 import iconGithub from "../media/iconGithub.png";
-import iconDiscord from "../media/iconDiscord.png";
 
 const links = [
   new SideLink("E-Mail", "#mail", false),

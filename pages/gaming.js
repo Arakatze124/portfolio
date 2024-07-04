@@ -6,7 +6,6 @@ import SideLink from "../components/SideLink";
 import Card from "../components/card";
 import Footer from "../components/footer";
 import Banner from "../components/banner";
-import Link from "next/link";
 import List from "../components/list";
 //CSS
 import "../styles/default.css";
@@ -38,24 +37,23 @@ export default function Gaming() {
             <p>
               Das erste Spiel, das ich aktiv und lang gespielt hab, war, wie man
               es sich denken kann, Fortnite.<br></br>
-              <br></br> Mittlerweile hab ich mehr Geschmack. Alle Spiele
-              aufzulisten würde wohl zu lange daueren daher habe ich ein paar
-              meiner Lieblingsspiele aufgelistet:<br></br>
-              <br></br>
+              <br></br> Mittlerweile hab ich mehr Geschmack. Alle Spiele die ich gerne spiele
+              aufzulisten würde wohl zu lange daueren daher habe ich die meist gespielten Spiele aufgelistet:<br></br>
+              <br/><br/>
               <List
-                data={[
-                  "Star Citizen",
-                  "Ace Combat 7",
-                  "Spiderheck",
+                data={[,
                   "GTA V",
-                  "...",
+                  "Valorant",
+                  "Bloons TD 6",
+                  "Spiderheck",
+                  "..."
                 ]}
               ></List>
             </p>
           }
           img={gaming2}
           position={"left"}
-          date={"22.7.2023"}
+          date={"4.7.2024"}
         ></Card>
 
         <br id="setup"></br>

@@ -1,106 +1,121 @@
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 #container {
-  position:relative;
-  width:100%;
-  background-color:black;
-  box-shadow: -2px -2px 5px white,2px -2px 5px white;
+  position: relative;
+  width: 100%;
+  background-color: black;
+  box-shadow: -2px -2px 5px white, 2px -2px 5px white;
   z-index: 1;
 }
-#container > nav {
-  width:100%;
-  display:flex;
-  max-height:60px;
+
+#container>nav {
+  width: 100%;
+  display: flex;
+  max-height: 60px;
 }
+
 #logo {
-  line-height:60px;
-  font-size:30px;
+  line-height: 60px;
+  font-size: 30px;
   padding: 5px 50px;
   color: white;
-  width:40%;
-  letter-spacing:2px;
-  text-shadow:2px 2px 5px;
+  width: 40%;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px;
   display: flex;
-  
-  
+
+
 }
-#container > nav > ul {
-  margin:0;
-  padding:0;
-  list-style-type:none;
-  display:flex;
-  position:absolute;
-    right:50px;
+
+#container>nav>ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  right: 50px;
 }
-#container > nav > ul > li {
-  line-height:60px;
+
+#container>nav>ul>li {
+  line-height: 60px;
   margin: 0 0px;
-  padding:0;
-  text-align:center;
-  display:inline-block;
-} 
-#container > nav > ul > li > a {
-  position:relative;
-  padding: 20px 20px;
-    color:white;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
 }
-#container > nav > ul > li:hover, .active {
+
+#container>nav>ul>li>a {
+  position: relative;
+  padding: 20px 20px;
+  color: white;
+}
+
+#container>nav>ul>li:hover,
+.active {
   border-bottom: 2px solid white;
   background-color: #009607;
   position: sticky;
+  transition: all 0.3s ease;
 }
-#container > nav > ul > .dropdown:hover {
-  border-bottom:none;
+
+#container>nav>ul>.dropdown:hover {
+  border-bottom: none;
 }
-#container > nav > ul > .dropdown:hover >  .dd
-{
-  display:block;
+
+#container>nav>ul>.dropdown:hover>.dd {
+  display: block;
   padding: 0.4em;
+
 }
-.dropdown:hover > a .fa-caret-down {
-  display:none;
+
+.dropdown:hover>a .fa-caret-down {
+  display: none;
 }
+
 a {
-  text-decoration:none;
-  
+  text-decoration: none;
+
 }
 
-#container > nav > ul > li > div {
-  position:absolute;
+#container>nav>ul>li>div {
+  position: absolute;
   padding: 0 10px;
-  
-  background-color:black;
-  display:none;
-  background-color:rgba(147, 236, 147, 0.753);
-  min-width:103px;
+
+  background-color: black;
+  display: none;
+  background-color: rgba(147, 236, 147, 0.753);
+  width: 123px;
 }
 
-#container > nav > ul > li > div > ul {
-  margin:0px 0 10px 0;
-  padding:0;
-  list-style:none;
+#container>nav>ul>li>div>ul {
+  margin: 0px 0 10px 0;
+  padding: 0;
+  list-style: none;
   width: 100%;
 }
+
 #u_a_c {
-  position:relative;
-  width:100%;
-/*   background-color:red; */
+  position: relative;
+  width: 100%;
+  /*   background-color:red; */
 }
 
-#container > nav > ul > li> div > ul > li:hover {
-  background-color:rgba(255, 255, 255, 0.849);
-}
-#container > nav > ul > li > div > ul > li > a {
-  padding : 20px;
-    color:black;
+#container>nav>ul>li>div>ul>li:hover {
+  background-color: rgba(255, 255, 255, 0.849);
+  transition: all 0.5s ease;
 }
 
-.sticky{
+#container>nav>ul>li>div>ul>li>a {
+  padding: 20px;
+  color: black;
+}
+
+.sticky {
   position: fixed;
-  top:0;
+  top: 0;
   background-color: black;
 }
 
@@ -173,15 +188,18 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .container {
   display: none;
 }
+
 .container.show {
   display: block;
 }
- @media (max-width: 768px) {
-    #logo{
-      color: rgba(0, 0, 0, 0);
-    }
-    #container > nav > ul {
-        right:0px;
-    }
-    
+
+@media (max-width: 768px) {
+  #logo {
+    color: rgba(0, 0, 0, 0);
   }
+
+  #container>nav>ul {
+    right: 0px;
+  }
+
+}

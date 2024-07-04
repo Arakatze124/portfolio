@@ -234,9 +234,10 @@ export default function Sports() {
               sind bis heute {Math.round(daysDiff)} Tage. Angefangen mit einer
               App, heute mit selbst erstellten{" "}
               <Link href={"#plan"}>Trainingsplan</Link> der jeden Monat
-              geupdated wird.<br></br>
-              <br></br>Wer sich für meine Ernährung interessiert, kann sich auf
-              die nächste Version freuen.
+              geupdated wird.
+              <br/><br/>
+              Falls die unten angebotenen Daten nicht reichen, könnt ihr auf meinem <Link href={"https://hevy.com/user/deanus_124"}>Hevy Profil</Link> mehr über mein Training erfahren, oder ihr 
+              könnt mich <Link  href={"#contact"}>kontaktieren</Link> und ich erkläre euch alles.
             </p>
           }
           img={null}
@@ -261,6 +262,8 @@ export default function Sports() {
             "https://onedrive.live.com/embed?resid=999107596EE3D11B%21156160&authkey=!ACywZ-H57i6egwE&em=2"
           }
         ></Table>
+
+        
       </div>
       <Footer></Footer>
     </>

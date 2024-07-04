@@ -33,7 +33,7 @@ export default function Card({ title, text, img, position, date }) {
       <>
         <div
           className={
-            img === null ? "card gridi-center" : "grid2 card gridi-center"
+            img == (null || undefined) ? "card gridi-center" : "grid2 card gridi-center"
           }
         >
           {buildImage(img, width)}
@@ -46,7 +46,7 @@ export default function Card({ title, text, img, position, date }) {
       <>
         <div
           className={
-            img === null ? "card gridi-center" : "grid2 card gridi-center"
+            img == (null || undefined) ? "card gridi-center" : "grid2 card gridi-center"
           }
         >
           {buildImage(img, imgWidth)}
@@ -60,7 +60,7 @@ export default function Card({ title, text, img, position, date }) {
         <>
           <div
             className={
-              img === null ? "card gridi-center" : "grid2 card gridi-center"
+              img == (null || undefined) ? "card gridi-center" : "grid2 card gridi-center"
             }
           >
             {buildText(title, text, date, cardId)}
@@ -72,7 +72,7 @@ export default function Card({ title, text, img, position, date }) {
   }
 
   function buildImage(img, width) {
-    if (img != null) {
+    if (img != (null || undefined)) {
       return (
         <div className="center img-container">
           <Image
