@@ -1,23 +1,21 @@
 //Components
 import React, { useEffect, useState } from "react";
-import NavigationBar from "../components/NavigationBar";
-import SideBar from "../components/SideBar";
-import Footer from "../components/footer";
-import SideLink from "../components/SideLink";
-import Card from "../components/card";
-import Banner from "../components/banner";
+import SideLink from "../../components/SideLink";
+import Card from "../../components/card";
+import Banner from "../../components/banner";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 //CSS
-import "../styles/default.css";
-import "../styles/sideBar.css";
+import "../../styles/default.css";
+import "../../styles/sideBar.css";
 //Media
-import bikes1 from "../media/bikes1.jpeg";
-import bikes2 from "../media/bikes2.jpg";
-import bikes3 from "../media/bikes3.jpg";
-import bikes4 from "../media/bikes4.jpg";
-import bikes5 from "../media/bikes5.jpg";
+import bikes1 from "../../media/bikes1.jpeg";
+import bikes2 from "../../media/bikes2.jpg";
+import bikes3 from "../../media/bikes3.jpg";
+import bikes4 from "../../media/bikes4.jpg";
+import bikes5 from "../../media/bikes5.jpg";
+import Layout from "../../components/layout";
 
 const links = [
   new SideLink("Moped", "#moped", false),
@@ -45,12 +43,10 @@ export default function Bikes() {
   }, []);
   return (
     <>
-      <NavigationBar active={"bikes"}></NavigationBar>
+      <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
         <Banner title={"Motorräder"} img={bikes1}></Banner>
-        <div>
-          <SideBar links={links} />
-        </div>
+       
 
         <br id="moped"></br>
         <div className="title2 center gridi-center">Moped</div>
@@ -116,7 +112,7 @@ export default function Bikes() {
           </Carousel>
         </div>
       </div>
-      <Footer></Footer>
+      </Layout>
     </>
   );
 }

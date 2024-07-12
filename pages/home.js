@@ -1,14 +1,16 @@
+//Components
 import React from "react";
+import Card from "../components/card";
+import Link from "next/link";
+import Banner from "../components/banner";
+import { Analytics } from "@vercel/analytics/react"
+import Layout from "../components/layout";
+//CSS
 import "../styles/default.css";
-import NavigationBar from "../components/NavigationBar";
-import Footer from "../components/footer";
+//Media
 import Home1 from "../media/home2.jpg";
 import Home3 from "../media/home3.jpg";
 import Home4 from "../media/home4.jpg";
-import Card from "../components/card";
-import "../styles/card.css";
-import Link from "next/link";
-import Banner from "../components/banner";
 
 const currentDate = new Date();
 const birthday = new Date('2007-08-13')
@@ -17,7 +19,8 @@ const age = Math.floor((currentDate - birthday) / (1000 * 60 * 60 * 24 * 365.25)
 export default function Home() {
   return (
     <>
-      <NavigationBar active={"home"}></NavigationBar>
+    <Analytics/>
+      <Layout active={"home"}>
       <Banner
        img={Home1}
        title={"Dean Opara"}
@@ -70,7 +73,7 @@ export default function Home() {
         title={"Wie würde ich mich beschreiben?"}
         date={"3.7.2024"}
       ></Card>
-      <Footer></Footer>
+      </Layout>
     </>
   );
 }

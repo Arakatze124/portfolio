@@ -1,19 +1,17 @@
 //Components
 import React from "react";
-import NavigationBar from "../components/NavigationBar";
-import SideBar from "../components/SideBar";
-import SideLink from "../components/SideLink";
-import Card from "../components/card";
-import Footer from "../components/footer";
-import Banner from "../components/banner";
-import List from "../components/list";
+import SideLink from "../../components/SideLink";
+import Card from "../../components/card";
+import Banner from "../../components/banner";
+import List from "../../components/list";
+import Layout from "../../components/layout";
 //CSS
-import "../styles/default.css";
-import "../styles/sideBar.css";
+import "../../styles/default.css";
 //Media
-import gaming1 from "../media/gaming1.jpg";
-import gaming2 from "../media/gaming2.jpg";
-import gaming3 from "../media/gaming3.jpg";
+import gaming1 from "../../media/gaming1.jpg";
+import gaming2 from "../../media/gaming2.jpg";
+import gaming3 from "../../media/gaming3.jpg";
+import { La_Belle_Aurore } from "next/dist/compiled/@next/font/dist/google";
 
 const links = [
   new SideLink("Games", "#games", false),
@@ -23,12 +21,10 @@ const links = [
 export default function Gaming() {
   return (
     <>
-      <NavigationBar active={"gaming"}></NavigationBar>
+      <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
         <Banner title={"Gaming"} img={gaming1}></Banner>
-        <div>
-          <SideBar links={links} />
-        </div>
+        
 
         <br id="games"></br>
         <Card
@@ -85,7 +81,7 @@ export default function Gaming() {
           date={"22.7.2023"}
         ></Card>
       </div>
-      <Footer></Footer>
+      </Layout>
     </>
   );
 }

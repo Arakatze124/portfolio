@@ -13,11 +13,12 @@ import List from "../components/list";
 //Media
 import patchNotes1 from "../media/patchNotes1.jpg";
 import {Siemreap} from "next/dist/compiled/@next/font/dist/google";
+import Layout from "../components/layout";
 
 const links = [
-    new SideLink("Version: 3", "#patchNotes", false),
+    new SideLink("Version: 3", "#3.0", false),
     new SideLink("3.0", "#3.0", true),
-  new SideLink("Version: 2", "#patchNotes", false),
+    new SideLink("Version: 2", "#2.5", false),
     new SideLink("2.5", "#2.5", true),
     new SideLink("2.4", "#2.4", true),
     new SideLink("2.3", "#2.3", true),
@@ -27,11 +28,9 @@ const links = [
 export default function Contact() {
   return (
       <>
-      <NavigationBar active={"contact"}></NavigationBar>
+      <Layout sideBarLinks={links} >
       <div className="grid">
           <Banner title={"Patch Notes"} img={patchNotes1}></Banner>
-
-          <SideBar links={links}/>
 
           <div className="flex gridi-center center">
               <div className="center flex-ignore"></div>
@@ -52,7 +51,7 @@ export default function Contact() {
                     img={null}
                     date={"4.2.2024"}/>
 
-              <br id="5"></br>
+              <br id="2.5"></br>
               <Card
                   title={"Version 2.5"}
                   text={<List data={["Bücher zu Medien hinzugefügt"]}></List>}
@@ -60,7 +59,7 @@ export default function Contact() {
                   date={"4.2.2024"}
               ></Card>
 
-              <br id="4"></br>
+              <br id="2.4"></br>
               <Card
                   title={"Version 2.4"}
                   text={<List data={["American Football Text aktualisiert"]}></List>}
@@ -69,7 +68,7 @@ export default function Contact() {
               ></Card>
 
 
-              <br id="3"></br>
+              <br id="2.3"></br>
               <Card
                   title={"Version 2.3"}
                   text={
@@ -82,7 +81,7 @@ export default function Contact() {
               ></Card>
 
 
-              <br id="2"></br>
+              <br id="2.2"></br>
               <Card
                   title={"Version 2.2"}
                   text={
@@ -100,7 +99,8 @@ export default function Contact() {
 
           </div>
       </div>
-          <Footer></Footer>
+
+      </Layout>
       </>
   )
       ;

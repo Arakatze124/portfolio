@@ -1,13 +1,10 @@
 //Components
 import React from "react";
-import NavigationBar from "../components/NavigationBar";
-import SideBar from "../components/SideBar";
 import SideLink from "../components/SideLink";
-import Footer from "../components/footer";
 import Banner from "../components/banner";
+import Layout from "../components/layout";
 //CSS
 import "../styles/default.css";
-import "../styles/sideBar.css";
 //Media
 import contact1 from "../media/contact1.jpg";
 import Reference from "../components/reference";
@@ -24,11 +21,9 @@ const links = [
 export default function Contact() {
   return (
     <>
-      <NavigationBar active={"contact"}></NavigationBar>
+      <Layout sideBarLinks={links} active={"contact"}>
       <div className="grid">
         <Banner title={"Kontakt"} img={contact1}></Banner>
-
-        <SideBar links={links} />
 
         <div className="flex gridi-center center">
           <div className="center flex-ignore"></div>
@@ -58,7 +53,7 @@ export default function Contact() {
           ></Reference>
         </div>
       </div>
-      <Footer></Footer>
+      </Layout>
     </>
   );
 }

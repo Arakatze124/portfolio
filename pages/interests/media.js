@@ -1,20 +1,16 @@
 //Components
 import React from "react";
-import NavigationBar from "../components/NavigationBar";
-import SideBar from "../components/SideBar";
-import SideLink from "../components/SideLink";
-import Footer from "../components/footer";
-import Card from "../components/card";
-import Banner from "../components/banner";
-import Link from "next/link";
-import List from "../components/list.js";
+import SideLink from "../../components/SideLink.js";
+import Card from "../../components/card.js";
+import Banner from "../../components/banner.js";
+import List from "../../components/list.js";
 //CSS
-import "../styles/default.css";
-import "../styles/sideBar.css";
+import "../../styles/default.css";
 //Media
-import media1 from "../media/media1.jpg";
-import media2 from "../media/media2.jpg";
-import media3 from "../media/media3.jpg";
+import media1 from "../../media/media1.jpg";
+import media2 from "../../media/media2.jpg";
+import media3 from "../../media/media3.jpg";
+import Layout from "../../components/layout.js";
 
 const links = [
   new SideLink("Musik", "#music", false),
@@ -28,12 +24,9 @@ const links = [
 export default function Media() {
   return (
     <>
-      <NavigationBar active={"media"}></NavigationBar>
+        <Layout sideBarLinks={links} active={"interests"}>
         <div className="grid">
             <Banner title={"Medien"} img={media1}></Banner>
-            <div>
-                <SideBar links={links}/>
-            </div>
 
             <br id="music"></br>
             <div className="title2 center gridi-center">Musik</div>
@@ -152,7 +145,7 @@ export default function Media() {
                 date={"4.7.2024"}
             ></Card>
         </div>
-        <Footer></Footer>
+        </Layout>
     </>
   );
 }

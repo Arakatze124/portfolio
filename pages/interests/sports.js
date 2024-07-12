@@ -1,26 +1,23 @@
 //Components
 import React from "react";
-import NavigationBar from "../components/NavigationBar";
-import SideBar from "../components/SideBar";
-import SideLink from "../components/SideLink";
-import Card from "../components/card";
-import Banner from "../components/banner";
+import SideLink from "../../components/SideLink.js";
+import Card from "../../components/card.js";
+import Banner from "../../components/banner.js";
 import Link from "next/link";
-import Footer from "../components/footer.js";
+import Embed from "../../components/embed.js";
 //CSS
-import "../styles/default.css";
-import "../styles/sideBar.css";
+import "../../styles/default.css";
 //Media
-import sports1 from "../media/sports1.jpg";
-import sports2 from "../media/sports2.gif";
-import sports3 from "../media/sports3.jpg";
-import sports4 from "../media/sports4.gif";
-import sports5 from "../media/sports5.gif";
-import sports6 from "../media/sports6.gif";
-import sports7 from "../media/sports7.gif";
-import sports8 from "../media/sports8.jpg";
-import Table from "../components/Table";
-import football1 from "../media/football1.jpg";
+import sports1 from "../../media/sports1.jpg";
+import sports2 from "../../media/sports2.gif";
+import sports3 from "../../media/sports3.jpg";
+import sports4 from "../../media/sports4.gif";
+import sports5 from "../../media/sports5.gif";
+import sports6 from "../../media/sports6.gif";
+import sports7 from "../../media/sports7.gif";
+import sports8 from "../../media/sports8.jpg";
+import football1 from "../../media/football1.jpg";
+import Layout from "../../components/layout.js";
 
 const currentDate = new Date();
 const october21 = new Date("2021-10-21");
@@ -29,8 +26,8 @@ const daysDiff = timeDiff / (1000 * 3600 * 24);
 
 const links = [
   new SideLink("Sportarten", "#sports", false),
-  new SideLink("Parkour", "#parcour", true),
   new SideLink("American Football", "#football", true),
+  new SideLink("Parkour", "#parcour", true),
   new SideLink("Mountainbiking", "#mountainbiking", true),
   new SideLink("Fußball", "#soccer", true),
   new SideLink("Calisthenics", "#calisthenics", true),
@@ -46,15 +43,38 @@ const links = [
 export default function Sports() {
   return (
     <>
-      <NavigationBar active={"sports"}></NavigationBar>
+      <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
         <Banner title={"Sport"} img={sports1}></Banner>
-        <div>
-          <SideBar links={links} />
-        </div>
 
         <br id="sports"></br>
         <div className="title2 center gridi-center">Sportarten</div>
+
+        <div className="title3 center gridi-center">American Football</div>
+        <br id="football"></br>
+        <Card
+         
+          text={
+            <p>
+              Seit Juli, 2023 bin ich stolzes Mitglied der{" "}
+              <Link href={"https://www.grazgiants.at"} target="_blank">Thalheim Graz Giants</Link>,
+              einem österreichischen Football Team in Graz. Dort spiele ich als starting Runningback in der U18.
+              <br/><br/>
+              In meiner ersten Saison konnte ich mich als Rookie beweisen. Mit
+              über 1000 Yards in der gesamten Season und mind. 1 Touchdown pro
+              Game wurde mir als Ausnahmetalent der Award des Rookie of the Year
+              der Graz Giants verliehen.
+              Nach einer zwar persönlich erfolgreichen Season ist es mein Ziel mich 
+              stetig weiter zu verbessern und das Land Österreich im Nationalteam zu vertreten.
+            </p>
+          }
+          img={football1}
+          position={"right"}
+          date={"14.7.2023"}
+        ></Card>
+
+        <Embed url={"https://www.hudl.com/embed/video/3/20153906/6548d6e32352620a404e2ca4"} />
+
         <br id="parcour"></br>
         <Card
           title={"Parkour/Freerunning"}
@@ -69,37 +89,8 @@ export default function Sports() {
             </p>
           }
           img={sports2}
-          position={"right"}
-          date={"9.12.2023"}
-        ></Card>
-
-        <br id="football"></br>
-        <Card
-          title={"American Football"}
-          text={
-            <p>
-              Seit Juli, 2023 bin ich stolzes Mitglied der{" "}
-              <Link href={"https://www.grazgiants.at"} target="_blank">Grazer Giants</Link>,
-              einem österreichischen Football Team in Graz. Als Runningback habe
-              ich in meiner ersten Season erstaunliche Leistungen erbracht. Mit
-              über 1000 Yards in der gesamten Season und mind. 1 Touchdown pro
-              Game wurde mir als Ausnahmetalent der Award des Rookie of the Year
-              der Graz Giants verliehen.{" "}
-              <Link
-                href={
-                  "https://www.hudl.com/video/3/20153906/6548d6e32352620a404e2ca4"
-                }target="_blank"
-              >
-                Hier
-              </Link>{" "}
-              gehts zu meinen Highlights. Ich bin vollkommen von Football
-              überzeugt und werde weiterhin mein bestes geben und eine weiter
-              erfolgreiche Season abschließen.
-            </p>
-          }
-          img={football1}
           position={"left"}
-          date={"14.7.2023"}
+          date={"9.12.2023"}
         ></Card>
 
         <br id="mountainbiking"></br>
@@ -250,23 +241,23 @@ export default function Sports() {
         <br></br>
         <br></br>
         <div className="title3 center gridi-center">Workouts</div>
-        <Table
+        <Embed
           url={
             "https://onedrive.live.com/embed?resid=999107596EE3D11B%21112950&authkey=!ABECRSUBJZSHP48&em=2"
           }
-        ></Table>
+        ></Embed>
 
         <br id="plan"></br>
         <div className="title3 center gridi-center">Trainingsplan</div>
-        <Table
+        <Embed
           url={
             "https://onedrive.live.com/embed?resid=999107596EE3D11B%21156160&authkey=!ACywZ-H57i6egwE&em=2"
           }
-        ></Table>
+        ></Embed>
 
         
       </div>
-      <Footer></Footer>
+      </Layout>
     </>
   );
 }

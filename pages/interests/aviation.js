@@ -1,20 +1,17 @@
 //Components
 import React from "react";
-import NavigationBar from "../components/NavigationBar";
-import Footer from "../components/footer";
-import SideBar from "../components/SideBar";
-import SideLink from "../components/SideLink";
-import Card from "../components/card";
-import Banner from "../components/banner";
+import SideLink from "../../components/SideLink";
+import Card from "../../components/card";
+import Banner from "../../components/banner";
 import Link from "next/link";
 //CSS
-import "../styles/default.css";
-import "../styles/sideBar.css";
+import "../../styles/default.css";
 //Images
-import aviation1 from "../media/aviation1.jpg";
-import aviation2 from "../media/aviation2.jpg";
-import aviation3 from "../media/aviation3.jpg";
-import aviation4 from "../media/aviation4.jpg";
+import aviation1 from "../../media/aviation1.jpg";
+import aviation2 from "../../media/aviation2.jpg";
+import aviation3 from "../../media/aviation3.jpg";
+import aviation4 from "../../media/aviation4.jpg";
+import Layout from "../../components/layout";
 
 const links = [
   new SideLink("Segelflug", "#glider", true),
@@ -25,12 +22,10 @@ const links = [
 export default function Aviation() {
   return (
     <>
-      <NavigationBar active={"aviation"}></NavigationBar>
+      <Layout active={"interests"} sideBarLinks={links}>
       <div className="grid">
         <Banner title={"Luft-Raumfahrt"} img={aviation1}></Banner>
-        <div className="gridi-sidebar">
-          <SideBar links={links} />
-        </div>
+        
 
         <br id="glider"></br>
         <Card
@@ -84,7 +79,7 @@ export default function Aviation() {
           date={"4.7.2024"}
         ></Card>
       </div>
-      <Footer></Footer>
+      </Layout>
     </>
   );
 }

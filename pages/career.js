@@ -1,17 +1,12 @@
-import React from "react";
 //Components
-import NavigationBar from "../components/NavigationBar";
-import SideBar from "../components/SideBar";
-import Footer from "../components/footer";
+import React from "react";
 import SideLink from "../components/SideLink";
 import Card from "../components/card";
 import Link from "next/link";
 import Banner from "../components/banner";
 import List from "../components/list";
 //CSS
-import "../styles/test.css";
 import "../styles/default.css";
-import "../styles/sideBar.css";
 //Images
 import Kaindorf1 from "../media/kaindorf1.jpg";
 import pmsdobl1 from "../media/pmsdobl1.jpg";
@@ -19,6 +14,7 @@ import vslannach1 from "../media/vslannach1.jpg";
 import Career1 from "../media/career1.jpg";
 import career7 from "../media/career7.png";
 import career8 from "../media/career8.png";
+import Layout from "../components/layout";
 
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
@@ -52,8 +48,7 @@ const links = [
 function Career() {
   return (
     <>
-      <NavigationBar active={"career"}></NavigationBar>
-
+      <Layout sideBarLinks={links} active={"career"}>
       <div className="grid">
         <Banner title={"Karriere"} img={Career1}></Banner>
 
@@ -183,10 +178,6 @@ function Career() {
         <br id="schools"></br>
         <div className="center title2 gridi-center">Schulen</div>
 
-        <div className="gridi-sidebar">
-          <SideBar links={links} />
-        </div>
-
         <br id="htlKaindorf"></br>
         <br></br>
         <Card
@@ -266,7 +257,7 @@ function Career() {
 
         <br></br>
       </div>
-      <Footer></Footer>
+      </Layout>
     </>
   );
 }
