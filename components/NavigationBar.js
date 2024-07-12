@@ -5,12 +5,12 @@ import Link from "next/link";
 import { slide as Menu } from "react-burger-menu";
 import "../styles/default.css";
 import "../styles/NavigationBar.css";
-import { useRouter } from "next/router";
 import Image from "next/image";
 import logo from "../media/logo.png";
 
 export default function NavigationBar(active) {
   const [width, setWidth] = useState(500);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     function handleResize() {
@@ -24,32 +24,20 @@ export default function NavigationBar(active) {
     };
   }, []);
 
+  const handleOpenMenu = () => {
+    setMenuOpen(true);
+  }
+
   const buildBurgerMenu = () => {
   return (
-    <Menu>
-      <Link href="/home">Home</Link>
-      <a className="dropdown-btn">Interessen</a>
-      <div className="container">
-        <Link href="/sports">Sport</Link>
-        <br></br>
-        <br></br>
-        <Link href="/bikes">Motorräder</Link>
-        <br></br>
-        <br></br>
-        <Link href="/gaming">Gaming</Link>
-        <br></br>
-        <br></br>
-        <Link href="/aviation">Aviation</Link>
-        <br></br>
-        <br></br>
-        <Link href="/media">Media</Link>
-        <br></br>
-        <br></br>
-      </div>
-
-      <Link href="/career">Karriere</Link>
-      <Link href="/contact">Kontakt</Link>
-    </Menu>
+    <div className="bgMenuContainer"> 
+          <button className="bgButton" onClick={handleOpenMenu}>☰</button>
+          {menuOpen ? <>
+          <div>
+            Hello
+          </div>
+          </>: <></>}
+    </div>
   );
 }
 
@@ -68,28 +56,8 @@ const buildNavigationBar = (active, width) => {
               Home
             </Link>
           </li>
-          <li className={"dropdown"}>
-            <a href="#" >Interessen ▼</a>
-            <div class="dd">
-              <div id="up_arrow"></div>
-              <ul>
-                <li className={active === "sports" ? "active" : ""}>
-                  <Link href={"/sports"}>Sport</Link>
-                </li>
-                <li className={active === "bikes" ? "active" : ""}>
-                  <Link href={"/bikes"}>Motorräder</Link>
-                </li>
-                <li className={active === "gaming" ? "active" : ""}>
-                  <Link href={"/gaming"}>Gaming</Link>
-                </li>
-                <li className={active === "aviation" ? "active" : ""}>
-                  <Link href={"/aviation"}>Aviation</Link>
-                </li>
-                <li className={active === "media" ? "active" : ""}>
-                  <Link href={"/media"}>Medien</Link>
-                </li>
-              </ul>
-            </div>
+          <li className={active === "interests" ? "active" : ""}>
+            <Link href={"/interests"}>Interessen</Link>
           </li>
           <li className={active === "career" ? "active" : ""}>
             <Link href={"/career"}>Karriere</Link>
@@ -110,4 +78,7 @@ const buildNavigationBar = (active, width) => {
     return buildNavigationBar(active.active, width);
   }
 }
+
+
+
 
