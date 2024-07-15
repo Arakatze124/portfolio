@@ -16,7 +16,8 @@ import {Siemreap} from "next/dist/compiled/@next/font/dist/google";
 import Layout from "../components/layout";
 
 const links = [
-    new SideLink("Version: 3", "#3.0", false),
+    new SideLink("Version: 3", "#3.1", false),
+    new SideLink("3.1", "#3.1", true),
     new SideLink("3.0", "#3.0", true),
     new SideLink("Version: 2", "#2.5", false),
     new SideLink("2.5", "#2.5", true),
@@ -35,6 +36,18 @@ export default function Contact() {
           <div className="flex gridi-center center">
               <div className="center flex-ignore"></div>
 
+                <br id="3.1"></br>
+                <Card
+                title={"Version 3.1"}
+                text={<List
+                    data={[
+                        "Neues Responsive Design",
+                        "Interessen Seite überarbeitet",
+                        "Kochen und Tiere hinzugefügt",
+                    ]}></List>}
+                img={null}
+                date={"4.2.2024"}
+                ></Card>
                 <br id="3.0"></br>
                 <Card
                     title={"Version 3.0"}
