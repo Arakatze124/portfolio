@@ -21,22 +21,20 @@
   line-height: 60px;
   font-size: 30px;
   padding: 5px 50px;
+  display: flex;
+  justify-content: center;
   color: white;
-  width: 40%;
   letter-spacing: 2px;
   text-shadow: 2px 2px 5px;
-  display: flex;
-
-
 }
 
 #container>nav>ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
   position: absolute;
   right: 50px;
+  overflow: hidden;
 }
 
 #container>nav>ul>li {
@@ -45,6 +43,9 @@
   padding: 0;
   text-align: center;
   display: inline-block;
+  flex-shrink: 10;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #container>nav>ul>li>a {
@@ -141,13 +142,22 @@ a {
 
 
 
-@media (max-width: 768px) {
-  #logo {
-    color: rgba(0, 0, 0, 0);
+@media (max-width: 600px) {
+  #logo>a>img {
+    width: 0%;
+  }
+
+  #container>nav>ul>li>a {
+    font-size: 0.8em;
+    padding: 5px;
+  }
+
+  #container>nav {
+    justify-content: center;
+    align-items: center;
   }
 
   #container>nav>ul {
-    right: 0px;
+    right: auto;
   }
-
 }

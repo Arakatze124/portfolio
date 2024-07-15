@@ -1,21 +1,23 @@
-.banner{
+.banner {
     position: relative;
-    z-index: -1;  
+    z-index: -1;
     background-color: black;
 }
 
-.banner-title{
-    filter:none;
+.banner-title {
+    filter: none;
     z-index: 1;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.2vmax rgb(0, 0, 0);
     font-size: 8vmax;
 }
 
-@media (max-width: 768px) {
-    img{
+@media (max-width: 600px) {
+    img {
         top: 0;
     }
 
+    .banner-title {
+        margin-top: 11vmax;
+    }
 }
-

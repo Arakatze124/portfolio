@@ -24,24 +24,6 @@ export default function NavigationBar(active) {
     };
   }, []);
 
-  const handleOpenMenu = () => {
-    setMenuOpen(true);
-  }
-
-  const buildBurgerMenu = () => {
-  return (
-    <div className="bgMenuContainer"> 
-          <button className="bgButton" onClick={handleOpenMenu}>☰</button>
-          {menuOpen ? <>
-          <div>
-            Hello
-          </div>
-          </>: <></>}
-    </div>
-  );
-}
-
-const buildNavigationBar = (active, width) => {
   return (
     <div id="container">
       <nav className="sticky">
@@ -70,15 +52,6 @@ const buildNavigationBar = (active, width) => {
     </div>
   );
 }
-
-
-  if (width <= 769) {
-    return buildBurgerMenu();
-  } else {
-    return buildNavigationBar(active.active, width);
-  }
-}
-
 
 
 
