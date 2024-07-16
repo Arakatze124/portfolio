@@ -48,6 +48,10 @@ p {
   margin-bottom: 1vmax;
 }
 
+.text-center {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
 
   .grid2 {

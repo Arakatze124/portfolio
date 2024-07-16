@@ -11,13 +11,13 @@ export default function List({ data }) {
             <li className="li-parent" key={index}>
               <div className="title4">
                 {part1}
-                <p className="li-item">{part2}</p>
+                <p className="li-item ">{part2}</p>
               </div>
             </li>
           );
         } else {
           return (
-            <li className="li-parent li-item" key={index}>
+            <li className="li-parent li-item text-center" key={index}>
               {item}
             </li>
           );

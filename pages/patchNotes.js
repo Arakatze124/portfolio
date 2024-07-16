@@ -17,6 +17,7 @@ import Layout from "../components/layout";
 
 const links = [
     new SideLink("Version: 3", "#3.1", false),
+    new SideLink("3.2", "#3.2", true),
     new SideLink("3.1", "#3.1", true),
     new SideLink("3.0", "#3.0", true),
     new SideLink("Version: 2", "#2.5", false),
@@ -26,15 +27,26 @@ const links = [
     new SideLink("2.2", "#2.2", true),
 ];
 
-export default function Contact() {
+export default function PatchNotes() {
+
   return (
       <>
       <Layout sideBarLinks={links} >
       <div className="grid">
           <Banner title={"Patch Notes"} img={patchNotes1}></Banner>
 
-          <div className="flex gridi-center center">
-              <div className="center flex-ignore"></div>
+                <br id="3.2"></br>
+                <Card
+                title={"Version 3.2"}
+                text={<p><List
+                    data={[
+                        "Neuer Text Kochen",
+                        "Neuer Text Tiere",
+                        "Bug Fixing and UX improvements",
+                    ]}></List></p>}
+                
+                date={"16.7.2024"}
+/>
 
                 <br id="3.1"></br>
                 <Card
@@ -111,8 +123,6 @@ export default function Contact() {
 
 
           </div>
-      </div>
-
       </Layout>
       </>
   )

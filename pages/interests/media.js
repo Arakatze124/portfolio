@@ -30,6 +30,7 @@ export default function Media() {
 
             <br id="music"></br>
             <div className="title2 center gridi-center">Musik</div>
+            
             <br id="consumption"></br>
             <Card
                 title={"Konsum"}

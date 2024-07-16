@@ -8,7 +8,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 //CSS
 import "../../styles/default.css";
-import "../../styles/sideBar.css";
 //Media
 import bikes1 from "../../media/bikes1.jpeg";
 import bikes2 from "../../media/bikes2.jpg";
