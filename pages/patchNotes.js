@@ -43,6 +43,7 @@ export default function PatchNotes() {
                         "Neuer Text Kochen",
                         "Neuer Text Tiere",
                         "Bug Fixing and UX improvements",
+                        "Ernährungsplan hinzugefügt",
                     ]}></List></p>}
                 
                 date={"16.7.2024"}
