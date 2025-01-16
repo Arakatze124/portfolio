@@ -44,7 +44,7 @@ export default function PatchNotes() {
                         "Neue Bilder",
                         "Kein Gaming mehr als Hobby",
                         "PR's hinzugefügt",
-                        
+                        "Keine Workouts mehr"
                     ]}></List>}
                 img={null}
                 date={"16.1.2025"}
