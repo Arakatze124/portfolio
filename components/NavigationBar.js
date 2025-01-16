@@ -23,9 +23,13 @@ export default function NavigationBar(active) {
               Home
             </Link>
           </li>
+          {
+          /*
           <li className={active === "projects" ? "active" : ""}>
             <Link href={"/projects"}>Projekte</Link>
           </li>
+          */
+          }
           <li className={active === "career" ? "active" : ""}>
             <Link href={"/career"}>Karriere</Link>
           </li>

@@ -255,7 +255,14 @@ export default function Sports() {
           }
         ></Embed>
 
-        
+        <br id="PRs"></br>
+        <div className="title3 center gridi-center">Personal Records</div>
+        <Embed
+          url={
+            "https://onedrive.live.com/embed?resid=999107596EE3D11B%21253528&authkey=%21ANHLvzxQ9xwfZqQ&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"
+          }
+          height={100}
+        ></Embed>
       </div>
       </Layout>
     </>

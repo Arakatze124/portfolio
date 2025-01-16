@@ -7,7 +7,6 @@ import Link from "next/link";
 //CSS
 import "../../styles/default.css";
 //Media 
-import projects1 from "../../media/IWasHere.jpg";
 
 const links = [
     new SideLink("I Was Here", "#IWasHere", false), 

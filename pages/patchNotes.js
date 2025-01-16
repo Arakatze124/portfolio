@@ -17,6 +17,7 @@ import Layout from "../components/layout";
 
 const links = [
     new SideLink("Version: 3", "#3.1", false),
+    new SideLink("3.3", "#3.3", true),
     new SideLink("3.2", "#3.2", true),
     new SideLink("3.1", "#3.1", true),
     new SideLink("3.0", "#3.0", true),
@@ -34,6 +35,20 @@ export default function PatchNotes() {
       <Layout sideBarLinks={links} >
       <div className="grid">
           <Banner title={"Patch Notes"} img={patchNotes1}></Banner>
+          
+          <br id="3.3"></br>
+            <Card
+                title={"Version 3.3"}
+                text={<List
+                    data={[
+                        "Neue Bilder",
+                        "Kein Gaming mehr als Hobby",
+                        "PR's hinzugefügt",
+                        
+                    ]}></List>}
+                img={null}
+                date={"16.1.2025"}
+            ></Card>
 
                 <br id="3.2"></br>
                 <Card
