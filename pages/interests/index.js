@@ -14,7 +14,6 @@ export default function Root() {
     const links = [
         new SideLink("Sport", "/interests/sports"),
         new SideLink("Motorräder", "/interests/bikes"),
-        new SideLink("Gaming", "/interests/gaming"),
         new SideLink("Luft-Raumfahrt", "/interests/aviation"),
         new SideLink("Medien", "/interests/media"),
         new SideLink("Kochen", "/interests/cooking"),
@@ -33,12 +32,7 @@ export default function Root() {
         <Link href="/interests/bikes">
         <Banner title={"Motorräder"} img={bikes1}></Banner>
         </Link>
-
-        <div id="gaming" />
-        <Link href="/interests/gaming">
-        <Banner title={"Gaming"} img={gaming1}></Banner>
-        </Link>
-
+        
         <div id="aviation" />
         <Link href="/interests/aviation">
         <Banner title={"Luft-Raumfahrt"} img={aviation1}></Banner>

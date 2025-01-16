@@ -2,27 +2,12 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import Link from "next/link";
-import { slide as Menu } from "react-burger-menu";
 import "../styles/default.css";
 import "../styles/NavigationBar.css";
 import Image from "next/image";
 import logo from "../media/logo.png";
 
 export default function NavigationBar(active) {
-  const [width, setWidth] = useState(500);
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    function handleResize() {
-      setWidth(document.body.clientWidth);
-    }
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <div id="container">
@@ -38,11 +23,14 @@ export default function NavigationBar(active) {
               Home
             </Link>
           </li>
-          <li className={active === "interests" ? "active" : ""}>
-            <Link href={"/interests"}>Interessen</Link>
+          <li className={active === "projects" ? "active" : ""}>
+            <Link href={"/projects"}>Projekte</Link>
           </li>
           <li className={active === "career" ? "active" : ""}>
             <Link href={"/career"}>Karriere</Link>
+          </li>
+          <li className={active === "interests" ? "active" : ""}>
+            <Link href={"/interests"}>Interessen</Link>
           </li>
           <li className={active === "contact" ? "active" : ""}>
             <Link href={"/contact"}>Kontakt</Link>
