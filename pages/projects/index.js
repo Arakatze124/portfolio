@@ -4,6 +4,8 @@ import Layout from "../../components/layout";
 import SideLink from "../../components/SideLink";
 import Banner from "../../components/banner";
 import Link from "next/link";
+//Media
+//import projects1 from "../../media/projects1.jpg";
 //CSS
 import "../../styles/default.css";
 //Media 
@@ -17,7 +19,7 @@ export default function Projects() {
     <>
       <Layout sideBarLinks={links} active={"interests"}>
         <Link href="/projects/IWasHere"> 
-          <Banner title={"I Was Here"} img={projects1}></Banner>
+          <Banner title={"I Was Here"} img={""}></Banner>
         </Link>   
       </Layout>
     </>
