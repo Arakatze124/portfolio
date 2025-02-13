@@ -72,7 +72,7 @@ export default function Sports() {
           date={"14.7.2023"}
         ></Card>
 
-        <Embed url={"https://www.hudl.com/video/3/20153906/6737285ad51e98451a07fd23"} />
+        <Embed url={"https://www.hudl.com/embed/video/3/20153906/6737285ad51e98451a07fd23"} />
 
         <br id="parcour"></br>
         <Card
