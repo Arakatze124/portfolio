@@ -1,5 +1,5 @@
 import Layout from '../components/layout';
-import Home from './home';
+import Home from './newIndex';
 
 export default function Root() {
   

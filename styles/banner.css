@@ -2,14 +2,27 @@
     position: relative;
     z-index: -1;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    margin-top: 5vmax;
 }
 
 .banner-title {
     filter: none;
     z-index: 1;
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 0.01vmax rgb(0, 0, 0);
-    font-size: 8vmax;
+    font-size: 9vmax;
+    animation: colorChange 5s infinite;
+    margin: 0; /* Remove default margin */
+}
+
+.banner-subtitle {
+    filter: none;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 4vmax;
+    margin-top: 1vmax; 
 }
 
 @media (max-width: 600px) {
@@ -21,3 +34,4 @@
         margin-top: 11vmax;
     }
 }
+
