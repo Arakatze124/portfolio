@@ -6,14 +6,25 @@
 #container {
   position: relative;
   width: 100%;
-  background-color: black;
+  background-color: transparent;
   box-shadow: -2px -2px 5px white, 2px -2px 5px white;
   z-index: 1;
+  transition: top 0.3s;
+}
+
+#container.hide {
+  top: -60px; /* Adjust based on navbar height */
+}
+
+#container.show {
+  top: 0;
 }
 
 #container>nav {
   width: 100%;
   display: flex;
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
   max-height: 60px;
 }
 
@@ -26,20 +37,24 @@
   color: white;
   letter-spacing: 2px;
   text-shadow: 2px 2px 5px;
+  position: fixed; /* Make the logo fixed */
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 #container>nav>ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  position: absolute;
-  right: 50px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
 }
 
 #container>nav>ul>li {
-  line-height: 60px;
-  margin: 0 0px;
+  line-height: 3vh;
+  margin: 4vh 10px; /* Add some margin between items */
   padding: 0;
   text-align: center;
   display: inline-block;
@@ -50,14 +65,14 @@
 
 #container>nav>ul>li>a {
   position: relative;
-  padding: 20px 20px;
+  padding: 0px 20px;
   color: white;
 }
 
 #container>nav>ul>li:hover,
 .active {
-  border-bottom: 2px solid white;
   background-color: #009607;
+  border-radius: 10%;
   position: sticky;
   transition: all 0.3s ease;
 }
@@ -69,7 +84,6 @@
 #container>nav>ul>.dropdown:hover>.dd {
   display: block;
   padding: 0.4em;
-
 }
 
 .dropdown:hover>a .fa-caret-down {
@@ -84,8 +98,7 @@ a {
 #container>nav>ul>li>div {
   position: absolute;
   padding: 0 10px;
-
-  background-color: black;
+  background-color: transparent;
   display: none;
   background-color: rgba(147, 236, 147, 0.753);
   width: 123px;
@@ -117,7 +130,7 @@ a {
 .sticky {
   position: fixed;
   top: 0;
-  background-color: black;
+  background-color: transparent;
 }
 
 .link {
@@ -137,10 +150,6 @@ a {
   background-color: transparent;
   border: none;
 }
-
-
-
-
 
 @media (max-width: 660px) {
   #logo>a>img {

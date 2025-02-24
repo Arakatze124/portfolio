@@ -25,14 +25,25 @@ const Banner = ({ img, title, subtitle, titleRef, subtitleRef }) => {
   }, [subtitle]);
 
   return (
-    <div  className="center gridi-center title1 banner">
-      <Image
-        src={img}
-        layout="fill"
-        objectFit="cover"
-        alt="error"
-        style={{ filter: "brightness(0.4) blur(3px)" }}
-      />
+    <div className="center gridi-center banner">
+      <div className="image-container">
+        {//check if src is image or video
+        img.includes(".mp4") ? (
+          <video autoPlay loop muted playsInline className="banner-video">
+            <source src={img} type="video/mp4" />
+          </video>
+        ) : (
+          <Image
+            src={img}
+            alt="Banner Image"
+            width={width}
+            height={width / 2}
+            layout="responsive"
+          />
+        )
+        
+        }
+      </div>
       <h1 ref={titleRef} className="title1 banner-title">{title}</h1>
       <h2 ref={subtitleRef} className="title2 banner-subtitle">{subtitle}</h2>
     </div>

@@ -19,12 +19,7 @@ const age = Math.floor((currentDate - birthday) / (1000 * 60 * 60 * 24 * 365.25)
 export default function Home() {
   return (
     <>
-    <Analytics/>
-      <Layout active={"home"}>
-      <Banner
-       img={Home1}
-       title={"Dean Opara"}
-       />
+      <div id="home" className="title1 center gridi-center">Home</div>
       <Card
         img={Home3}
         text={
@@ -73,7 +68,6 @@ export default function Home() {
         title={"Wie würde ich mich beschreiben?"}
         date={"3.7.2024"}
       ></Card>
-      </Layout>
     </>
   );
 }

@@ -48,13 +48,10 @@ const links = [
 function Career() {
   return (
     <>
-      <Layout sideBarLinks={links} active={"career"}>
       <div className="grid">
-        <Banner title={"Karriere"} img={Career1}></Banner>
-
+        <div id="career" className="title1 center gridi-center">Karriere</div>
         <br id="experience"></br>
         <div className="center title2 gridi-center">Erfahrung</div>
-
         <Card
           title={"Arland Technologies"}
           text={
@@ -257,7 +254,6 @@ function Career() {
 
         <br></br>
       </div>
-      </Layout>
     </>
   );
 }

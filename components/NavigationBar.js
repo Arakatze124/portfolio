@@ -7,19 +7,28 @@ import "../styles/NavigationBar.css";
 import Image from "next/image";
 import logo from "../media/logo.png";
 
-export default function NavigationBar(active) {
+export default function NavigationBar({bgColor}) {
+
+  useEffect(() => {
+    console.log(bgColor);
+  }
+  , [bgColor]);
 
   return (
-    <div id="container">
-      <nav className="sticky">
-        <div id="logo">
-          <Link href={"/home"}>
-            <Image width={50} src={logo} />
-          </Link>
+    <>
+    <div id="logo">
+      <Link href={"/home"}>
+        <Image src={logo} alt="Logo" width={50} height={50} />
+        </Link>
         </div>
+          
+    <div id="container">
+      
+      <nav className="sticky" style={{ backgroundColor: bgColor }}>
+        
         <ul>
-          <li className={active === "home" ? "active" : ""}>
-            <Link className="link" href={"/home"}>
+          <li>
+            <Link className="link" href={"#home"}>
               Home
             </Link>
           </li>
@@ -30,18 +39,19 @@ export default function NavigationBar(active) {
           </li>
           */
           }
-          <li className={active === "career" ? "active" : ""}>
-            <Link href={"/career"}>Karriere</Link>
+          <li >
+            <Link href={"#career"}>Karriere</Link>
           </li>
-          <li className={active === "interests" ? "active" : ""}>
-            <Link href={"/interests"}>Interessen</Link>
+          <li >
+            <Link href={"#interests"}>Interessen</Link>
           </li>
-          <li className={active === "contact" ? "active" : ""}>
-            <Link href={"/contact"}>Kontakt</Link>
+          <li>
+            <Link href={"#contact"}>Kontakt</Link>
           </li>
         </ul>
       </nav>
     </div>
+    </>
   );
 }
 

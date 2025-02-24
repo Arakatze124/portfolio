@@ -11,49 +11,11 @@ import SideLink from "../../components/SideLink";
 import Layout from "../../components/layout";
 
 export default function Root() {
-    const links = [
-        new SideLink("Sport", "/interests/sports"),
-        new SideLink("Motorräder", "/interests/bikes"),
-        new SideLink("Luft-Raumfahrt", "/interests/aviation"),
-        new SideLink("Medien", "/interests/media"),
-        new SideLink("Kochen", "/interests/cooking"),
-        new SideLink("Tiere", "/interests/animals"),
-      ];
+   
     return (
         <>
-         <Layout active={"interests"} sideBarLinks={links}>
-
-        <div id="sports" />
-        <Link href="/interests/sports">
-        <Banner title={"Sport"} img={sports1}></Banner>
-        </Link>
-
-        <div id="bikes" />
-        <Link href="/interests/bikes">
-        <Banner title={"Motorräder"} img={bikes1}></Banner>
-        </Link>
+      <div id="home" className="title1 center gridi-center">Interests</div>
         
-        <div id="aviation" />
-        <Link href="/interests/aviation">
-        <Banner title={"Luft-Raumfahrt"} img={aviation1}></Banner>
-        </Link>
-
-        <div id="media" />
-        <Link href="/interests/media">
-        <Banner title={"Medien"} img={media1}></Banner>
-        </Link>
-
-        <div id="cooking" />
-        <Link href="/interests/cooking">
-        <Banner title={"Kochen"} img={cooking1}></Banner>
-        </Link>
-
-        <div id="animals" />
-        <Link href="/interests/animals">
-        <Banner title={"Tiere"} img={animals1}></Banner>
-        </Link>
-
-        </Layout>
         </>
     );
     }

@@ -1,11 +1,14 @@
 import "../styles/default.css"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
-import Home1 from "../media/home2.jpg"
+import Home1 from "../media/newIndex.mp4"
 import { useRef, useEffect, useState } from "react"
 import { gsap } from "gsap"
+import Home from "../pages/home"
+import Career from "../pages/career"
+import Interests from "../pages/interests/index"
 
-export default function Home() {
+export default function Index() {
     const [textIndex, setTextIndex] = useState(0)
     const titleRef = useRef(null)
     const subtitleRef = useRef(null)
@@ -19,6 +22,7 @@ export default function Home() {
         "Biker",
     
     ]
+    
 
     const startCarousel = () => {
         const tl = gsap.timeline({ repeat: -1, repeatDelay: 0 });
@@ -47,6 +51,9 @@ export default function Home() {
                     subtitle={subtitles[textIndex]}
                     subtitleRef={subtitleRef}
                 />
+                <Home/>
+                <Career/>
+                <Interests/>
             </Layout>
         </div>
     )
