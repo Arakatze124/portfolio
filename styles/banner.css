@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Center align items horizontally */
-    margin-top: 5vmax;
+    margin-top: 60px;
 }
 
 .banner-title {
