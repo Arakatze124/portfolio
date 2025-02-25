@@ -1,6 +1,6 @@
 import "../styles/default.css"
-import Layout from "../components/layout"
-import Banner from "../components/banner"
+import Layout from "../components/Layout"
+import Banner from "../components/Banner"
 import Home1 from "../media/newIndex.mp4"
 import { useRef, useEffect, useState } from "react"
 import { gsap } from "gsap"

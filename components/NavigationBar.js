@@ -7,12 +7,8 @@ import "../styles/NavigationBar.css";
 import Image from "next/image";
 import logo from "../media/logo.png";
 
-export default function NavigationBar({bgColor}) {
+export default function NavigationBar() {
 
-  useEffect(() => {
-    console.log(bgColor);
-  }
-  , [bgColor]);
 
   return (
     <>
@@ -24,7 +20,7 @@ export default function NavigationBar({bgColor}) {
           
     <div id="container">
       
-      <nav className="sticky" style={{ backgroundColor: bgColor }}>
+      <nav className="sticky" >
         
         <ul>
           <li>

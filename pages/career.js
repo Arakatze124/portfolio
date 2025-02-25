@@ -1,10 +1,10 @@
 //Components
 import React from "react";
 import SideLink from "../components/SideLink";
-import Card from "../components/card";
+import Card from "../components/Card";
 import Link from "next/link";
-import Banner from "../components/banner";
-import List from "../components/list";
+import Banner from "../components/Banner";
+import List from "../components/List";
 //CSS
 import "../styles/default.css";
 //Images
@@ -14,7 +14,7 @@ import vslannach1 from "../media/vslannach1.jpg";
 import Career1 from "../media/career1.jpg";
 import career7 from "../media/career7.png";
 import career8 from "../media/career8.png";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();

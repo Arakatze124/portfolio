@@ -1,10 +1,10 @@
 //Components
 import React from "react";
-import Card from "../components/card";
+import Card from "../components/Card";
 import Link from "next/link";
-import Banner from "../components/banner";
+import Banner from "../components/Banner";
 import { Analytics } from "@vercel/analytics/react"
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 //CSS
 import "../styles/default.css";
 //Media

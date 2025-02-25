@@ -45,16 +45,21 @@
 
 #container>nav>ul {
   margin: 0;
-  padding: 0;
+  margin-top: 20px;
+  padding: 0 5px;
   list-style-type: none;
   display: flex;
   justify-content: center; /* Center align items horizontally */
   align-items: center; /* Center align items vertically */
+  background-color: black;
+  border: transparent 3px solid;
+  border-radius: 20px; /* Adjust border-radius for a more traditional look */
+  z-index: 0;
 }
 
 #container>nav>ul>li {
   line-height: 3vh;
-  margin: 4vh 10px; /* Add some margin between items */
+  margin: 5px 8px; /* Add some margin between items */
   padding: 0;
   text-align: center;
   display: inline-block;
@@ -72,7 +77,7 @@
 #container>nav>ul>li:hover,
 .active {
   background-color: #009607;
-  border-radius: 10%;
+  border-radius: 5px; /* Adjust border-radius for a more traditional look */
   position: sticky;
   transition: all 0.3s ease;
 }

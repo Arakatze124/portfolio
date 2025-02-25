@@ -1,6 +1,6 @@
 import NavigationBar from "./NavigationBar";
 import Sidebar from "./SideBar";
-import Footer from "./footer";
+import Footer from "./Footer";
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
