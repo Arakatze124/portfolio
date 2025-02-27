@@ -1,9 +1,9 @@
 //Components
 import React from "react";
 import SideLink from "../../components/SideLink";
-import Banner from "../../components/banner";
-import Layout from "../../components/layout";
-import Card from "../../components/card";
+import Banner from "../../components/Banner";
+import Layout from "../../components/Layout";
+import Card from "../../components/Card";
 //CSS
 import "../../styles/default.css";
 //Media
@@ -15,12 +15,11 @@ const links = [
 ];
 
 export default function Animals() {
-  return (
+  const title = "Tiere";
+  const img = animals2;
+  const text =
+  (
     <>
-      <Layout sideBarLinks={links} active={"interests"}>
-      <div className="grid">
-        <Banner title={"Tiere"} img={animals1}></Banner>
-
         <br id="slushy"></br>
         <div className="flex gridi-center center">
         <Card
@@ -35,8 +34,9 @@ export default function Animals() {
           date={"16.7.2024"}
         />
          </div>
-      </div>
-      </Layout>
     </>
   );
+  const animals = { title, img, text};
+  console.log(animals);
+  return animals;
 }

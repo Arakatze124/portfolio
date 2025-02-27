@@ -11,7 +11,6 @@ export default function CarouselSelector({ items, setSelectedItem }) {
         setSelected(index);
         setSelectedItem(items[index]);
     };
-    
     return (
         <div className="carousel">
         <div className="carousel-selector">
