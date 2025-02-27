@@ -102,7 +102,7 @@ export default function Card({ title, text, img, position, date }) {
       );
     }
     return (
-      <div style={{ position: "relative" }}>
+      <div >
         <div>
           <div id={`section-${cardId}`} className="center title3">
             {title}
