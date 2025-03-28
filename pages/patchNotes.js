@@ -3,9 +3,10 @@ import React from "react";
 import NavigationBar from "../components/NavigationBar";
 import SideBar from "../components/SideBar";
 import SideLink from "../components/SideLink";
-import Footer from "../components/footer";
-import Card from "../components/card";
-import Banner from "../components/banner";
+import Footer from "../components/Footer";
+import Card from "../components/Card";
+import Banner from "../components/Banner";
+import Layout from "../components/Layout";
 //CSS
 import "../styles/default.css";
 import "../styles/sideBar.css";
@@ -13,7 +14,6 @@ import List from "../components/list";
 //Media
 import patchNotes1 from "../media/patchNotes1.jpg";
 import {Siemreap} from "next/dist/compiled/@next/font/dist/google";
-import Layout from "../components/layout";
 
 const links = [
     new SideLink("Version: 3", "#3.1", false),

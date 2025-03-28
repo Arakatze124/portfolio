@@ -8,7 +8,7 @@ import Media from "./media";
 import Sports from "./sports";
 
 export default function Root() {
-  const items = [Animals, Aviation, Bikes, Cooking, Media, Sports];
+  const items = [Animals(), Aviation(), Bikes(), Media(), Sports()];
    
     return (
         <>

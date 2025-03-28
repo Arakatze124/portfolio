@@ -1,8 +1,8 @@
 //Components
 import React from "react";
 import SideLink from "../components/SideLink";
-import Banner from "../components/banner";
-import Layout from "../components/layout";
+import Banner from "../components/Banner";
+import Layout from "../components/Layout";
 //CSS
 import "../styles/default.css";
 //Media

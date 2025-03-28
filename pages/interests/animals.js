@@ -17,7 +17,7 @@ const links = [
 export default function Animals() {
   const title = "Tiere";
   const img = animals2;
-  const text =
+  const details =
   (
     <>
         <br id="slushy"></br>
@@ -36,7 +36,6 @@ export default function Animals() {
          </div>
     </>
   );
-  const animals = { title, img, text};
-  console.log(animals);
+  const animals = { title, img, details};
   return animals;
 }

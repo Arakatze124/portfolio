@@ -9,7 +9,6 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
 export default function Card({ title, text, img, position, date }) {
   const [width, setWidth] = useState(1000);
   const [mobile, setMobile] = useState(true);
-  console.log(title == "American Football");
   useEffect(() => {
     function handleResize() {
       const newWidth = document.body.clientWidth;

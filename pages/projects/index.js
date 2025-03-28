@@ -1,8 +1,8 @@
 //Components
 import React from "react";
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 import SideLink from "../../components/SideLink";
-import Banner from "../../components/banner";
+import Banner from "../../components/Banner";
 import Link from "next/link";
 //Media
 //import projects1 from "../../media/projects1.jpg";

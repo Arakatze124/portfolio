@@ -1,10 +1,11 @@
 //Components
 import React from "react";
 import SideLink from "../../components/SideLink.js";
-import Card from "../../components/card.js";
-import Banner from "../../components/banner.js";
+import Card from "../../components/Card.js";
+import Banner from "../../components/Banner.js";
 import Link from "next/link";
 import Embed from "../../components/embed.js";
+import Layout from "../../components/Layout.js";
 //CSS
 import "../../styles/default.css";
 //Media
@@ -17,7 +18,6 @@ import sports6 from "../../media/sports6.gif";
 import sports7 from "../../media/sports7.gif";
 import sports8 from "../../media/sports8.jpg";
 import football1 from "../../media/football1.jpg";
-import Layout from "../../components/layout.js";
 
 const currentDate = new Date();
 const october21 = new Date("2021-10-21");
@@ -40,11 +40,12 @@ const links = [
 ];
 
 export default function Sports() {
-  return (
+  const title = "Sports";
+  const img = sports1;
+  const details = (
     <>
       <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
-        <Banner title={"Sport"} img={sports1}></Banner>
 
         <br id="sports"></br>
         <div className="title2 center gridi-center">Sportarten</div>
@@ -256,4 +257,7 @@ export default function Sports() {
       </Layout>
     </>
   );
+
+  const sports = { title, img, details };
+  return sports;
 }

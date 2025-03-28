@@ -1,9 +1,9 @@
 //Components
 import React from "react";
 import SideLink from "../../components/SideLink";
-import Banner from "../../components/banner";
-import Layout from "../../components/layout";
-import Card from "../../components/card";
+import Banner from "../../components/Banner";
+import Layout from "../../components/Layout";
+import Card from "../../components/Card";
 import Embed from "../../components/embed";
 //CSS
 import "../../styles/default.css";
@@ -16,11 +16,13 @@ const links = [
 ];
 
 export default function Cooking() {
-  return (
+  const title = "Cooking";
+  const img = cooking1;
+  const details = 
+   (
     <>
       <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
-        <Banner title={"Kochen"} img={cooking1}></Banner>
 
           <br id="cooking"/>
           <Card
@@ -47,4 +49,6 @@ export default function Cooking() {
       </Layout> 
     </>
   );
+  const cooking = { title, img, details};
+  return cooking;
 }

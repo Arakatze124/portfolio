@@ -55,7 +55,7 @@ function Career() {
         <Card
           title={"Arland Technologies"}
           text={
-            <p>
+            <div>
               Im Juli 2023 habe ich ein Ferialpraktikum im Bereich Software
               Development absolviert . Bei{" "}
               <Link href={"https://arland.at"} target="_blank">Arland Technologies </Link>konnte
@@ -65,7 +65,7 @@ function Career() {
                 data={["Webdesign", "Web-Entwicklung"]}
               ></List>
               Derzeit bin ich dort geringfügig als Web-Developer eingestellt.
-            </p>
+            </div>
           }
           img={career7}
           date={"20.10.2023"}

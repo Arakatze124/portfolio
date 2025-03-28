@@ -23,6 +23,7 @@
     font-size: 15vmax;
     animation: colorChange 5s infinite;
     margin: 0; /* Remove default margin */
+    z-index: 0;
 }
 
 .banner-subtitle {

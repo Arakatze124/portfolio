@@ -1,8 +1,8 @@
 //Components
 import React, { useEffect, useState } from "react";
 import SideLink from "../../components/SideLink";
-import Card from "../../components/card";
-import Banner from "../../components/banner";
+import Card from "../../components/Card";
+import Banner from "../../components/Banner";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
@@ -14,7 +14,7 @@ import bikes2 from "../../media/bikes2.jpg";
 import bikes3 from "../../media/bikes3.jpg";
 import bikes4 from "../../media/bikes4.jpg";
 import bikes5 from "../../media/bikes5.jpg";
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 
 const links = [
   new SideLink("Moped", "#moped", false),
@@ -25,6 +25,10 @@ const links = [
 export default function Bikes() {
   const [width, setWidth] = useState(1000);
   const [mobile, setMobile] = useState(true);
+
+  const title = "Bikes";
+  const img = bikes1;
+
 
   useEffect(() => {
     function handleResize() {
@@ -40,11 +44,10 @@ export default function Bikes() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  return (
+const details = (
     <>
       <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
-        <Banner title={"Motorräder"} img={bikes1}></Banner>
        
 
         <br id="moped"></br>
@@ -114,4 +117,7 @@ export default function Bikes() {
       </Layout>
     </>
   );
+
+  const bikes = { title, img, details };
+  return bikes;
 }

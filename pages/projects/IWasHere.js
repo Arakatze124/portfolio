@@ -1,11 +1,11 @@
 //Components
 import React from "react";
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 import SideLink from "../../components/SideLink";
-import Banner from "../../components/banner";
+import Banner from "../../components/Banner";
 import PinBoard from "../../components/PinBoard";
 import { useState, useEffect } from 'react';
-import Card from "../../components/card";
+import Card from "../../components/Card";
 //CSS
 import "../../styles/default.css";
 //Media 

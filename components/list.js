@@ -12,7 +12,7 @@ export default function List({ data }) {
             <li className="li-parent" key={index}>
               <div className="title4">
                 {part1}
-                <p className="li-item ">{part2}</p>
+                <div className="li-item ">{part2}</div>
               </div>
             </li>
           );

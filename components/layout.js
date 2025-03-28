@@ -23,6 +23,7 @@ export default function Layout({ children, active, sideBarLinks }) {
         setNavBackgroundColor("transparent");
       }
       setLastScrollY(currentScrollY);
+      
     };
 
     window.addEventListener("scroll", handleScroll);

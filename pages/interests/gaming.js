@@ -1,10 +1,10 @@
 //Components
 import React from "react";
 import SideLink from "../../components/SideLink";
-import Card from "../../components/card";
-import Banner from "../../components/banner";
+import Card from "../../components/Card";
+import Banner from "../../components/Banner";
 import List from "../../components/list";
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 //CSS
 import "../../styles/default.css";
 //Media
@@ -23,7 +23,6 @@ export default function Gaming() {
     <>
       <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
-        <Banner title={"Gaming"} img={gaming1}></Banner>
         
 
         <br id="games"></br>

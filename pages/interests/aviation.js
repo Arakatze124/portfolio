@@ -1,8 +1,8 @@
 //Components
 import React from "react";
 import SideLink from "../../components/SideLink";
-import Card from "../../components/card";
-import Banner from "../../components/banner";
+import Card from "../../components/Card";
+import Banner from "../../components/Banner";
 import Link from "next/link";
 //CSS
 import "../../styles/default.css";
@@ -11,7 +11,7 @@ import aviation1 from "../../media/aviation1.jpg";
 import aviation2 from "../../media/aviation2.jpg";
 import aviation3 from "../../media/aviation3.jpg";
 import aviation4 from "../../media/aviation4.jpg";
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 
 const links = [
   new SideLink("Segelflug", "#glider", true),
@@ -20,12 +20,13 @@ const links = [
 ];
 
 export default function Aviation() {
-  return (
+  const title = "Aviation";
+  const img = aviation1;
+  const details = (
     <>
       <Layout active={"interests"} sideBarLinks={links}>
       <div className="grid">
-        <Banner title={"Luft-Raumfahrt"} img={aviation1}></Banner>
-        
+       
 
         <br id="glider"></br>
         <Card
@@ -82,4 +83,6 @@ export default function Aviation() {
       </Layout>
     </>
   );
+
+  return { title, img, details };
 }
