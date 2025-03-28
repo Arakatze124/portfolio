@@ -4,13 +4,13 @@ import CarouselDetail from "./CarouselDetail";
 import CarouselSelector from "./CarouselSelector";
 
 export default function Carousel({items}){
-    const [selectedItem, setSelectedItem] = React.useState(items[0]);
+    const [selectedItem, setSelectedItem] = React.useState();
     
     return (
     
         <>
         <CarouselSelector items={items} setSelectedItem={setSelectedItem}/>
-        <CarouselDetail selectedItem={selectedItem}/>
+        
         </>
         );
     

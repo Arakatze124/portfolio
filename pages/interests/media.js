@@ -3,7 +3,7 @@ import React from "react";
 import SideLink from "../../components/SideLink.js";
 import Card from "../../components/Card.js";
 import Banner from "../../components/Banner.js";
-import List from "../../components/list.js";
+import List from "../../components/List.js";
 //CSS
 import "../../styles/default.css";
 //Media
