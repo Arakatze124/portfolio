@@ -235,6 +235,7 @@ export default function Sports() {
           position={"left"}
           date={"5.8.2023"}
         ></Card>
+{
         /*
         <br id="plan"></br>
         <div className="title3 center gridi-center">Trainingsplan</div>
@@ -244,6 +245,7 @@ export default function Sports() {
           }
         ></Embed>
         */
+}
         <br id="prs"></br>
         <div className="title3 center gridi-center">Personal Records</div>
         <Embed
