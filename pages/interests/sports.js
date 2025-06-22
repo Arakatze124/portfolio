@@ -36,7 +36,7 @@ const links = [
   new SideLink("Skaten", "#skateboarding", true),
   new SideLink("Wakeboarding", "#wakeboarding", true),
   new SideLink("Krafttraining", "#strength", false),
-  new SideLink("Trainingsplan", "#plan", true),
+  new SideLink("Personal Records", "#prs", true),
 ];
 
 export default function Sports() {
@@ -235,7 +235,7 @@ export default function Sports() {
           position={"left"}
           date={"5.8.2023"}
         ></Card>
-
+        /*
         <br id="plan"></br>
         <div className="title3 center gridi-center">Trainingsplan</div>
         <Embed
@@ -243,8 +243,8 @@ export default function Sports() {
             "https://onedrive.live.com/embed?resid=999107596EE3D11B%21156160&authkey=!ACywZ-H57i6egwE&em=2"
           }
         ></Embed>
-
-        <br id="PRs"></br>
+        */
+        <br id="prs"></br>
         <div className="title3 center gridi-center">Personal Records</div>
         <Embed
           url={
