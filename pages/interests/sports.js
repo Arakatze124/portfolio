@@ -227,7 +227,7 @@ export default function Sports() {
               angepasst wird.
               <br/><br/>
               Falls die unten angebotenen Daten nicht reichen, könnt ihr auf meinem <Link target="_blank" href={"https://hevy.com/user/deanus_124"}>Hevy Profil</Link> aktuelle Trainingsdaten ansehen, oder ihr 
-              könnt mich <Link  href={"#contact"}>kontaktieren</Link>.
+              könnt mich <Link  href={"http://opara.at/contact"}>kontaktieren</Link>.
             </p>
           }
           img={null}
