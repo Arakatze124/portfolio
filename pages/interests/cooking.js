@@ -21,7 +21,6 @@ export default function Cooking() {
   const details = 
    (
     <>
-      <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
 
           <br id="cooking"/>
@@ -46,7 +45,7 @@ export default function Cooking() {
             date={"16.7.2024"}
             />
             <Embed url="https://onedrive.live.com/embed?resid=999107596EE3D11B%21240576&authkey=%21ANEI82iSqS5FeyE&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"/>
-      </Layout> 
+     
     </>
   );
   const cooking = { title, img, details};

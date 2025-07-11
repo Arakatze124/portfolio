@@ -9,33 +9,33 @@ import CarouselDetail from "./CarouselDetail";
 import { useEffect } from "react";
 
 export default function CarouselSelector({ items, setSelectedItem }) {
-    const [selected, setSelected] = useState();
+    const [selected, setSelected] = useState(null);
 
-   useEffect(() => {
-         setSelectedItem(items[selected]);
-    
+    useEffect(() => {
+        setSelectedItem(items[selected]);
     }, [selected]);
 
+    const toggleSelected = (index) => {
+        setSelected(prev => prev === index ? null : index);
+    };
 
     return (
-        <div className="carousel">
-            <div className="carousel-selector">
-                {items ? items.map((item, index) => (
-                    <div 
-                        key={index}
-                        className={"carousel-card" + " " + (index === selected ? "selected" : "")}
-                        onMouseOver={() => setSelected(index)}
-                        onClick={() => setSelected(index)}
-                        onMouseOut={() => setSelected(undefined)}
-                    >
+        <div className="carousel-selector">
+            {items?.map((item, index) => (
+                <div
+                    key={index}
+                    className={`carousel-card ${selected === index ? "selected" : ""}`}
+                    onClick={() => toggleSelected(index)}
+                >
+                    <div className="carousel-image-container">
                         <Image className="carousel-img" src={item.img} alt={item.title} />
                         <h3 className="carousel-title">{item.title}</h3>
-                        <div className="carousel-details">
-                            {selected === index && <CarouselDetail selectedItem={item} />}
-                        </div>
                     </div>
-                )) : null}
-            </div>
+                    <div className="carousel-details">
+                        {selected === index && <CarouselDetail selectedItem={item} />}
+                    </div>
+                </div>
+            ))}
         </div>
     );
 }

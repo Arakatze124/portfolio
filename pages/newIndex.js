@@ -7,6 +7,7 @@ import { gsap } from "gsap"
 import Home from "../pages/home"
 import Career from "../pages/career"
 import Interests from "../pages/interests/index"
+import Contact from "../pages/contact"
 
 export default function Index() {
     const [textIndex, setTextIndex] = useState(0)
@@ -43,7 +44,7 @@ export default function Index() {
 
     return(
         <div>
-            <Layout active={"home"}>
+            <Layout active={"home"} withFooter={true}>
                 <Banner
                     img={Home1}
                     title={"Dean Opara"}
@@ -54,6 +55,7 @@ export default function Index() {
                 <Home/>
                 <Career/>
                 <Interests/>
+                <Contact/>
             </Layout>
         </div>
     )

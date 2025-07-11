@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-export default function Layout({ children, active, sideBarLinks }) {
+export default function Layout({ children, active, sideBarLinks, withFooter }) {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [navBackgroundColor, setNavBackgroundColor] = useState("transparent");
   const navbarRef = useRef(null);
@@ -36,7 +36,9 @@ export default function Layout({ children, active, sideBarLinks }) {
         <NavigationBar bgColor={navBackgroundColor} />
       </div>
       <main>{children}</main>
+      {withFooter ? (
       <Footer />
+      ) : null}
     </>
   );
 }

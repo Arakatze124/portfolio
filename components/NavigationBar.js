@@ -13,7 +13,7 @@ export default function NavigationBar() {
   return (
     <>
     <div id="logo">
-      <Link href={"/home"}>
+      <Link href={"#home"}>
         <Image src={logo} alt="Logo" width={50} height={50} />
         </Link>
         </div>
@@ -24,7 +24,7 @@ export default function NavigationBar() {
         
         <ul>
           <li>
-            <Link className="link" href={"#home"}>
+            <Link href={"#home"}>
               Home
             </Link>
           </li>

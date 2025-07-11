@@ -21,10 +21,8 @@ const links = [
 export default function Contact() {
   return (
     <>
-      <Layout sideBarLinks={links} active={"contact"}>
       <div className="grid">
-        <Banner title={"Kontakt"} img={contact1}></Banner>
-
+        <div id="contact" className="title1 center gridi-center">Kontakt</div>
         <div className="flex gridi-center center">
           <div className="center flex-ignore"></div>
 
@@ -36,13 +34,15 @@ export default function Contact() {
             title={"E-Mail"}
           ></Reference>
 
-          <br id="github"></br>
+          {/*          <br id="github"></br>
           <Reference
             title={"Github"}
             text={"Arakatze124"}
             link={"https://github.com/Arakatze124"}
             icon={iconGithub}
-          ></Reference>
+          ></Reference> 
+          */}
+
 
           <br id="instagram"></br>
           <Reference
@@ -53,7 +53,6 @@ export default function Contact() {
           ></Reference>
         </div>
       </div>
-      </Layout>
     </>
   );
 }

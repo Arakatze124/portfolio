@@ -8,7 +8,7 @@
   width: 100%;
   background-color: transparent;
   box-shadow: -2px -2px 5px white, 2px -2px 5px white;
-  z-index: 1;
+  z-index: 1000;
   transition: top 0.3s;
 }
 
@@ -31,7 +31,7 @@
 #logo {
   line-height: 60px;
   font-size: 30px;
-  padding: 5px 50px;
+  margin: 5px 50px;
   display: flex;
   justify-content: center;
   color: white;
@@ -54,7 +54,8 @@
   background-color: black;
   border: transparent 3px solid;
   border-radius: 20px; /* Adjust border-radius for a more traditional look */
-  z-index: 0;
+  z-index: 1001;
+  position: relative; /* Ensure the dropdowns are positioned relative to this */
 }
 
 #container>nav>ul>li {

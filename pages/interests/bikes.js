@@ -46,7 +46,6 @@ export default function Bikes() {
   }, []);
 const details = (
     <>
-      <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
        
 
@@ -114,7 +113,6 @@ const details = (
           </Carousel>
         </div>
       </div>
-      </Layout>
     </>
   );
 

@@ -24,7 +24,6 @@ export default function Aviation() {
   const img = aviation1;
   const details = (
     <>
-      <Layout active={"interests"} sideBarLinks={links}>
       <div className="grid">
        
 
@@ -80,7 +79,6 @@ export default function Aviation() {
           date={"4.7.2024"}
         ></Card>
       </div>
-      </Layout>
     </>
   );
 

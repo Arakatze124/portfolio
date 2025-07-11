@@ -44,7 +44,6 @@ export default function Sports() {
   const img = sports1;
   const details = (
     <>
-      <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
 
         <br id="sports"></br>
@@ -254,7 +253,6 @@ export default function Sports() {
           height={100}
         ></Embed>
       </div>
-      </Layout>
     </>
   );
 
