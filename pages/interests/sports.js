@@ -223,12 +223,11 @@ export default function Sports() {
             <p>
               Seit den Herbstferien 2021 (27.10) trainiere ich fast täglich. Das
               sind bis heute {Math.round(daysDiff)} Tage. Angefangen mit einer
-              App, heute mit selbst erstellten{" "}
-              <Link href={"#plan"}>Trainingsplan</Link> der jeden Monat
-              geupdated wird.
+              App, heute mit selbst erstellten Trainingsplan der laufend
+              angepasst wird.
               <br/><br/>
-              Falls die unten angebotenen Daten nicht reichen, könnt ihr auf meinem <Link target="_blank" href={"https://hevy.com/user/deanus_124"}>Hevy Profil</Link> mehr über mein Training erfahren, oder ihr 
-              könnt mich <Link  href={"#contact"}>kontaktieren</Link> und ich erkläre euch alles.
+              Falls die unten angebotenen Daten nicht reichen, könnt ihr auf meinem <Link target="_blank" href={"https://hevy.com/user/deanus_124"}>Hevy Profil</Link> aktuelle Trainingsdaten ansehen, oder ihr 
+              könnt mich <Link  href={"#contact"}>kontaktieren</Link>.
             </p>
           }
           img={null}
