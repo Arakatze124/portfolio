@@ -48,7 +48,7 @@ export default function Contact() {
           <Reference
             title={"Instagram"}
             text={"deanus_124_"}
-            link={"https://www.instagram.com/deanus_124_/"}
+            link={"https://www.instagram.com/deanus_124/"}
             icon={iconInstagram}
           ></Reference>
         </div>
