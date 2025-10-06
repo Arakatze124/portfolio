@@ -4,12 +4,13 @@
 }
 
 #container {
-  position: relative;
+  position: fixed;
   width: 100%;
   background-color: transparent;
   box-shadow: -2px -2px 5px white, 2px -2px 5px white;
+  top: 0;
+  left: 0;
   z-index: 1000;
-  transition: top 0.3s;
 }
 
 #container.hide {
@@ -37,10 +38,9 @@
   color: white;
   letter-spacing: 2px;
   text-shadow: 2px 2px 5px;
-  position: fixed; /* Make the logo fixed */
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
 }
 
 #container>nav>ul {
@@ -54,7 +54,6 @@
   background-color: black;
   border: transparent 3px solid;
   border-radius: 20px; /* Adjust border-radius for a more traditional look */
-  z-index: 1001;
   position: relative; /* Ensure the dropdowns are positioned relative to this */
 }
 

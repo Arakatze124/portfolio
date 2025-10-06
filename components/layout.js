@@ -12,9 +12,7 @@ export default function Layout({ children, active, sideBarLinks, withFooter }) {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY < lastScrollY || currentScrollY < 50) {
-        gsap.to(navbarRef.current, { y: currentScrollY, duration: 0.1, ease: "power1.out" });
-      } 
+      
       if(currentScrollY > 100){
         //set background to black
         setNavBackgroundColor("black");
@@ -32,9 +30,7 @@ export default function Layout({ children, active, sideBarLinks, withFooter }) {
 
   return (
     <>
-      <div ref={navbarRef}>
-        <NavigationBar bgColor={navBackgroundColor} />
-      </div>
+      <NavigationBar bgColor={navBackgroundColor} />
       <main>{children}</main>
       {withFooter ? (
       <Footer />

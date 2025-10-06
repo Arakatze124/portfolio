@@ -7,7 +7,6 @@
     margin-bottom: 1rem;
     transition: all 0.3s ease;
     cursor: pointer;
-    z-index: 0;
 }
 
 .carousel-card.selected {
@@ -44,6 +43,10 @@
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 0 1rem;
+}
+
+.carousel-selector {
+    isolation: isolate;
 }
 
 .carousel-details {
