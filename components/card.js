@@ -97,34 +97,22 @@ export default function Card({ title, text, img, position, date }) {
           <div id={`section-${cardId}`} className="center title3">
             {title}
           </div>
+          <div className="date-simple">
+            {date}
+          </div>
         </>
       );
     }
     return (
-      <div >
+      <div>
         <div>
           <div id={`section-${cardId}`} className="center title3">
             {title}
           </div>
           <div className="text-container">{text}</div>
         </div>
-        <span
-          className="timestamp material-symbols-outlined"
-          onMouseEnter={() => {
-            document.getElementById(`date-${cardId}`).style.display = "block";
-          }}
-          onMouseLeave={() => {
-            document.getElementById(`date-${cardId}`).style.display = "none";
-          }}
-        >
-          today
-        </span>
-        <div
-          id={`date-${cardId}`}
-          className="date"
-          style={{ position: "absolute", bottom: 0, right: 0, display: "none" }}
-        >
-          Verfasst am {date}
+        <div className="date-simple">
+          {date}
         </div>
       </div>
     );
