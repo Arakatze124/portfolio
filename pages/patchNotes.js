@@ -16,6 +16,8 @@ import patchNotes1 from "../media/patchNotes1.jpg";
 import {Siemreap} from "next/dist/compiled/@next/font/dist/google";
 
 const links = [
+    new SideLink("Version: 4", "#4.0", false),
+    new SideLink("4.0", "#4.0", true),
     new SideLink("Version: 3", "#3.1", false),
     new SideLink("3.3", "#3.3", true),
     new SideLink("3.2", "#3.2", true),
@@ -34,7 +36,22 @@ export default function PatchNotes() {
       <>
       <Layout sideBarLinks={links} >
       <div className="grid">
-          <Banner title={"Patch Notes"} img={patchNotes1}></Banner>
+   
+            <br id="4.0"></br>
+            <Card
+                title={"Version 4.0"}
+                text={<List
+                    data={[
+                        "Single Page Application",
+                        "Video als Banner",
+                        "Ein paar Animationen",
+                        "Eine neue Navbar",
+                        "Content Änderungen",
+                        "Ein neues Interessen Menü"
+                    ]}></List>}
+                img={null}
+                date={"1.6.2024"}
+            ></Card>
           
           <br id="3.3"></br>
             <Card

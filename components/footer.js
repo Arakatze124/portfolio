@@ -15,7 +15,7 @@ export default function Footer() {
       </div>
       <div>
         <Link className="white" href={"/patchNotes"}>
-          Version: 3.3
+          Version: 4.0
         </Link>
       </div>
 
