@@ -1,16 +1,12 @@
 //Components
 import React from "react";
 import SideLink from "../components/SideLink";
-import Banner from "../components/Banner";
-import Layout from "../components/Layout";
 //CSS
 import "../styles/default.css";
 //Media
-import contact1 from "../media/contact1.jpg";
 import Reference from "../components/reference";
 import iconMail from "../media/iconMail.png";
 import iconInstagram from "../media/iconInstagram.png";
-import iconGithub from "../media/iconGithub.png";
 
 const links = [
   new SideLink("E-Mail", "#mail", false),

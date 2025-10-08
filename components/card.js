@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import "../styles/default.css";
 import "../styles/card.css";
-import { faL } from "@fortawesome/free-solid-svg-icons";
 
 export default function Card({ title, text, img, position, date }) {
   const [width, setWidth] = useState(1000);
