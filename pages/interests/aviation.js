@@ -1,8 +1,8 @@
 //Components
 import React from "react";
 import SideLink from "../../components/SideLink";
-import Card from "../../components/Card";
-import Banner from "../../components/Banner";
+import Card from "../../components/card";
+import Banner from "../../components/banner";
 import Link from "next/link";
 //CSS
 import "../../styles/default.css";
@@ -11,7 +11,7 @@ import aviation1 from "../../media/aviation1.jpg";
 import aviation2 from "../../media/aviation2.jpg";
 import aviation3 from "../../media/aviation3.jpg";
 import aviation4 from "../../media/aviation4.jpg";
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout";
 
 const links = [
   new SideLink("Segelflug", "#glider", true),
@@ -19,14 +19,12 @@ const links = [
   new SideLink("Luftstreitkämpfe", "#military", true),
 ];
 
-export default function Aviation() {
+export function getData() {
   const title = "Aviation";
   const img = aviation1;
   const details = (
     <>
       <div className="grid">
-       
-
         <br id="glider"></br>
         <Card
           title={"Segelflug"}
@@ -43,7 +41,7 @@ export default function Aviation() {
           img={aviation4}
           position={"left"}
           date={"25.7.2023"}
-        ></Card>
+        />
 
         <br id="space"></br>
         <Card
@@ -59,28 +57,31 @@ export default function Aviation() {
           img={aviation3}
           position={"right"}
           date={"25.7.2023"}
-        ></Card>
+        />
 
         <br id="military"></br>
         <Card
           title={"Luftstreitkräfte"}
           text={
             <p>
-              Gleich vorweg möchte ich klarstellen, dass ich absolut kein Fan von 
-              Krieg und Gewalt bin. Allerdings bin ich fasziniert von der Technik 
-              rund um Kampfjets. Was mich wirklich begeistert ist die Höhe, die Schnellichkeit und 
-              einfach das Gefühl von Freiheit. Und für steht klar, dass Kampfflugzeuge eben um ein vielfaches 
-              cooler sind als Passagierflugzeuge. Und auch wenn ich gern eine Karriere in der Luftfahrt
-              anstreben würde, werde ich das nicht können wenn es nicht mit meinem ethnischen Werten übereinstimmt.
+              Gleich vorweg möchte ich klarstellen, dass ich absolut kein Fan von
+              Krieg und Gewalt bin. Allerdings bin ich fasziniert von der
+              Technik rund um Kampfjets. Was mich wirklich begeistert ist die
+              Höhe, die Schnellichkeit und einfach das Gefühl von Freiheit.
             </p>
           }
           img={aviation2}
           position={"left"}
           date={"4.7.2024"}
-        ></Card>
+        />
       </div>
     </>
   );
 
   return { title, img, details };
+}
+
+export default function AviationPage() {
+  const data = getData();
+  return <Layout sideBarLinks={links} active={"interests"}>{data.details}</Layout>;
 }

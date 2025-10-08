@@ -1,10 +1,10 @@
 //Components
 import React from "react";
 import SideLink from "../../components/SideLink";
-import Card from "../../components/Card";
-import Banner from "../../components/Banner";
-import List from "../../components/List";
-import Layout from "../../components/Layout";
+import Card from "../../components/card";
+import Banner from "../../components/banner";
+import List from "../../components/list";
+import Layout from "../../components/layout";
 //CSS
 import "../../styles/default.css";
 //Media

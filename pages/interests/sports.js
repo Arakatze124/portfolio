@@ -1,11 +1,11 @@
 //Components
 import React from "react";
 import SideLink from "../../components/SideLink.js";
-import Card from "../../components/Card.js";
-import Banner from "../../components/Banner.js";
+import Card from "../../components/card.js";
+import Banner from "../../components/banner.js";
 import Link from "next/link";
 import Embed from "../../components/embed.js";
-import Layout from "../../components/Layout.js";
+import Layout from "../../components/layout.js";
 //CSS
 import "../../styles/default.css";
 //Media
@@ -39,7 +39,7 @@ const links = [
   new SideLink("Trainingsplan", "#plan", true),
 ];
 
-export default function Sports() {
+export function getData() {
   const title = "Sports";
   const img = sports1;
   const details = (
@@ -258,4 +258,9 @@ export default function Sports() {
 
   const sports = { title, img, details };
   return sports;
+}
+
+export default function SportsPage() {
+  const data = getData();
+  return <Layout sideBarLinks={links} active={"interests"}>{data.details}</Layout>;
 }

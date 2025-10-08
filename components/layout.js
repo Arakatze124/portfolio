@@ -1,6 +1,6 @@
 import NavigationBar from "./NavigationBar";
 import Sidebar from "./SideBar";
-import Footer from "./Footer";
+import Footer from "./footer";
 import { useState, useEffect, useRef } from "react";
 
 export default function Layout({ children, active, sideBarLinks, withFooter }) {

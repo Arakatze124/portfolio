@@ -1,16 +1,16 @@
 //Components
 import React from "react";
 import SideLink from "../../components/SideLink.js";
-import Card from "../../components/Card.js";
-import Banner from "../../components/Banner.js";
-import List from "../../components/List.js";
+import Card from "../../components/card.js";
+import Banner from "../../components/banner.js";
+import List from "../../components/list.js";
 //CSS
 import "../../styles/default.css";
 //Media
 import media1 from "../../media/media1.jpg";
 import media2 from "../../media/media2.png";
 import media3 from "../../media/media3.jpg";
-import Layout from "../../components/Layout.js";
+import Layout from "../../components/layout.js";
 
 const links = [
   new SideLink("Musik", "#music", false),
@@ -21,11 +21,10 @@ const links = [
     new SideLink("Bücher", "#books", false),
 ];
 
-export default function Media() {
+export function getData() {
     const title = "Media";
     const img = media1;
-    const details = 
-  (
+    const details = (
     <>
         <div className="grid">
 
@@ -147,8 +146,13 @@ export default function Media() {
                 date={"4.7.2024"}
             ></Card>
         </div>
-    </>
-  );
+        </>
+    );
     const media = { title, img, details };
     return media;
+}
+
+export default function MediaPage() {
+    const data = getData();
+    return <Layout sideBarLinks={links} active={"interests"}>{data.details}</Layout>;
 }

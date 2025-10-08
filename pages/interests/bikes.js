@@ -1,8 +1,8 @@
 //Components
-import React, { useEffect, useState } from "react";
+import React from "react";
 import SideLink from "../../components/SideLink";
-import Card from "../../components/Card";
-import Banner from "../../components/Banner";
+import Card from "../../components/card";
+import Banner from "../../components/banner";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
@@ -14,7 +14,7 @@ import bikes2 from "../../media/bikes2.jpg";
 import bikes3 from "../../media/bikes3.jpg";
 import bikes4 from "../../media/bikes4.jpg";
 import bikes5 from "../../media/bikes5.jpg";
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout";
 
 const links = [
   new SideLink("Moped", "#moped", false),
@@ -22,28 +22,12 @@ const links = [
   new SideLink("Gallerie", "#gallerie", false),
 ];
 
-export default function Bikes() {
-  const [width, setWidth] = useState(1000);
-  const [mobile, setMobile] = useState(true);
+export function getData() {
+  const width = 1000;
+  const mobile = false;
 
   const title = "Bikes";
   const img = bikes1;
-
-
-  useEffect(() => {
-    function handleResize() {
-      const newWidth = document.body.clientWidth;
-      setWidth(newWidth);
-      setMobile(newWidth < 769);
-    }
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 const details = (
     <>
       <div className="grid">
@@ -118,4 +102,9 @@ const details = (
 
   const bikes = { title, img, details };
   return bikes;
+}
+
+export default function BikesPage() {
+  const data = getData();
+  return <Layout sideBarLinks={links} active={"interests"}>{data.details}</Layout>;
 }

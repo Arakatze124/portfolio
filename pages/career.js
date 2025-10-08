@@ -1,9 +1,9 @@
 //Components
 import React from "react";
 import SideLink from "../components/SideLink";
-import Card from "../components/Card";
+import Card from "../components/card";
 import Link from "next/link";
-import List from "../components/List";
+import List from "../components/list";
 //CSS
 import "../styles/default.css";
 //Images

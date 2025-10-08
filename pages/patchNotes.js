@@ -3,10 +3,10 @@ import React from "react";
 import NavigationBar from "../components/NavigationBar";
 import SideBar from "../components/SideBar";
 import SideLink from "../components/SideLink";
-import Footer from "../components/Footer";
-import Card from "../components/Card";
-import Banner from "../components/Banner";
-import Layout from "../components/Layout";
+import Footer from "../components/footer";
+import Card from "../components/card";
+import Banner from "../components/banner";
+import Layout from "../components/layout";
 //CSS
 import "../styles/default.css";
 import "../styles/sideBar.css";
