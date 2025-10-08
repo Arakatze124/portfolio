@@ -2,7 +2,6 @@ import NavigationBar from "./NavigationBar";
 import Sidebar from "./SideBar";
 import Footer from "./Footer";
 import { useState, useEffect, useRef } from "react";
-import { gsap } from "gsap";
 
 export default function Layout({ children, active, sideBarLinks, withFooter }) {
   const [lastScrollY, setLastScrollY] = useState(0);

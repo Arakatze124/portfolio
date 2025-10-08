@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import "../styles/default.css";
 import "../styles/banner.css";
-import { gsap } from "gsap";
 
 const Banner = ({ img, title, subtitle, titleRef, subtitleRef }) => {
   const [width, setWidth] = useState(1000);

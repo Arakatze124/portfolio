@@ -8,7 +8,7 @@ import List from "../../components/List.js";
 import "../../styles/default.css";
 //Media
 import media1 from "../../media/media1.jpg";
-import media2 from "../../media/media2.jpg";
+import media2 from "../../media/media2.png";
 import media3 from "../../media/media3.jpg";
 import Layout from "../../components/Layout.js";
 
