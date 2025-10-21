@@ -22,17 +22,17 @@ export default function Root() {
   }
 
   const items = [
-    resolve(Animals),
-    resolve(Aviation),
-    resolve(Bikes),
-    resolve(Cooking),
-    resolve(Media),
+    //resolve(Animals),
     resolve(Sports),
+    resolve(Bikes),
+    //resolve(Cooking),
+    resolve(Media),
+    resolve(Aviation),
   ].filter(Boolean);
    
     return (
         <>
-      <div id="interests" className="title1 center gridi-center">Interests</div>
+      <div id="interests" className="title1 center gridi-center">Interessen</div>
           <Carousel items={items}/>
         </>
     );

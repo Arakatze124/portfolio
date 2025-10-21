@@ -36,6 +36,19 @@ export default function PatchNotes() {
       <>
       <Layout sideBarLinks={links} >
       <div className="grid">
+
+        <br id="4.1"></br>
+        <Card
+            title={"Version 4.1"}
+            text={<List
+                data={[
+                    "Erfahrung angepasst",
+                    "Ausbildung angepasst",
+                    "Medien angepasst",
+                    "Motorräder angepasst",
+                    "Sport angepasst",
+                ]}></List>}
+        ></Card>
    
             <br id="4.0"></br>
             <Card

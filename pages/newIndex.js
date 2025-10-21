@@ -21,7 +21,6 @@ export default function Index() {
         "Student",
         "Musician",
         "Biker",
-    
     ]
     
 

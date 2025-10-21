@@ -73,7 +73,7 @@ const details = (
           position={"left"}
           date={"4.7.2024"}
           />
-
+        {/*
         <br id="gallerie"></br>
         <div className="title2 center gridi-center">Gallerie</div>
         <div className="center gridi-center carousel">
@@ -95,8 +95,12 @@ const details = (
               <Image src={bikes3} width={width}></Image>
             </div>
           </Carousel>
+        
+      
+        */}
         </div>
-      </div>
+
+
     </>
   );
 

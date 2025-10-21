@@ -33,21 +33,18 @@ export function getData() {
             
             <br id="consumption"></br>
             <Card
-                title={"Konsum"}
+                title={"Musik hören"}
                 text={
                     <p>
-                        Es vergeht kein Tag an dem ich nicht Musik hör, und ich würde auch
-                        keinen ohne überleben. Musik ist mir extrem wichtig und ich höre
-                        sie so ziemlich die ganze Zeit. <br></br>
+                        Musik hat eine große Bedeutung in meinem Leben und einen starken Einfluss auf meine Stimmung.
                         <br></br>Sich für ein Lieblingslied zu entscheiden ist für mich
-                        unmöglich, deshalb habe ich eine Playlist mit Liedern erstellt,
-                        die für mich auf verschiedene Art und Weise gut sind.
-                        Hauptsächlich besteht die Playlist aus Indie Rock, meist leicht melancholisch.
+                        unmöglich, es kommt ganz auf die Situation an.
                     </p>
                 }
                 img={null}
-                date={"24.7.2023"}
+                date={"21.10.2025"}
             ></Card>
+           {/*
             <div className="center gridi-center ">
                 <iframe
                     src="https://open.spotify.com/embed/playlist/3CLwuiZhshnmVHvyAz1pF5?utm_source=generator&theme=0"
@@ -59,25 +56,23 @@ export function getData() {
                     loading="lazy"
                 ></iframe>
             </div>
+            */}
 
             <br id="production"></br>
             <Card
-                title={"Produktion"}
+                title={"Gitarre & Klavier"}
                 text={
                     <p>
-                        Mit meinem großen Konsum von Musik kommt das Bedürfnis mit, selbst
-                        etwas zu produzieren. Nicht falsch verstehen, ich komponiere
-                        (jedenfalls noch) keine eigenen Songs. Ich möchte nur in der Lage
-                        sein meine Lieblingslieder auf einem Instrument spielen zu können.
+                        Neben Sport schafft Musik für mich einen guten Ausgleich und Entspannung. Deshalb habe ich
+                        angefangen, Gitarre zu lernen. Dabei hat sich das Interesse von Solos in Richtung Akkorden entwickelt.
+                    
                         <br></br>
+                        Daher sich mein Geschmack auch auf das Klavier ausweitet, habe ich damit auch begonnen.
                         <br></br>
-                        Seit August 2023 spiele ich E-Gitarre. Ich schon die ein oder
-                        anderen einfachen Songs spielen. So konnte ich, zum Beispiel,
-                        eines meiner Lieblingslieder, Freaks, ohne große Probleme spielen.
                     </p>
                 }
                 img={media2}
-                date={"3.9.2023"}
+                date={"21.10.2025"}
             ></Card>
 
             <br id="movies"></br>
@@ -86,33 +81,17 @@ export function getData() {
                 title={"Filme und Serien"}
                 text={
                     <p>
-                        Wenn es nur hin und wieder wäre, würde ich diesen Punkt nicht
-                        auflisten. Denn Fakt ist, das ich jedentag zumindest eine Folge
-                        oder einen Film schaue. Ich liebe es, wenn dich etwas so in den
-                        Bann reißt, das du Raum und Zeit vergisst und in einer ganz
+                        Wenn der Alltag mal eine Pause gönnt, genieße ich es, in die Welt der Filme und Serien einzutauchen. Ich liebe es, wenn dich etwas so in den
+                        Bann reißt, dass du Raum und Zeit vergisst und in einer ganz
                         anderen Welt bist. <br></br>
-                        <br></br>Hier ein paar meiner Favoriten:
-                        <List
-                            data={[
-                                "Serien:",
-                                "The Boys",
-                                "Haus des Geldes",
-                                "Sword Art Online",
-                                "Filme:",
-                                "Interstellar",
-                                "Tenet",
-                                "Inception",
-                                "Whiplash",
-                                "The Truman Show",
-                            ]}
-                        ></List>
                     </p>
                 }
                 img={null}
-                date={"9.8.2023"}
+                date={"21.10.2025"}
             ></Card>
             <br id="pictures"></br>
 
+            {/*
             <div className="title2 center gridi-center">Fotos/Videos</div>
             <Card
                 title={"Fotos/Videos"}
@@ -145,6 +124,8 @@ export function getData() {
                 img={null}
                 date={"4.7.2024"}
             ></Card>
+
+            */}
         </div>
         </>
     );

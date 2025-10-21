@@ -11,7 +11,7 @@ import Kaindorf1 from "../media/kaindorf1.jpg";
 import pmsdobl1 from "../media/pmsdobl1.jpg";
 import vslannach1 from "../media/vslannach1.jpg";
 import career7 from "../media/career7.png";
-import career8 from "../media/career8.png";
+import career8 from "../media/Spark7.jpeg";
 
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
@@ -68,24 +68,17 @@ function Career() {
           date={"20.10.2023"}
         ></Card>
 
-        <br id="k&oe"></br>
+        <br id="spark7"></br>
         <Card
-          title={"Kastner & Öhler"}
+          title={"Spark7 Markebotschafter"}
           text={
             <p>
-              Im November, 2022, habe ich im Bereich der Warenkomission
-              geringfügig bis Jänner nächsten Jahres bei{" "}
-              <Link href={"https://www.kastner-oehler.at"} target="_blank">
-                Kastner & Öhler
-              </Link>{" "}
-              gearbeitet. Dort habe ich dafür gesorgt, dass die bestellte Ware
-              so schnell wie möglich zu der Versandstation gebracht wird, um
-              unseren Kunden eine kurze Wartezeit zu bereiten.
+              Seit August 2025 darf ich für Spark7 freiberuflich als Markebotschafter agieren. Dabei konnte ich in einer völlig anderen Branche Fuß fassen und
+              vor der Kamera arbeiten.
             </p>
           }
-          img={career8}
           position={"left"}
-          date={"3.8.2023"}
+          date={"21.10.2025"}
         ></Card>
 
        {/* 
@@ -170,7 +163,7 @@ function Career() {
         ></Card>
           */}
         <br id="schools"></br>
-        <div className="center title2 gridi-center">Schulen</div>
+        <div className="center title2 gridi-center">Ausbildung</div>
 
         <br id="htlKaindorf"></br>
         <br></br>
@@ -184,69 +177,15 @@ function Career() {
               </Link>{" "}
               ist der aktuelle Ort meiner Ausbildung. Da ich den Fachbereicht
               Informatik gewählt habe, lerne ich dort einige Themenbezogene
-              Gegenstände. Außerdem bin ich Abteilungssprecher meines Bereichs. Mehr zu den Lehrinhalten{" "}
-              <b>
-                <Link
-                  href={"https:www.htl-kaindorf.at/abteilungen/informatik"}
-                  target="_blank"
-                >
-                  hier
-                </Link>
-              </b>
-              , zusätzlich dazu besuche ich den Freigegenstand Spanisch, der es mir ermöglichte, eine Traumhafte Reise nach Barcelona zu machen
+              Gegenstände. Ich habe schon vieles gelernt, durfte sowohl als Abteilungssprecher, als auch stv. Schulsprecher agieren. Zusätzlich dazu besuche ich den Freigegenstand Spanisch und das Wahlfplichtfach Entrepreneurship.
               <br></br>
               <br></br> Meine Ausblidung habe ich 2021 begonnen und befinde mich
-              demnach im {schoolYear}ten Schuljahr.
+              demnach in der Maturaklasse.
             </p>
           }
           img={Kaindorf1}
           position={"left"}
-          date={"4.7.2024"}
-        ></Card>
-
-        <br id="pmsDobl"></br>
-        <Card
-          title={"PMS Dobl"}
-          text={
-            <p>
-              Die{" "}
-              <Link href={"https://www.pms-dobl.at/"} target="_blank">
-                Private Mittelschule in Dobl
-              </Link>{" "}
-              ist die Schule des Schulvereins der Barmherzigen Schwestern
-              Schloss Dobl. <br></br>
-              <br></br> In dieser Schule haben einige meiner jetzigen Hobbys
-              ihren Platz in meinem Leben gefunden. So zum Beispiel habe ich den
-              Freigegenstand Akrobatik besucht welcher mich später zu Parcour
-              brachte oder der Beitritt des Chor, wessen ich zwar wieder
-              zurückgezogen habe, aber Musik immernoch ein großer Teil meines
-              Lebens geblieben ist.
-            </p>
-          }
-          img={pmsdobl1}
-          position={"right"}
-          date={"13.7.2023"}
-        ></Card>
-
-        <br id="vsLannach"></br>
-        <Card
-          title={"VS Lannach"}
-          text={
-            <p>
-              Die{" "}
-              <Link href={"https://www.vs-lannach.at/"} target="_blank">
-                Volksschule Lannach
-              </Link>
-              . Nun, über die Volksschule kann man ja wohl nicht viel sagen
-              oder? Ich war ein sehr aufgedrehtes Kind, hab den Unterricht
-              gestört, bin auf Sachen geklettert auf die ich nicht hoch durfte
-              und so weiter ... Ich hab meine jungen Jahre voll und ganz
-              ausgelebt.
-            </p>
-          }
-          img={vslannach1}
-          position={"left"}
-          date={"13.7.2023"}
+          date={"21.10.2025"}
         ></Card>
 
         <br></br>

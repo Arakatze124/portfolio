@@ -223,9 +223,7 @@ export function getData() {
             <p>
               Seit den Herbstferien 2021 (27.10) trainiere ich fast täglich. Das
               sind bis heute {Math.round(daysDiff)} Tage. Angefangen mit einer
-              App, heute mit selbst erstellten{" "}
-              <Link href={"#plan"}>Trainingsplan</Link> der jeden Monat
-              geupdated wird.
+              App, heute mit selbst erstellten Trainingsplan.
               <br/><br/>
               Falls die unten angebotenen Daten nicht reichen, könnt ihr auf meinem <Link target="_blank" href={"https://hevy.com/user/deanus_124"}>Hevy Profil</Link> mehr über mein Training erfahren, oder ihr 
               könnt mich <Link  href={"#contact"}>kontaktieren</Link> und ich erkläre euch alles.
@@ -236,22 +234,7 @@ export function getData() {
           date={"5.8.2023"}
         ></Card>
 
-        <br id="plan"></br>
-        <div className="title3 center gridi-center">Trainingsplan</div>
-        <Embed
-          url={
-            "https://onedrive.live.com/embed?resid=999107596EE3D11B%21156160&authkey=!ACywZ-H57i6egwE&em=2"
-          }
-        ></Embed>
-
-        <br id="PRs"></br>
-        <div className="title3 center gridi-center">Personal Records</div>
-        <Embed
-          url={
-            "https://onedrive.live.com/embed?resid=999107596EE3D11B%21253528&authkey=%21ANHLvzxQ9xwfZqQ&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"
-          }
-          height={100}
-        ></Embed>
+     
       </div>
     </>
   );
