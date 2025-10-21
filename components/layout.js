@@ -1,3 +1,4 @@
+import Head from "next/head";
 import NavigationBar from "./NavigationBar";
 import Sidebar from "./SideBar";
 import Footer from "./footer";
@@ -29,6 +30,11 @@ export default function Layout({ children, active, sideBarLinks, withFooter }) {
 
   return (
     <>
+      <Head>
+        <title>Dean Opara - Athlet und Software-Developer</title>
+        <meta name="description" content="Diese Website ist über Dean Opara, ein junger österreichischer Software Entwickler und Athlet." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <NavigationBar bgColor={navBackgroundColor} />
       <main>{children}</main>
       {withFooter ? (
