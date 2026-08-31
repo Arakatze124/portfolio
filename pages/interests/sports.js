@@ -226,7 +226,7 @@ export default function Sports() {
               App, heute mit selbst erstellten Trainingsplan der laufend
               angepasst wird.
               <br/><br/>
-              Falls die unten angebotenen Daten nicht reichen, könnt ihr auf meinem <Link target="_blank" href={"https://hevy.com/user/deanus_124"}>Hevy Profil</Link> aktuelle Trainingsdaten ansehen, oder ihr 
+              Falls die unten angebotenen Daten nicht reichen, könnt ihr auf meinem <Link target="_blank" href={"https://hevy.com/user/deanus_124"}>Hevy Profil</Link> aktuelle Trainingsdaten ansehen, oder ihr
               könnt mich <Link  href={"http://opara.at/contact"}>kontaktieren</Link>.
             </p>
           }
