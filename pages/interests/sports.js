@@ -36,7 +36,7 @@ const links = [
   new SideLink("Skaten", "#skateboarding", true),
   new SideLink("Wakeboarding", "#wakeboarding", true),
   new SideLink("Krafttraining", "#strength", false),
-  new SideLink("Trainingsplan", "#plan", true),
+  new SideLink("Personal Records", "#prs", true),
 ];
 
 export function getData() {
@@ -225,8 +225,8 @@ export function getData() {
               sind bis heute {Math.round(daysDiff)} Tage. Angefangen mit einer
               App, heute mit selbst erstellten Trainingsplan.
               <br/><br/>
-              Falls die unten angebotenen Daten nicht reichen, könnt ihr auf meinem <Link target="_blank" href={"https://hevy.com/user/deanus_124"}>Hevy Profil</Link> mehr über mein Training erfahren, oder ihr 
-              könnt mich <Link  href={"#contact"}>kontaktieren</Link> und ich erkläre euch alles.
+              Falls die unten angebotenen Daten nicht reichen, könnt ihr auf meinem <Link target="_blank" href={"https://hevy.com/user/deanus_124"}>Hevy Profil</Link> aktuelle Trainingsdaten ansehen, oder ihr
+              könnt mich <Link  href={"http://opara.at/contact"}>kontaktieren</Link>.
             </p>
           }
           img={null}
