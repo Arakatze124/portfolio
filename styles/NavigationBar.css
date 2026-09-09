@@ -161,3 +161,33 @@ a {
     right: auto;
   }
 }
+.lang-switcher {
+  color: white;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.35rem;
+  padding-left: 0.8rem;
+}
+
+.lang-switcher button {
+  border: 1px solid #fff;
+  background: transparent;
+  color: white;
+  padding: 0.2rem 0.45rem;
+  cursor: pointer;
+}
+
+.lang-switcher .lang-active {
+  background: #009607;
+}
+
+@media (max-width: 660px) {
+  .lang-switcher {
+    font-size: 0.8em;
+    padding-left: 0.4rem;
+  }
+
+  .lang-switcher button {
+    padding: 0.15rem 0.3rem;
+  }
+}

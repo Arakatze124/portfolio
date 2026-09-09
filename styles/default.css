@@ -268,3 +268,55 @@ img {
   }
 
 }
+.stats-list {
+  margin-left: 2rem;
+}
+
+.stats-list li {
+  margin-bottom: 0.4rem;
+  font-size: 1.3vmax;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+  margin: 1rem 0;
+}
+
+.services-photo {
+  border: 2px solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.active-photo {
+  border-color: #009607;
+}
+
+.service-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0.8rem 0;
+}
+
+.service-form input,
+.service-form textarea {
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+.service-cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #009607;
+}
+
+@media (max-width: 768px) {
+  .stats-list li {
+    font-size: 2.1vmax;
+  }
+}
