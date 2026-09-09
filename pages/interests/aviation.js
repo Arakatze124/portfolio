@@ -19,14 +19,12 @@ const links = [
   new SideLink("Luftstreitkämpfe", "#military", true),
 ];
 
-export default function Aviation() {
-  return (
+export function getData() {
+  const title = "Aviation";
+  const img = aviation1;
+  const details = (
     <>
-      <Layout active={"interests"} sideBarLinks={links}>
       <div className="grid">
-        <Banner title={"Luft-Raumfahrt"} img={aviation1}></Banner>
-        
-
         <br id="glider"></br>
         <Card
           title={"Segelflug"}
@@ -43,7 +41,7 @@ export default function Aviation() {
           img={aviation4}
           position={"left"}
           date={"25.7.2023"}
-        ></Card>
+        />
 
         <br id="space"></br>
         <Card
@@ -59,27 +57,31 @@ export default function Aviation() {
           img={aviation3}
           position={"right"}
           date={"25.7.2023"}
-        ></Card>
+        />
 
         <br id="military"></br>
         <Card
           title={"Luftstreitkräfte"}
           text={
             <p>
-              Gleich vorweg möchte ich klarstellen, dass ich absolut kein Fan von 
-              Krieg und Gewalt bin. Allerdings bin ich fasziniert von der Technik 
-              rund um Kampfjets. Was mich wirklich begeistert ist die Höhe, die Schnellichkeit und 
-              einfach das Gefühl von Freiheit. Und für steht klar, dass Kampfflugzeuge eben um ein vielfaches 
-              cooler sind als Passagierflugzeuge. Und auch wenn ich gern eine Karriere in der Luftfahrt
-              anstreben würde, werde ich das nicht können wenn es nicht mit meinem ethnischen Werten übereinstimmt.
+              Gleich vorweg möchte ich klarstellen, dass ich absolut kein Fan von
+              Krieg und Gewalt bin. Allerdings bin ich fasziniert von der
+              Technik rund um Kampfjets. Was mich wirklich begeistert ist die
+              Höhe, die Schnellichkeit und einfach das Gefühl von Freiheit.
             </p>
           }
           img={aviation2}
           position={"left"}
           date={"4.7.2024"}
-        ></Card>
+        />
       </div>
-      </Layout>
     </>
   );
+
+  return { title, img, details };
+}
+
+export default function AviationPage() {
+  const data = getData();
+  return <Layout sideBarLinks={links} active={"interests"}>{data.details}</Layout>;
 }

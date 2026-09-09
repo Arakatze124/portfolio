@@ -5,6 +5,7 @@ import Card from "../../components/card.js";
 import Banner from "../../components/banner.js";
 import Link from "next/link";
 import Embed from "../../components/embed.js";
+import Layout from "../../components/layout.js";
 //CSS
 import "../../styles/default.css";
 //Media
@@ -17,7 +18,6 @@ import sports6 from "../../media/sports6.gif";
 import sports7 from "../../media/sports7.gif";
 import sports8 from "../../media/sports8.jpg";
 import football1 from "../../media/football1.jpg";
-import Layout from "../../components/layout.js";
 
 const currentDate = new Date();
 const october21 = new Date("2021-10-21");
@@ -39,12 +39,12 @@ const links = [
   new SideLink("Personal Records", "#prs", true),
 ];
 
-export default function Sports() {
-  return (
+export function getData() {
+  const title = "Sports";
+  const img = sports1;
+  const details = (
     <>
-      <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
-        <Banner title={"Sport"} img={sports1}></Banner>
 
         <br id="sports"></br>
         <div className="title2 center gridi-center">Sportarten</div>
@@ -223,8 +223,7 @@ export default function Sports() {
             <p>
               Seit den Herbstferien 2021 (27.10) trainiere ich fast täglich. Das
               sind bis heute {Math.round(daysDiff)} Tage. Angefangen mit einer
-              App, heute mit selbst erstellten Trainingsplan der laufend
-              angepasst wird.
+              App, heute mit selbst erstellten Trainingsplan.
               <br/><br/>
               Falls die unten angebotenen Daten nicht reichen, könnt ihr auf meinem <Link target="_blank" href={"https://hevy.com/user/deanus_124"}>Hevy Profil</Link> aktuelle Trainingsdaten ansehen, oder ihr
               könnt mich <Link  href={"http://opara.at/contact"}>kontaktieren</Link>.
@@ -234,27 +233,17 @@ export default function Sports() {
           position={"left"}
           date={"5.8.2023"}
         ></Card>
-{
-        /*
-        <br id="plan"></br>
-        <div className="title3 center gridi-center">Trainingsplan</div>
-        <Embed
-          url={
-            "https://onedrive.live.com/embed?resid=999107596EE3D11B%21156160&authkey=!ACywZ-H57i6egwE&em=2"
-          }
-        ></Embed>
-        */
-}
-        <br id="prs"></br>
-        <div className="title3 center gridi-center">Personal Records</div>
-        <Embed
-          url={
-            "https://onedrive.live.com/embed?resid=999107596EE3D11B%21253528&authkey=%21ANHLvzxQ9xwfZqQ&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"
-          }
-          height={100}
-        ></Embed>
+
+     
       </div>
-      </Layout>
     </>
   );
+
+  const sports = { title, img, details };
+  return sports;
+}
+
+export default function SportsPage() {
+  const data = getData();
+  return <Layout sideBarLinks={links} active={"interests"}>{data.details}</Layout>;
 }

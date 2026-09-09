@@ -4,12 +4,10 @@ import React from "react";
 import Image from "next/image";
 import "../styles/default.css";
 import "../styles/card.css";
-import { faL } from "@fortawesome/free-solid-svg-icons";
 
 export default function Card({ title, text, img, position, date }) {
   const [width, setWidth] = useState(1000);
   const [mobile, setMobile] = useState(true);
-
   useEffect(() => {
     function handleResize() {
       const newWidth = document.body.clientWidth;
@@ -33,7 +31,7 @@ export default function Card({ title, text, img, position, date }) {
       <>
         <div
           className={
-            img == (null || undefined) ? "card gridi-center" : "grid2 card gridi-center"
+            (img == (null || undefined) || text == (null || undefined)) ? "card gridi-center" : "grid2 card gridi-center"
           }
         >
           {buildImage(img, width)}
@@ -46,7 +44,7 @@ export default function Card({ title, text, img, position, date }) {
       <>
         <div
           className={
-            img == (null || undefined) ? "card gridi-center" : "grid2 card gridi-center"
+            (img == (null || undefined) || text == (null || undefined)) ? "card gridi-center" : "grid2 card gridi-center"
           }
         >
           {buildImage(img, imgWidth)}
@@ -60,7 +58,7 @@ export default function Card({ title, text, img, position, date }) {
         <>
           <div
             className={
-              img == (null || undefined) ? "card gridi-center" : "grid2 card gridi-center"
+              (img == (null || undefined) || text == (null || undefined)) ? "card gridi-center" : "grid2 card gridi-center"
             }
           >
             {buildText(title, text, date, cardId)}
@@ -83,36 +81,37 @@ export default function Card({ title, text, img, position, date }) {
         </div>
       );
     } else {
-      return <></>;
+      return <>
+      </>;
     }
   }
 
   function buildText(title, text, date, cardId) {
+    if (date == undefined) {
+      date = "unbekannt";
+    }
+    if (text == undefined) {
+      return (
+        <>
+          <div id={`section-${cardId}`} className="center title3">
+            {title}
+          </div>
+          <div className="date-simple">
+            {date}
+          </div>
+        </>
+      );
+    }
     return (
-      <div style={{ position: "relative" }}>
+      <div>
         <div>
           <div id={`section-${cardId}`} className="center title3">
             {title}
           </div>
           <div className="text-container">{text}</div>
         </div>
-        <span
-          className="timestamp material-symbols-outlined"
-          onMouseEnter={() => {
-            document.getElementById(`date-${cardId}`).style.display = "block";
-          }}
-          onMouseLeave={() => {
-            document.getElementById(`date-${cardId}`).style.display = "none";
-          }}
-        >
-          today
-        </span>
-        <div
-          id={`date-${cardId}`}
-          className="date"
-          style={{ position: "absolute", bottom: 0, right: 0, display: "none" }}
-        >
-          Verfasst am {date}
+        <div className="date-simple">
+          {date}
         </div>
       </div>
     );

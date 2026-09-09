@@ -21,9 +21,7 @@ const links = [
 export default function Gaming() {
   return (
     <>
-      <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
-        <Banner title={"Gaming"} img={gaming1}></Banner>
         
 
         <br id="games"></br>
@@ -81,7 +79,6 @@ export default function Gaming() {
           date={"22.7.2023"}
         ></Card>
       </div>
-      </Layout>
     </>
   );
 }

@@ -14,29 +14,36 @@ const links = [
   new SideLink("Slushy", "#slushy", false)
 ];
 
-export default function Animals() {
-  return (
+export function getData() {
+  const title = "Tiere";
+  const img = animals2;
+  const details = (
     <>
-      <Layout sideBarLinks={links} active={"interests"}>
-      <div className="grid">
-        <Banner title={"Tiere"} img={animals1}></Banner>
-
-        <br id="slushy"></br>
-        <div className="flex gridi-center center">
+      <br id="slushy"></br>
+      <div className="flex gridi-center center">
         <Card
           title={"Slushy"}
-          text={<p>Schon seit ich klein bin, habe ich mir eine Katze gewünscht. 
-            Ich habe mich schon immmer sehr verbunden mit Tieren gefühlt, 
-            deshlab war ich umso glücklicher als 2017 mein Wunsch in Erfüllung ging. 
-            Ich habe eine Katze bekomm und sie hat sich den Namen Slushy ausgesucht. 
-            Sie ist ein wichtiger Teil meines Lebens und ich bin sehr dankbar, dass sie bei mir ist.
-            </p>}
+          text={
+            <p>
+              Schon seit ich klein bin, habe ich mir eine Katze gewünscht. Ich
+              habe mich schon immmer sehr verbunden mit Tieren gefühlt, deshlab
+              war ich umso glücklicher als 2017 mein Wunsch in Erfüllung ging.
+              Ich habe eine Katze bekomm und sie hat sich den Namen Slushy
+              ausgesucht. Sie ist ein wichtiger Teil meines Lebens und ich bin
+              sehr dankbar, dass sie bei mir ist.
+            </p>
+          }
           img={animals2}
           date={"16.7.2024"}
         />
-         </div>
       </div>
-      </Layout>
     </>
   );
+
+  return { title, img, details };
+}
+
+export default function AnimalsPage() {
+  const data = getData();
+  return <Layout sideBarLinks={links} active={"interests"}>{data.details}</Layout>;
 }

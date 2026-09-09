@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/footer.css";
 import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer>
@@ -14,7 +15,7 @@ export default function Footer() {
       </div>
       <div>
         <Link className="white" href={"/patchNotes"}>
-          Version: 3.3
+          Version: 4.1
         </Link>
       </div>
 

@@ -1,5 +1,5 @@
 //Components
-import React, { useEffect, useState } from "react";
+import React from "react";
 import SideLink from "../../components/SideLink";
 import Card from "../../components/card";
 import Banner from "../../components/banner";
@@ -22,29 +22,15 @@ const links = [
   new SideLink("Gallerie", "#gallerie", false),
 ];
 
-export default function Bikes() {
-  const [width, setWidth] = useState(1000);
-  const [mobile, setMobile] = useState(true);
+export function getData() {
+  const width = 1000;
+  const mobile = false;
 
-  useEffect(() => {
-    function handleResize() {
-      const newWidth = document.body.clientWidth;
-      setWidth(newWidth);
-      setMobile(newWidth < 769);
-    }
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-  return (
+  const title = "Bikes";
+  const img = bikes1;
+const details = (
     <>
-      <Layout sideBarLinks={links} active={"interests"}>
       <div className="grid">
-        <Banner title={"Motorräder"} img={bikes1}></Banner>
        
 
         <br id="moped"></br>
@@ -87,7 +73,7 @@ export default function Bikes() {
           position={"left"}
           date={"4.7.2024"}
           />
-
+        {/*
         <br id="gallerie"></br>
         <div className="title2 center gridi-center">Gallerie</div>
         <div className="center gridi-center carousel">
@@ -109,9 +95,20 @@ export default function Bikes() {
               <Image src={bikes3} width={width}></Image>
             </div>
           </Carousel>
+        
+      
+        */}
         </div>
-      </div>
-      </Layout>
+
+
     </>
   );
+
+  const bikes = { title, img, details };
+  return bikes;
+}
+
+export default function BikesPage() {
+  const data = getData();
+  return <Layout sideBarLinks={links} active={"interests"}>{data.details}</Layout>;
 }

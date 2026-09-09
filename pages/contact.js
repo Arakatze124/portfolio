@@ -1,16 +1,12 @@
 //Components
 import React from "react";
 import SideLink from "../components/SideLink";
-import Banner from "../components/banner";
-import Layout from "../components/layout";
 //CSS
 import "../styles/default.css";
 //Media
-import contact1 from "../media/contact1.jpg";
 import Reference from "../components/reference";
 import iconMail from "../media/iconMail.png";
 import iconInstagram from "../media/iconInstagram.png";
-import iconGithub from "../media/iconGithub.png";
 
 const links = [
   new SideLink("E-Mail", "#mail", false),
@@ -21,10 +17,8 @@ const links = [
 export default function Contact() {
   return (
     <>
-      <Layout sideBarLinks={links} active={"contact"}>
       <div className="grid">
-        <Banner title={"Kontakt"} img={contact1}></Banner>
-
+        <div id="contact" className="title1 center gridi-center">Kontakt</div>
         <div className="flex gridi-center center">
           <div className="center flex-ignore"></div>
 
@@ -36,13 +30,15 @@ export default function Contact() {
             title={"E-Mail"}
           ></Reference>
 
-          <br id="github"></br>
+          {/*          <br id="github"></br>
           <Reference
             title={"Github"}
             text={"Arakatze124"}
             link={"https://github.com/Arakatze124"}
             icon={iconGithub}
-          ></Reference>
+          ></Reference> 
+          */}
+
 
           <br id="instagram"></br>
           <Reference
@@ -53,7 +49,6 @@ export default function Contact() {
           ></Reference>
         </div>
       </div>
-      </Layout>
     </>
   );
 }
